@@ -7,15 +7,14 @@ import Home from './pages/Home';
 import OurWork from './pages/OurWork';
 
 
-
-
 const app = document.getElementById('app');
 
 ReactDOM.render(
 	<Router history = {hashHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Home}></IndexRoute>
-			<Route path="our-work" component={OurWork}></Route>
+			<Route path="our-work" component={OurWork}>	
+			</Route>
 		</Route>
 	</Router>, 
 	app);
