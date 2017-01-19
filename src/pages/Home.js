@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Intro from '../components/Intro'
 import OurWorkLink from '../components/OurWorkLink'
+import TeamLink from '../components/TeamLink'
 import Footer from '../components/Footer'
 import { Link } from 'react-router'
 
@@ -15,7 +16,7 @@ export default class Home extends React.Component{
 				<Header />
 				<div id="about">
 					<div>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</div>
-					<Intro />
+				<Intro />
 					<div>Our Work</div>
 					<div> 
 						<h2>See our work </h2>
@@ -28,6 +29,16 @@ export default class Home extends React.Component{
 						<OurWorkLink />
 						<OurWorkLink />
 						<OurWorkLink />
+					</ul>
+					<div>
+						<h2>OUR LEADERSHIP TEAM</h2>
+						<p> Meet the men and women in charge of it all.</p>
+					</div>
+					<ul>
+						<TeamLink />
+						<TeamLink />
+						<TeamLink />
+						<TeamLink />
 					</ul>
 				</div>
 				<Footer/>
