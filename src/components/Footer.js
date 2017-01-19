@@ -3,7 +3,7 @@ import React from 'react'
 export default class Footer extends React.Component{
 	render(){
 		return(
-			<footer>	
+			<footer id="footer">	
 				<p>GET IN TOUCH</p>
 					<ul>
 						<li><img alt="map"/> 111 Queen St E, Suite 200 Toronto, ON M5C 1S2</li>
