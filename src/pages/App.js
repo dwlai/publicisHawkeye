@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import { Link } from 'react-router'
+import Footer from '../components/Footer'
 
 
 export default class App extends React.Component {
@@ -13,7 +13,7 @@ export default class App extends React.Component {
 				{this.props.children}
 				<Link to="/">Home</Link>
 				<Link to="our-work">Our Work</Link>
-				<Footer />
+				<Footer/>
 			</div>
 
         );
