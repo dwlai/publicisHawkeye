@@ -11,6 +11,7 @@ export default class App extends React.Component {
 			<div>
 				<Header />
 				{this.props.children}
+				<Link to="/">Home</Link>
 				<Link to="our-work">Our Work</Link>
 				<Footer />
 			</div>
