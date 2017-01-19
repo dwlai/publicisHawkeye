@@ -1,5 +1,5 @@
 import React from 'react'
-import WavyCircle from './WavyCircle'
+import IntroPic from './IntroPic'
 import AboutLink from './AboutLink'
 import AboutContent from './AboutContent'
 
@@ -8,7 +8,7 @@ export default class Intro extends React.Component{
 	render(){
 		return (
 				<div>
-					<WavyCircle />
+					<IntroPic />
 					<ul>
 						<AboutLink />
 						<AboutLink />

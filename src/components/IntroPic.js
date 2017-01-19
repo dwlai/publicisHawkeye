@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class WavyCircle extends React.Component{
+export default class IntroPic extends React.Component{
 	
 	render(){
 		return (

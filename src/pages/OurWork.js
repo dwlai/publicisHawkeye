@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from './Home';
 import { Link } from 'react-router';
 
 export default class OurWork extends React.Component{
@@ -8,7 +7,7 @@ export default class OurWork extends React.Component{
 		return(
 			<div>
 				<h1>OUR WORK</h1>
-				<Link to="/" component={Home}>Back</Link>
+				<Link to="/">Back</Link>
 			</div>
 			);
 	}
