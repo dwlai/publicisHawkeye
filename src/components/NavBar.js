@@ -7,10 +7,10 @@ export default class NavBar extends React.Component{
 				return(
 				<div id="NavBar">
 					<ul>
-						<Navlink/>
-						<Navlink/>
-						<Navlink/>
-						<Navlink/>
+						<Navlink title="ABOUT"/>
+						<Navlink title="OUR WORK"/>
+						<Navlink title="OUR TEAM"/>
+						<Navlink title="CONTACT"/>
 					</ul>
 				</div>
 				);

@@ -1,3 +1,42 @@
-h1 {
-color: red;
+$red : #d41f31;
+$grey : #818285;
+$yellow : #ffcb08;
+$turquoise : #2bbbab;
+
+a{
+	text-decoration:none;
+}
+
+header {
+
+	background: $red;
+	height: 70px;
+	
+	ul {
+		float : right;
+		li {
+			padding:12px;
+			display:inline;
+	
+			
+			
+			a{
+				color:white;
+			}
+			a:hover{
+				color:yellow;
+				text-decoration:none;
+			}
+			
+		}
+		li:hover{
+			border:solid;
+			border-width:1px;
+			border-color:white;
+		}
+		
+		
+	}
+
+
 }
