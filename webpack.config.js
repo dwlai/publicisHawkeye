@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var CleanPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: {app:'./src/Main.js'},
+	entry: {app:'./src/Main.js',theme:'./src/Theme.js'},
 
   output: {
     filename: '[name].bundle.js',
