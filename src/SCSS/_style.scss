@@ -38,7 +38,7 @@ header {
 				color:white;
 			}
 			a:hover{
-				color:yellow;
+				color:white;
 				text-decoration:none;
 			}
 			
@@ -84,6 +84,35 @@ header {
 			top: 61px;
 		}
 	}
+}
+
+#intro{
+
+		background-color:$grey;
+		color:white;
+		
+		li {
+			padding:12px;
+			display:inline-block;
+	
+			
+			
+			a{
+				color:white;
+			}
+			a:hover{
+				color:white;
+				text-decoration:none;
+			}
+			
+		}
+		li:hover{
+			border:solid;
+			border-width:1px;
+			border-color:white;
+		}
+	
+
 }
 
 
