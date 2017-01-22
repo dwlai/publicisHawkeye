@@ -11,9 +11,23 @@ header {
 
 	background: $red;
 	height: 70px;
+	position:fixed;
+	width:100%;
+	
+	img{
+	float:left;
+	height: 57px;
+    position: relative;
+    top: 4px;
+    left: 66px;
+	}
 	
 	ul {
 		float : right;
+		position: relative;
+		top: 23px;
+		left: -43px;
+
 		li {
 			padding:12px;
 			display:inline;
@@ -40,3 +54,37 @@ header {
 
 
 }
+
+#about{
+	background-image:url("../../assets/img/hero.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	height:100vh;
+	
+	div{
+		height: 188px;
+		width: 681px;
+		background:rgba(0, 0, 0, 0.09);
+		position: relative;
+		top: 146px;
+		left: 253px;
+		border:solid;
+		border-color:white;
+		border-width:5px;
+		display:none;
+		
+		p{
+			color:white;
+			margin-left:auto;
+			margin-right:auto;
+			vertical-align:middle;
+			font-size: 26px;
+			width: 541px;
+			position: relative;
+			top: 61px;
+		}
+	}
+}
+
+
+
