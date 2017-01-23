@@ -20,18 +20,20 @@ export default class Home extends React.Component{
 				<Intro />
 				<div id = "ourWork">
 					<p>Our Work</p>
-					<div> 
-						<h2>See our work </h2>
-						<p> A good look at what we've done so far. (And a brief glimpse into what we can do.</p>
-					</div>
-					<ul>
-						<OurWorkLink />
-						<OurWorkLink />
-						<OurWorkLink />
-						<OurWorkLink />
-						<OurWorkLink />
-						<OurWorkLink />
-					</ul>
+						<div className="row">
+							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" > 
+								<h2>See our work </h2>
+								<p> A good look at what we've done so far. (And a brief glimpse into what we can do.)</p>
+							</div>
+							<ul className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<OurWorkLink title="CPC SMM"/>
+								<OurWorkLink title="ROGERS PLATINUM LAUNCH"/>
+								<OurWorkLink title="CPC CONNECTIVITY"/>
+								<OurWorkLink title="RED LOBSTER"/>
+								<OurWorkLink title="LG DESIGN COLLECTION"/>
+								<OurWorkLink title="CMA INCITE AWARDS"/>
+							</ul>
+						</div>
 				</div>
 				<div id="team">
 					<h2>OUR LEADERSHIP TEAM</h2>

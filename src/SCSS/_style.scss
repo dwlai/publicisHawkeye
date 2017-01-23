@@ -121,5 +121,24 @@ header {
 
 }
 
+#ourWork{
+	
+	height:100vh;
+	
+	ul{
+		list-style-type:none;
+	
+		li{
+			margin-bottom:29px;
+					
+			img{
+					display:block;
+					width:100%;
+					height:auto;
+			}
+		}
+	}
+}
+
 
 
