@@ -38,7 +38,8 @@ export default class Home extends React.Component{
 				<div id="team">
 					<h2>OUR LEADERSHIP TEAM</h2>
 					<p> Meet the men and women in charge of it all.</p>			
-					<ul>
+					<ul className="row">
+						<div className="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
 						<TeamLink />
 						<TeamLink />
 						<TeamLink />

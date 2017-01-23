@@ -144,11 +144,23 @@ header {
 
 #team{
 	width:100%;
-	padding-bottom:28%;
+	padding-bottom:39%;
 	min-height:368px;
 	background-image:url("../../assets/img/team.png");
 	background-size:cover;
 	background-repeat:no-repeat;
+	
+	ul{
+		li{
+			display:inline;
+		
+			background-color:$grey;
+			border-style:solid;
+			border-color:white;
+			border-width:2px;
+		}
+		
+	}
 
 }
 
