@@ -17,7 +17,7 @@ export default class Intro extends React.Component{
 								<Navlink title={["OUR",<br/>, "APPROACH"]}/>
 								<Navlink title={["OUR",<br/>, "DATA"]}/>
 							</ul>
-							<AboutContent />
+							<AboutContent title="WE CREATE RELATIONSHIP MOMENTS" content="From grand gestures to “just because”, every moment matters in defining a relationship – whether in our personal lives or in business. It’s these moments that we seize on. It’s these moments that make anyone feel special, heard, and compelled to take immediate action. And together, it’s these moments that ultimately determine how your relationship grows. " />
 						</div>
 					</div>
 				</div>
