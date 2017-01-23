@@ -61,6 +61,7 @@ header {
 	background-size:cover;
 	background-repeat:no-repeat;
 	height:100vh;
+	width:100%;
 	
 	div{
 		height: 188px;
@@ -140,5 +141,15 @@ header {
 	}
 }
 
+
+#team{
+	width:100%;
+	padding-bottom:28%;
+	min-height:368px;
+	background-image:url("../../assets/img/team.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+
+}
 
 
