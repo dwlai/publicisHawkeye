@@ -124,7 +124,6 @@ header {
 
 #ourWork{
 	
-	height:100vh;
 	
 	ul{
 		list-style-type:none;
@@ -152,12 +151,13 @@ header {
 	
 	ul{
 		li{
-			display:inline;
-		
+			display:inline-block;
 			background-color:$grey;
 			border-style:solid;
 			border-color:white;
 			border-width:2px;
+			width:148px;
+			height:74px;
 		}
 		
 	}
