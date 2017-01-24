@@ -31,12 +31,12 @@ export default class Home extends React.Component{
 								</div>
 							</div>
 							<ul className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-								<OurWorkLink title="CPC SMM"/>
-								<OurWorkLink title="ROGERS PLATINUM LAUNCH"/>
-								<OurWorkLink title="CPC CONNECTIVITY"/>
-								<OurWorkLink title="RED LOBSTER"/>
-								<OurWorkLink title="LG DESIGN COLLECTION"/>
-								<OurWorkLink title="CMA INCITE AWARDS"/>
+								<OurWorkLink title={"CPC SMM"}/>
+								<OurWorkLink title={"ROGERS PLATINUM LAUNCH"}/>
+								<OurWorkLink title={"CPC CONNECTIVITY"}/>
+								<OurWorkLink title={"RED LOBSTER"}/>
+								<OurWorkLink title={"LG DESIGN COLLECTION"}/>
+								<OurWorkLink title={"CMA INCITE AWARDS"}/>
 							</ul>
 						</div>
 				</div>
