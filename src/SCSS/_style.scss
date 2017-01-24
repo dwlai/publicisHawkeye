@@ -3,6 +3,14 @@ $grey : #818285;
 $yellow : #ffcb08;
 $turquoise : #2bbbab;
 
+
+@mixin border-style(){
+	border:solid;
+	border-width:1px;
+	border-color:white;
+}
+
+
 a{
 	text-decoration:none;
 }
@@ -45,9 +53,7 @@ header {
 			
 		}
 		li:hover{
-			border:solid;
-			border-width:1px;
-			border-color:white;
+			@include border-style();
 		}
 		
 		
@@ -114,9 +120,7 @@ header {
 			
 		}
 		li:hover{
-			border:solid;
-			border-width:1px;
-			border-color:white;
+			@include border-style();
 		}
 	
 
@@ -124,9 +128,42 @@ header {
 
 #ourWork{
 	
+
+	
+	.row{
+		div{
+			color:$grey;
+			h6{
+				@include border-style();
+				border-color:$grey;
+				color:$grey;
+				width: 100px;
+				padding: 12px;
+				margin-top:61px;
+				margin-left:61px;
+			}
+			
+			h2{
+				margin-top:152px;
+				margin-left:61px;
+			}
+			p{
+				border:none;
+				padding:0px;
+				width:324px;
+				margin-left:61px;
+			}
+		}
+		
+	}
+	
+	
+	
 	
 	ul{
 		list-style-type:none;
+		   margin-top: 61px;
+		margin-bottom: 31px;
 	
 		li{
 			margin-bottom:29px;
@@ -153,9 +190,7 @@ header {
 		li{
 			display:inline-block;
 			background-color:$grey;
-			border-style:solid;
-			border-color:white;
-			border-width:2px;
+			@include border-style();
 			width:98%;
 			padding-bottom:30%
 		}
@@ -163,5 +198,56 @@ header {
 	}
 
 }
+
+footer{
+	background-color:$red;
+	color:white;
+	height:256px;
+	
+	ul{
+		list-style-type:none;
+		margin-top: 56px;
+	
+		}
+
+	p{
+		@include border-style();
+		width: 126px;
+		padding: 12px;
+		position: relative;
+		top: 37px;
+		left: 53px;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 

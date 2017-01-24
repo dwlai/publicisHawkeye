@@ -19,11 +19,14 @@ export default class Home extends React.Component{
 				</div>
 				<Intro />
 				<div id = "ourWork">
-					<p>Our Work</p>
+					
 						<div className="row">
 							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" > 
-								<h2>See our work </h2>
-								<p> A good look at what we've done so far. (And a brief glimpse into what we can do.)</p>
+								<div>
+									<h6>OUR WORK</h6>
+									<h2>See our work </h2>
+									<p> A good look at what we've done so far. (And a brief glimpse into what we can do.)</p>
+								</div>
 							</div>
 							<ul className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 								<OurWorkLink title="CPC SMM"/>
