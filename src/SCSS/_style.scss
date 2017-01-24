@@ -95,32 +95,48 @@ header {
 }
 
 #intro{
-		.row {
-				position:relative;
-				top:215px;
-			}
-			
-		background-color:$grey;
-		color:white;
-		height:100vh;
+
+		.row{
 		
-		li {
-			padding:12px;
-			display:inline-block;
-	
-			
-			
-			a{
+				background-color:$grey;
 				color:white;
-			}
-			a:hover{
-				color:white;
-				text-decoration:none;
-			}	
-			
-		}
-		li:hover{
-			@include border-style();
+				
+				
+				div{
+				
+					margin-top:6%;
+					margin-bottom:6%;				
+				}
+				
+				
+				
+				.introPic{
+					height:100%;
+					width:100%;
+				}
+					
+				ul{
+						margin-top:15%;
+						li {
+							padding:12px;
+							display:inline-block;
+					
+							
+							
+							a{
+								color:white;
+							}
+							a:hover{
+								color:white;
+								text-decoration:none;
+							}	
+							
+						}
+						li:hover{
+							@include border-style();
+						}
+				}
+		
 		}
 	
 
