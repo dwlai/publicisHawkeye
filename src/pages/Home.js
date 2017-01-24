@@ -40,10 +40,10 @@ export default class Home extends React.Component{
 					<p> Meet the men and women in charge of it all.</p>			
 					<ul className="row">
 						<div className="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
-						<TeamLink />
-						<TeamLink />
-						<TeamLink />
-						<TeamLink />
+						<TeamLink style={{marginTop: 164 + '%'}}/>
+						<TeamLink style={{marginTop: 188 + '%'}}/>
+						<TeamLink style={{marginTop: 119 + '%'}}/>
+						<TeamLink style={{marginTop: 150 + '%'}}/>
 					</ul>
 				</div>
 				<Footer/>
