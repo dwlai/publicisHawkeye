@@ -131,27 +131,27 @@ header {
 
 	
 	.row{
-		div{
+		.seeOurWork{
+		
+			margin-left:31%;
 			color:$grey;
 			h6{
 				@include border-style();
 				border-color:$grey;
 				color:$grey;
-				width: 100px;
-				padding: 12px;
+				width: 82px;
+				padding: 5px;
 				margin-top:61px;
-				margin-left:61px;
+				text-align:center;
 			}
 			
 			h2{
 				margin-top:152px;
-				margin-left:61px;
 			}
 			p{
 				border:none;
 				padding:0px;
 				width:324px;
-				margin-left:61px;
 			}
 		}
 		
@@ -185,6 +185,25 @@ header {
 	background-image:url("../../assets/img/team.png");
 	background-size:cover;
 	background-repeat:no-repeat;
+	color:white;
+	
+	
+		
+	h5{
+		@include border-style();
+		padding: 5px;
+		width: 180px;
+		text-align:center;
+		position: relative;
+		margin-left: 61%;
+		top: 36px;
+	}
+	
+	p{
+	    position: relative;
+		top: 36px;
+		margin-left: 61%;
+	}
 	
 	ul{
 		li{

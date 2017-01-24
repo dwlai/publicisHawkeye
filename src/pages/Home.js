@@ -22,7 +22,7 @@ export default class Home extends React.Component{
 					
 						<div className="row">
 							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" > 
-								<div>
+								<div className="seeOurWork">
 									<h6>OUR WORK</h6>
 									<h2>See our work </h2>
 									<p> A good look at what we've done so far. (And a brief glimpse into what we can do.)</p>
@@ -39,14 +39,14 @@ export default class Home extends React.Component{
 						</div>
 				</div>
 				<div id="team">
-					<h2>OUR LEADERSHIP TEAM</h2>
-					<p> Meet the men and women in charge of it all.</p>			
+						<h5>OUR LEADERSHIP TEAM</h5>
+						<p> Meet the men and women in charge of it all.</p>
 					<ul className="row">
 						<div className="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
-						<TeamLink style={{marginTop: 164 + '%'}}/>
+						<TeamLink style={{marginTop: 174 + '%'}}/>
 						<TeamLink style={{marginTop: 188 + '%'}}/>
-						<TeamLink style={{marginTop: 119 + '%'}}/>
-						<TeamLink style={{marginTop: 150 + '%'}}/>
+						<TeamLink style={{marginTop: 135 + '%'}}/>
+						<TeamLink style={{marginTop: 165 + '%'}}/>
 					</ul>
 				</div>
 				<Footer/>
