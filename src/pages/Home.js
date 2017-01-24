@@ -14,11 +14,13 @@ export default class Home extends React.Component{
 		return (
 			<div>
 				<Header />
-				<div id="about">
+				<div id="aboutSection">
 					<div><p>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</p></div>
 				</div>
+				<a className="anchor" id="intro"></a>
 				<Intro />
-				<div id = "ourWork">
+				<a className="anchor" id="ourWork"></a>
+				<div id = "ourWorkSection">
 					
 						<div className="row">
 							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" > 
@@ -38,7 +40,8 @@ export default class Home extends React.Component{
 							</ul>
 						</div>
 				</div>
-				<div id="team">
+				<a className="anchor" id="team"></a>
+				<div id="teamSection">
 						<h5>OUR LEADERSHIP TEAM</h5>
 						<p> Meet the men and women in charge of it all.</p>
 					<ul className="row">

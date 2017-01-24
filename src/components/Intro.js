@@ -7,7 +7,7 @@ export default class Intro extends React.Component{
 	
 	render(){
 		return (
-				<div id ="intro" className="container-fluid">
+				<div id ="introSection" className="container-fluid">
 					<div className="row">
 						<IntroPic image="./assets/img/introImage.png" />
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
