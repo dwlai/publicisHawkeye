@@ -13,7 +13,7 @@ ReactDOM.render(
 	<Router history = {hashHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Home}></IndexRoute>
-			<Route path="our-work-page" component={OurWorkPage}>	
+			<Route path="our-work-page/:article" component={OurWorkPage}>	
 			</Route>
 		</Route>
 	</Router>, 

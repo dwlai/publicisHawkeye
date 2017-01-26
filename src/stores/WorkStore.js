@@ -6,19 +6,19 @@ class WorkStore extends EventEmitter{
 		super()
 		this.work = [
 						{
-							title:"Mail Launch",
+							title:"CPC SMM",
 							image:"./assets/img/ourWork/maillaunch.png"
 						},
 						{
-							title:"Rogers",
+							title:"ROGERS PLATINUM LAUNCH",
 							image:"./assets/img/ourWork/rogers.png"
 						},
 						{
-							title:"Mail Launch",
+							title:"CPC CONNECTIVITY",
 							image:"./assets/img/ourWork/connectivity.png"
 						},
 						{
-							title:"Incite",
+							title:"CMA INCITE AWARDS",
 							image:"./assets/img/ourWork/incite.png"
 						},
 							{
@@ -26,7 +26,7 @@ class WorkStore extends EventEmitter{
 							image:"./assets/img/ourWork/redlobster.png"
 						},
 							{
-							title:"lg",
+							title:"LG DESIGN COLLECTION",
 							image:"./assets/img/ourWork/lg.png"
 						}
 
