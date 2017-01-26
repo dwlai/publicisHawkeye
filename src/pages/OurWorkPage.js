@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export default class OurWork extends React.Component{
+export default class OurWorkPage extends React.Component{
 	
 	render(){
 		return(
