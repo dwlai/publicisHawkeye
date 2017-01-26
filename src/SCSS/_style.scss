@@ -108,6 +108,11 @@ header {
 				background-color:$grey;
 				color:white;
 				
+				h1{
+				    font-family: Libre Baskerville;
+					font-size: 26pt;
+				}
+				
 				
 				div{
 				
@@ -223,7 +228,7 @@ header {
 		top: 36px;
 	}
 	
-	p{
+	#meet{
 	    position: relative;
 		top: 36px;
 		margin-left: 61%;
@@ -235,7 +240,13 @@ header {
 			background-color:$grey;
 			@include border-style();
 			width:98%;
-			padding-bottom:30%
+			padding-bottom:30%;
+			
+			h3{
+				font-family:Libre Baskerville;
+				font-size:14px;
+			}
+			
 		}
 		
 	}

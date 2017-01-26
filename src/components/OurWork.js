@@ -17,9 +17,7 @@ export default class OurWork extends React.Component{
 			const OurWorkLinks = work.map((work) => {
 					return <OurWorkLink key={work.id}{...work} />;
 			});
-			
-			console.log(OurWorkLinks);
-			
+	
 			return(
 							<ul className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							{OurWorkLinks}

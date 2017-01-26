@@ -35,13 +35,13 @@ export default class Home extends React.Component{
 				<a className="anchor" id="team"></a>
 				<div id="teamSection">
 						<h5>OUR LEADERSHIP TEAM</h5>
-						<p> Meet the men and women in charge of it all.</p>
+						<p id="meet"> Meet the men and women in charge of it all.</p>
 					<ul className="row">
 						<div className="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
-						<TeamLink style={{marginTop: 174 + '%'}}/>
-						<TeamLink style={{marginTop: 188 + '%'}}/>
-						<TeamLink style={{marginTop: 135 + '%'}}/>
-						<TeamLink style={{marginTop: 165 + '%'}}/>
+						<TeamLink style={{marginTop: 174 + '%'}} name={"Catherine Parsons"} title={"VP, CRM"}/>
+						<TeamLink style={{marginTop: 188 + '%'}} name={"Scott Pinkney"} title={"VP, Executive Director"}/>
+						<TeamLink style={{marginTop: 135 + '%'}} name={"Vish Ramkissoon"} title={"VP, Decision Science"}/>
+						<TeamLink style={{marginTop: 165 + '%'}} name={"Jennifer McConville"} title={"Director of Production"}/>
 					</ul>
 				</div>
 				<Footer/>
