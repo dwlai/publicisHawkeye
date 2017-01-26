@@ -17,7 +17,7 @@ class WorkPageStore extends EventEmitter{
 										},
 										{
 											title:"ROGERS PLATINUM LAUNCH",
-											image:"./assets/img/ourWork/rogers.png",
+											image:"./assets/img/ourWork/rogerspage.png",
 											headline: "Rogers Platinum MasterCard Launch",
 											subhead:"You’ll love the feeling of freeTM",
 											intelligence:"rogers",
@@ -44,7 +44,7 @@ class WorkPageStore extends EventEmitter{
 										},
 											{
 											title:"RED LOBSTER",
-											image:"./assets/img/ourWork/redlobster.png",
+											image:"./assets/img/ourWork/redlobsterpage.png",
 											headline: "My Red Lobster Rewards" ,
 											subhead:"Rewards are now on the menu",
 											intelligence:"connect",
@@ -53,7 +53,7 @@ class WorkPageStore extends EventEmitter{
 										},
 											{
 											title:"LG DESIGN COLLECTION",
-											image:"./assets/img/ourWork/lg.png",
+											image:"./assets/img/ourWork/lgpage.png",
 											headline: "Rewards are now on the menu ",
 											subhead:"Because life’s more about having the latest technology",
 											intelligence:"connect",
