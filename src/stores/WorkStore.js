@@ -15,7 +15,7 @@ class WorkStore extends EventEmitter{
 						},
 						{
 							title:"Mail Launch",
-							image:"./assets/img/ourWork/maillaunch.png"
+							image:"./assets/img/ourWork/connectivity.png"
 						},
 						{
 							title:"Incite",
