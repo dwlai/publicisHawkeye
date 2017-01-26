@@ -2,22 +2,20 @@ import React from 'react'
 import IntroPic from './IntroPic'
 import IntroLink from './IntroLink'
 import IntroContent from './IntroContent'
+import IntroStore from '../stores/IntroStore'
 
 export default class Intro extends React.Component{
 	
 	constructor(){
 			super();
 			this.state = {
-						title: "WE CREATE RELATIONSHIP MOMENTS",
-						content: "From grand gestures to “just because”, every moment matters in defining a relationship – whether in our personal lives or in business. It’s these moments that we seize on. It’s these moments that make anyone feel special, heard, and compelled to take immediate action. And together, it’s these moments that ultimately determine how your relationship grows. ",
-						image:"./assets/img/introImage.png"
+						intro: IntroStore.getContent(0)
 			};
 	}
 	
-	changeContent(){
-		this.setState({	title: "NEW CONTENT",
-						content :"Heres some new content",
-						image: "./assets/img/hi.png"
+	changeContent(item){
+		this.setState({	
+						intro: IntroStore.getContent(item)
 						});
 	}
 	
@@ -25,15 +23,15 @@ export default class Intro extends React.Component{
 		return (
 				<div id ="introSection" className="container-fluid">
 					<div className="row">
-						<IntroPic image={this.state.image} />
+						<IntroPic image={this.state.intro.image} />
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<ul>
-								<IntroLink changeContent= {this.changeContent.bind(this)} title={["OUR",<br/>, "DIFFERENCE"]}/>
-								<IntroLink changeContent= {this.changeContent.bind(this)} title={["OUR",<br/>, "CAPABILITIES"]}/>
-								<IntroLink changeContent= {this.changeContent.bind(this)} title={["OUR",<br/>, "APPROACH"]}/>
-								<IntroLink changeContent= {this.changeContent.bind(this)} title={["OUR",<br/>, "DATA"]}/>
+								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
+								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'1'} title={["OUR",<br/>, "CAPABILITIES"]}/>
+								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'2'} title={["OUR",<br/>, "APPROACH"]}/>
+								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'3'} title={["OUR",<br/>, "DATA"]}/>
 							</ul>
-							<IntroContent title={this.state.title} content={this.state.content} />
+							<IntroContent title={this.state.intro.title} content={this.state.intro.content} />
 						</div>
 					</div>
 				</div>
