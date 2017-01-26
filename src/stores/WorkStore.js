@@ -22,7 +22,7 @@ class WorkStore extends EventEmitter{
 							image:"./assets/img/ourWork/incite.png"
 						},
 							{
-							title:"Red Lobster",
+							title:"RED LOBSTER",
 							image:"./assets/img/ourWork/redlobster.png"
 						},
 							{

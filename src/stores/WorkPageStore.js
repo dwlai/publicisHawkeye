@@ -43,7 +43,7 @@ class WorkPageStore extends EventEmitter{
 											action: "connect",
 										},
 											{
-											title:"Red Lobster",
+											title:"RED LOBSTER",
 											image:"./assets/img/ourWork/redlobster.png",
 											headline: "My Red Lobster Rewards" ,
 											subhead:"Rewards are now on the menu",
@@ -65,8 +65,12 @@ class WorkPageStore extends EventEmitter{
 	
 			}
 			
-			getContent(){
-				return(this.workArticle[3]);
+			getContent(item){
+				
+				var result = this.workArticle.filter(function(obj){
+					return obj.title == item;
+				});
+				return(result);
 			}
 
 }
