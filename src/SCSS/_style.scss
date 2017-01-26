@@ -257,10 +257,12 @@ footer{
 	background-color:$red;
 	color:white;
 	height:256px;
+	overflow:hidden;
 	
 	ul{
 		list-style-type:none;
 		margin-top: 56px;
+		float:left;
 	
 		}
 
@@ -272,6 +274,13 @@ footer{
 		top: 37px;
 		left: 53px;
 	}
+	
+	#footerlogo{
+		float:right;
+		position: relative;
+		top: -150px;
+		}
+	
 }
 	
 	
