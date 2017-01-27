@@ -9,7 +9,8 @@ export default class Intro extends React.Component{
 	constructor(){
 			super();
 			this.state = {
-						intro: IntroStore.getContent(0)
+						intro: IntroStore.getContent(0),
+						counter:0
 			};
 	}
 	
@@ -17,9 +18,24 @@ export default class Intro extends React.Component{
 		this.setState({	
 						intro: IntroStore.getContent(item)
 						});
+						
+		}
+						
+	handleClick(){
+		
+		var newState = this.state;
+		newState.counter++;
+		newState.intro.content = IntroStore.getsubContent(newState.counter);
+		
+		
+		this.setState(newState);
+		if (newState.counter == 4)
+		{newState.counter = 0;}
 	}
 	
+	
 	render(){
+		console.log(this.state.counter);
 		return (
 				<div id ="introSection" className="container-fluid">
 					<div className="row">
@@ -32,6 +48,7 @@ export default class Intro extends React.Component{
 								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'3'} title={["OUR",<br/>, "DATA"]}/>
 							</ul>
 							<IntroContent title={this.state.intro.title} content={this.state.intro.content} />
+							<div className="approachButton" onClick={this.handleClick.bind(this)}></div>
 						</div>
 					</div>
 				</div>
