@@ -1,8 +1,9 @@
-import React from 'react'
-import IntroPic from './IntroPic'
-import IntroLink from './IntroLink'
-import IntroContent from './IntroContent'
-import IntroStore from '../stores/IntroStore'
+import React from 'react';
+import IntroPic from './IntroPic';
+import IntroLink from './IntroLink';
+import IntroContent from './IntroContent';
+import IntroStore from '../stores/IntroStore';
+import ApproachButton from './ApproachButton';
 
 export default class Intro extends React.Component{
 	
@@ -21,7 +22,7 @@ export default class Intro extends React.Component{
 						
 		}
 						
-	handleClick(){
+	changeSubcontent(){
 		
 		var newState = this.state;
 		newState.counter++;
@@ -29,7 +30,7 @@ export default class Intro extends React.Component{
 		
 		
 		this.setState(newState);
-		if (newState.counter == 4)
+		if (newState.counter == 3)
 		{newState.counter = 0;}
 	}
 	
@@ -48,7 +49,7 @@ export default class Intro extends React.Component{
 								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'3'} title={["OUR",<br/>, "DATA"]}/>
 							</ul>
 							<IntroContent title={this.state.intro.title} content={this.state.intro.content} />
-							<div className="approachButton" onClick={this.handleClick.bind(this)}></div>
+							<ApproachButton changeSubcontent= {this.changeSubcontent.bind(this)} />
 						</div>
 					</div>
 				</div>
