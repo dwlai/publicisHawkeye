@@ -102,34 +102,39 @@ a.anchor {
     visibility: hidden;
 }
 
-header {
+.navbar.navbar-default.navbar-fixed-top{
 	font-family: $font-avenir-roman;
 	background: $red;
-	height: 70px;
-	position:fixed;
-	width:100%;
+	height: 75px;
 	z-index:9999;
+	border:none;
+	
+	button{
+		height: 35px;
+		width: 35px;
+		position: relative;
+		top: 10px;
+	
+	}
+	
+	#navbar{
+		border:none;
+		background-color:$red;
+	}
 	
 	img{
-	float:left;
-	height: 57px;
+	height: 43px;
     position: relative;
-    top: 4px;
-    left: 66px;
+    top: 13px;
 	}
 	
 	ul {
-		float : right;
-		position: relative;
-		top: 23px;
-		left: -43px;
+		background-color:$red;
+		border:none;
 
 		li {
 			padding:12px;
-			display:inline;
-	
-			
-			
+		
 			a{
 				color:white;
 			}
