@@ -36,7 +36,6 @@ export default class Intro extends React.Component{
 	
 	
 	render(){
-		console.log(this.state.counter);
 		return (
 				<div id ="introSection" className="container-fluid">
 					<div className="row">

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import NavBar from '../components/NavBar';
 import Intro from '../components/Intro';
 import TeamLink from '../components/TeamLink';
 import Footer from '../components/Footer';
@@ -12,7 +12,7 @@ export default class Home extends React.Component{
 	render(){
 		return (
 			<div>
-				<Header />
+				<NavBar />
 				<div id="aboutSection">
 					<div><p>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</p></div>
 				</div>
