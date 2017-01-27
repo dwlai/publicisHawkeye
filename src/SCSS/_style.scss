@@ -1,8 +1,88 @@
+/* Webfont: Avenir-Book */@font-face {
+    font-family: 'Avenir-Book';
+    src: url('fonts/Avenir-Book.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Avenir-Book.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Avenir-Book.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Avenir-Book.svg#Avenir-Book') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Avenir-BookOblique */@font-face {
+    font-family: 'Avenir-BookOblique';
+    src: url('fonts/Avenir-BookOblique.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Avenir-BookOblique.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Avenir-BookOblique.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Avenir-BookOblique.svg#Avenir-BookOblique') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Avenir-Roman */@font-face {
+    font-family: 'Avenir-Roman';
+    src: url('fonts/Avenir-Roman.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Avenir-Roman.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Avenir-Roman.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Avenir-Roman.svg#Avenir-Roman') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: LibreBaskerville-Bold */@font-face {
+    font-family: 'LibreBaskerville-Bold';
+    src: url('fonts/LibreBaskerville-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/LibreBaskerville-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/LibreBaskerville-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/LibreBaskerville-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/LibreBaskerville-Bold.svg#LibreBaskerville-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: LibreBaskerville-Italic */@font-face {
+    font-family: 'LibreBaskerville-Italic';
+    src: url('fonts/LibreBaskerville-Italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/LibreBaskerville-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/LibreBaskerville-Italic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/LibreBaskerville-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/LibreBaskerville-Italic.svg#LibreBaskerville-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: LibreBaskerville-Regular */@font-face {
+    font-family: 'LibreBaskerville-Regular';
+    src: url('fonts/LibreBaskerville-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/LibreBaskerville-Regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/LibreBaskerville-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/LibreBaskerville-Regular.svg#LibreBaskerville-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+$font-avenir-roman: 'Avenir-Roman', Helvetica, Arial, sans-serif;
+$font-avenir-book: 'Avenir-Book', Helvetica, Arial, sans-serif;
+$font-avenir-bookoblique: 'Avenir-Book', Helvetica, Arial, sans-serif;
+$font-librebaskerville-regular: 'LibreBaskerville-Regular', Georgia, Times, serif;
+$font-librebaskerville-bold: 'LibreBaskerville-Bold', Georgia, Times, serif;
+$font-librebaskerville-italic: 'LibreBaskerville-Italic', Georgia, Times, serif;
+
+
 $red : #d41f31;
 $grey : #818285;
 $yellow : #ffcb08;
 $turquoise : #2bbbab;
 
+
+body {
+	font-family: $font-avenir-book;
+	-webkit-font-smoothing: antialiased;
+}
 
 @mixin border-style(){
 	border:solid;
@@ -23,7 +103,7 @@ a.anchor {
 }
 
 header {
-
+	font-family: $font-avenir-roman;
 	background: $red;
 	height: 70px;
 	position:fixed;
@@ -109,7 +189,7 @@ header {
 				color:white;
 				
 				h1{
-				    font-family: Libre Baskerville;
+				  font-family: $font-librebaskerville-italic;
 					font-size: 26pt;
 				}
 				
@@ -132,7 +212,7 @@ header {
 						li {
 							padding:12px;
 							display:inline-block;
-					
+							font-family: $font-avenir-roman;
 							
 							
 							a{
@@ -177,10 +257,12 @@ header {
 				padding: 5px;
 				margin-top:61px;
 				text-align:center;
+				font-family: $font-avenir-roman;
 			}
 			
 			h2{
 				margin-top:152px;
+				font-family: $font-librebaskerville-italic;
 			}
 			p{
 				border:none;
@@ -232,6 +314,7 @@ header {
 		position: relative;
 		margin-left: 61%;
 		top: 36px;
+		font-family: $font-avenir-roman;
 	}
 	
 	#meet{
@@ -249,7 +332,7 @@ header {
 			padding-bottom:30%;
 			
 			h3{
-				font-family:Libre Baskerville;
+				font-family: $font-librebaskerville-italic;
 				font-size:14px;
 			}
 			
@@ -279,6 +362,7 @@ footer{
 		position: relative;
 		top: 37px;
 		left: 53px;
+		font-family: $font-avenir-roman;
 	}
 	
 	#footerlogo{
