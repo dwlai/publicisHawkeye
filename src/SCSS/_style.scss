@@ -131,16 +131,21 @@ a.anchor {
 	ul {
 		background-color:$red;
 		border:none;
+		margin-top:2.5%;
 
 		li {
-			padding:12px;
+				margin-right:10px;
 		
 			a{
+				padding:7px;
 				color:white;
+		
 			}
 			a:hover{
 				color:white;
 				text-decoration:none;
+				padding:7px;
+			
 			}
 			
 		}
