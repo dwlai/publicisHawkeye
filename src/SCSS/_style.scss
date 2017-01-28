@@ -223,10 +223,22 @@ a.anchor {
 				
 				
 				
-				.introPic{
+				.flower{
 					height:100%;
 					width:100%;
 				}
+				
+				.brain, .approach, .data{
+						width: 74%;
+						position: relative;
+						top: 128px;
+						left: 59px;
+				}
+				
+				.none{
+						display:none;
+					}
+				
 					
 				ul{
 						margin-top:31%;

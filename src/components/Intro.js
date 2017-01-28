@@ -39,7 +39,12 @@ export default class Intro extends React.Component{
 		return (
 				<div id ="introSection" className="container-fluid">
 					<div className="row">
-						<IntroPic image={this.state.intro.image} />
+						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<IntroPic image={this.state.intro.image} 
+									image2={this.state.intro.image2} 
+									className={this.state.intro.className} 
+									className2={this.state.intro.className2}/>
+						</div>
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<ul>
 								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
