@@ -9,10 +9,10 @@ class IntroStore extends EventEmitter{
 							{
 								title: "We create Relationship Moments™.",
 								content: 'From grand gestures to "just because",'+" every moment matters in defining a relationship - whether in our personal lives or in business. It's these moments that we seize on. It's these moments that make anyone feel special, heard, and compelled to take immediate action. And together, it's these moments that ultimately determine how your relationship grows. ",
-								image:"./assets/img/difference/flower.png",
-								image2: "",
+								image:"",
+								image2: "./assets/img/difference/flower.png",
 								className: "flower",
-								className2: "none"
+								className2: "flower2"
 							},
 							{
 								title: "What can we do? A lot.",

@@ -202,14 +202,14 @@ a.anchor {
 		position:relative;
 		background-color:$grey;
 		top: -193px;
-		height:851px;
+		
 
 		.row{
 		
 			
 				color:white;
 				margin-top:38px;
-				height:742px;
+				
 				
 				h1{
 				  font-family: $font-librebaskerville-italic;
@@ -226,18 +226,19 @@ a.anchor {
 				
 				
 				.flower{
-							height: 731px;
-							background-size: contain;
+							width:70%;
+							background-size: cover;
 							background-repeat: no-repeat;
-							width: 100%;
+							position: relative;
+							top: 128px;
+							left: 59px;
 				}
 				
 				.brain, .approach, .data{
 						height:434px;
 						width:434px;
-						position: relative;
-						top: 128px;
-						left: 59px;
+						margin-left: 20%;
+						margin-top: 23%;
 						background-size:contain;
 						background-repeat:no-repeat;
 				}
@@ -263,8 +264,10 @@ a.anchor {
 				
 				
 				
-				.none{
-						display:none;
+				.flower2{
+						    width: 148%;
+							margin-left: -21%;
+							margin-top: -43%;
 					}
 				
 					

@@ -19,7 +19,7 @@ export default class Home extends React.Component{
 				<a className="anchor" id="intro"></a>
 				<Intro />
 				<a className="anchor" id="ourWork"></a>
-				<div id = "ourWorkSection">
+				<div id = "ourWorkSection" className="container-fluid">
 					
 						<div className="row">
 							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" > 
@@ -28,7 +28,7 @@ export default class Home extends React.Component{
 									<h2>See our work </h2>
 									<p> A good look at what we've done so far. (And a brief glimpse into what we can do.)</p>
 								</div>
-							</div>
+							</div>
 							<OurWork />
 						</div>
 				</div>
