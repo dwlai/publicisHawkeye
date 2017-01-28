@@ -169,6 +169,8 @@ a.anchor {
 	background-repeat:no-repeat;
 	width:100%;
 	padding-bottom:55%;
+	position:relative;
+	z-index:1;
 	
 	div{
 		height: 188px;
@@ -197,10 +199,15 @@ a.anchor {
 
 #introSection{
 
+		position:relative;
+		background-color:$grey;
+		top: -193px;
+
 		.row{
 		
-				background-color:$grey;
+			
 				color:white;
+				margin-top:38px;
 				
 				h1{
 				  font-family: $font-librebaskerville-italic;
@@ -222,11 +229,12 @@ a.anchor {
 				}
 					
 				ul{
-						margin-top:15%;
+						margin-top:31%;
 						li {
 							padding:12px;
 							display:inline-block;
 							font-family: $font-avenir-roman;
+							@include border-style();
 							
 							
 							a{
@@ -240,6 +248,7 @@ a.anchor {
 						}
 						li:hover{
 							@include border-style();
+							border-color:white;
 						}
 				}
 				
