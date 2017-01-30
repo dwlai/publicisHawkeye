@@ -5,11 +5,30 @@ import TeamLink from '../components/TeamLink';
 import Footer from '../components/Footer';
 import { Link } from 'react-router';
 import OurWork from '../components/OurWork';
+import IntroStore from '../stores/IntroStore';
 
 
 export default class Home extends React.Component{
+
+
+	constructor(){
+			super();
+			this.state = {
+						intros: IntroStore.getContent(),
+						
+			};
+	}
+	
 	
 	render(){
+		
+		const { intros } = this.state;
+		
+		const IntroComponents = intros.map((intro) =>{
+				return <Intro key ={intro.id}{...intro}/>
+		});
+		
+		
 		return (
 			<div>
 				<NavBar />
@@ -17,7 +36,7 @@ export default class Home extends React.Component{
 					<div><p>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</p></div>
 				</div>
 				<a className="anchor" id="intro"></a>
-				<Intro />
+				{IntroComponents}
 				<a className="anchor" id="ourWork"></a>
 				<div id = "ourWorkSection" className="container-fluid">
 					
