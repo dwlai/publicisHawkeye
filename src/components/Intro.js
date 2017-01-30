@@ -39,32 +39,31 @@ export default class Intro extends React.Component{
 		
 		if (rotateState == 1)    //data-count = 2
 		{
-			$intelligence.css({
-				"top":"-56px",
-				"left":"152px"
-			
-			});
 			$labels.removeClass("active");
+			$intelligence.removeClass("rotate1");
 			$intelligence.addClass("active");
+			$action.addClass("rotate3");
+			$relevance.addClass("rotate1");
+			$relevance.removeClass("rotate3");
+
 		}
 		else if (rotateState == 2)  //data-count = 3
 		{
-				$intelligence.css({
-				"top":"-92px",
-				"left":"130px"
-			});
-			
 			$labels.removeClass("active");
 			$relevance.addClass("active");
+			$relevance.removeClass("rotate1");
+			$intelligence.addClass("rotate3");
+			$action.addClass("rotate1");
+			$action.removeClass("rotate3");
 		}
 		else if (rotateState == 0) //data-count = 1
 		{
-				$intelligence.css({	
-				"top":"-42px",
-				"left":"184px"
-			});
 			$labels.removeClass("active");
 			$action.addClass("active");
+			$action.removeClass("rotate1");
+			$intelligence.addClass("rotate1");
+			$intelligence.removeClass("rotate3");
+			$relevance.addClass("rotate3");
 			
 		}
 	

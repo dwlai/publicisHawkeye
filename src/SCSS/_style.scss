@@ -264,14 +264,32 @@ a.anchor {
 										position: absolute;
 										top: -42px;
 										left: 184px;
-						
 									}
+									
+									
+										.intelligence.active{
+											top:-56px;
+											left:152px;
+										}
+										
+										.intelligence.rotate1{
+												top:-42px;
+												left:184px;
+										}
+										
+										.intelligence.rotate3{
+												top:-92px;
+												left:130px;
+										
+										}
+						
 						.action{
 							display:block;
 							position: absolute;
 							top: 294px;
 							left: 456px;
 						}
+						
 						.relevance{
 							display:block;
 							    position: absolute;
