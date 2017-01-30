@@ -10,7 +10,7 @@ export default class ApproachButton extends React.Component{
 	
 	render(){
 		return(
-			<div className="approachButton" onClick={this.handleClick.bind(this)}></div>
+			<div className="approachButton" onClick={this.handleClick.bind(this)}>Click here to rotate vector image</div>
 		);
 		
 	}
