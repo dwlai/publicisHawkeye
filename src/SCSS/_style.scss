@@ -1,76 +1,121 @@
-/* Webfont: Avenir-Book */@font-face {
-    font-family: 'Avenir-Book';
-    src: url('fonts/Avenir-Book.eot'); /* IE9 Compat Modes */
-    src: url('fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/Avenir-Book.woff') format('woff'), /* Modern Browsers */
-         url('fonts/Avenir-Book.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/Avenir-Book.svg#Avenir-Book') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-/* Webfont: Avenir-BookOblique */@font-face {
-    font-family: 'Avenir-BookOblique';
-    src: url('fonts/Avenir-BookOblique.eot'); /* IE9 Compat Modes */
-    src: url('fonts/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/Avenir-BookOblique.woff') format('woff'), /* Modern Browsers */
-         url('fonts/Avenir-BookOblique.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/Avenir-BookOblique.svg#Avenir-BookOblique') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-/* Webfont: Avenir-Roman */@font-face {
-    font-family: 'Avenir-Roman';
-    src: url('fonts/Avenir-Roman.eot'); /* IE9 Compat Modes */
-    src: url('fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/Avenir-Roman.woff') format('woff'), /* Modern Browsers */
-         url('fonts/Avenir-Roman.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/Avenir-Roman.svg#Avenir-Roman') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-/* Webfont: LibreBaskerville-Bold */@font-face {
-    font-family: 'LibreBaskerville-Bold';
-    src: url('fonts/LibreBaskerville-Bold.eot'); /* IE9 Compat Modes */
-    src: url('fonts/LibreBaskerville-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/LibreBaskerville-Bold.woff') format('woff'), /* Modern Browsers */
-         url('fonts/LibreBaskerville-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/LibreBaskerville-Bold.svg#LibreBaskerville-Bold') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-/* Webfont: LibreBaskerville-Italic */@font-face {
-    font-family: 'LibreBaskerville-Italic';
-    src: url('fonts/LibreBaskerville-Italic.eot'); /* IE9 Compat Modes */
-    src: url('fonts/LibreBaskerville-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/LibreBaskerville-Italic.woff') format('woff'), /* Modern Browsers */
-         url('fonts/LibreBaskerville-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/LibreBaskerville-Italic.svg#LibreBaskerville-Italic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-/* Webfont: LibreBaskerville-Regular */@font-face {
-    font-family: 'LibreBaskerville-Regular';
-    src: url('fonts/LibreBaskerville-Regular.eot'); /* IE9 Compat Modes */
-    src: url('fonts/LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/LibreBaskerville-Regular.woff') format('woff'), /* Modern Browsers */
-         url('fonts/LibreBaskerville-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/LibreBaskerville-Regular.svg#LibreBaskerville-Regular') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+@mixin border-style($color){
+	border:solid;
+	border-width:1px;
+	border-color: $color;
 }
 
-$font-avenir-roman: 'Avenir-Roman', Helvetica, Arial, sans-serif;
-$font-avenir-book: 'Avenir-Book', Helvetica, Arial, sans-serif;
-$font-avenir-bookoblique: 'Avenir-Book', Helvetica, Arial, sans-serif;
-$font-librebaskerville-regular: 'LibreBaskerville-Regular', Georgia, Times, serif;
-$font-librebaskerville-bold: 'LibreBaskerville-Bold', Georgia, Times, serif;
-$font-librebaskerville-italic: 'LibreBaskerville-Italic', Georgia, Times, serif;
+/* =====================
+	FONTS
+===================== */
+	/* Webfont: Avenir-Book */@font-face {
+	    font-family: 'Avenir-Book';
+	    src: url('fonts/Avenir-Book.eot'); /* IE9 Compat Modes */
+	    src: url('fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	         url('fonts/Avenir-Book.woff') format('woff'), /* Modern Browsers */
+	         url('fonts/Avenir-Book.ttf') format('truetype'), /* Safari, Android, iOS */
+	         url('fonts/Avenir-Book.svg#Avenir-Book') format('svg'); /* Legacy iOS */
+	    font-style: normal;
+	    font-weight: bold;
+	    text-rendering: optimizeLegibility;
+	}
+	/* Webfont: Avenir-BookOblique */@font-face {
+	    font-family: 'Avenir-BookOblique';
+	    src: url('fonts/Avenir-BookOblique.eot'); /* IE9 Compat Modes */
+	    src: url('fonts/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	         url('fonts/Avenir-BookOblique.woff') format('woff'), /* Modern Browsers */
+	         url('fonts/Avenir-BookOblique.ttf') format('truetype'), /* Safari, Android, iOS */
+	         url('fonts/Avenir-BookOblique.svg#Avenir-BookOblique') format('svg'); /* Legacy iOS */
+	    font-style: italic;
+	    font-weight: bold;
+	    text-rendering: optimizeLegibility;
+	}
+	/* Webfont: Avenir-Roman */@font-face {
+	    font-family: 'Avenir-Roman';
+	    src: url('fonts/Avenir-Roman.eot'); /* IE9 Compat Modes */
+	    src: url('fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	         url('fonts/Avenir-Roman.woff') format('woff'), /* Modern Browsers */
+	         url('fonts/Avenir-Roman.ttf') format('truetype'), /* Safari, Android, iOS */
+	         url('fonts/Avenir-Roman.svg#Avenir-Roman') format('svg'); /* Legacy iOS */
+	    font-style: normal;
+	    font-weight: normal;
+	    text-rendering: optimizeLegibility;
+	}
+	/* Webfont: LibreBaskerville-Bold */@font-face {
+	    font-family: 'LibreBaskerville-Bold';
+	    src: url('fonts/LibreBaskerville-Bold.eot'); /* IE9 Compat Modes */
+	    src: url('fonts/LibreBaskerville-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	         url('fonts/LibreBaskerville-Bold.woff') format('woff'), /* Modern Browsers */
+	         url('fonts/LibreBaskerville-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+	         url('fonts/LibreBaskerville-Bold.svg#LibreBaskerville-Bold') format('svg'); /* Legacy iOS */
+	    font-style: normal;
+	    font-weight: bold;
+	    text-rendering: optimizeLegibility;
+	}
+	/* Webfont: LibreBaskerville-Italic */@font-face {
+	    font-family: 'LibreBaskerville-Italic';
+	    src: url('fonts/LibreBaskerville-Italic.eot'); /* IE9 Compat Modes */
+	    src: url('fonts/LibreBaskerville-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	         url('fonts/LibreBaskerville-Italic.woff') format('woff'), /* Modern Browsers */
+	         url('fonts/LibreBaskerville-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+	         url('fonts/LibreBaskerville-Italic.svg#LibreBaskerville-Italic') format('svg'); /* Legacy iOS */
+	    font-style: italic;
+	    font-weight: normal;
+	    text-rendering: optimizeLegibility;
+	}
+	/* Webfont: LibreBaskerville-Regular */@font-face {
+	    font-family: 'LibreBaskerville-Regular';
+	    src: url('fonts/LibreBaskerville-Regular.eot'); /* IE9 Compat Modes */
+	    src: url('fonts/LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	         url('fonts/LibreBaskerville-Regular.woff') format('woff'), /* Modern Browsers */
+	         url('fonts/LibreBaskerville-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	         url('fonts/LibreBaskerville-Regular.svg#LibreBaskerville-Regular') format('svg'); /* Legacy iOS */
+	    font-style: normal;
+	    font-weight: normal;
+	    text-rendering: optimizeLegibility;
+	}
+	/* Generated by Glyphter (http://www.glyphter.com) on  Mon Jan 30 2017*/
+	@font-face {
+	    font-family: 'hawkeye 00';
+	    src: url('fonts/hawkeye-00.eot');
+	    src: url('fonts/hawkeye-00.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/hawkeye-00.woff') format('woff'),
+	         url('fonts/hawkeye-00.ttf') format('truetype'),
+	         url('fonts/hawkeye-00.svg#hawkeye-00') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	[class*='icon-']:before{
+		display: inline-block;
+	   font-family: 'hawkeye 00';
+	   font-style: normal;
+	   font-weight: normal;
+	   line-height: 1;
+	   vertical-align: middle;
+	   -webkit-font-smoothing: antialiased;
+	   -moz-osx-font-smoothing: grayscale
+	}
+	.icon-mail:before{content:'\0041';}
+	.icon-location:before{content:'\0042';}
+	.icon-phone:before{content:'\0043';}
+
+	$font-avenir-roman: 'Avenir-Roman', Helvetica, Arial, sans-serif;
+	$font-avenir-book: 'Avenir-Book', Helvetica, Arial, sans-serif;
+	$font-avenir-bookoblique: 'Avenir-Book', Helvetica, Arial, sans-serif;
+	$font-librebaskerville-regular: 'LibreBaskerville-Regular', Georgia, Times, serif;
+	$font-librebaskerville-bold: 'LibreBaskerville-Bold', Georgia, Times, serif;
+	$font-librebaskerville-italic: 'LibreBaskerville-Italic', Georgia, Times, serif;
+	
+	.block-title {
+		display: inline-block;
+		border: 1px solid;
+		padding: 1.2rem 1.2rem 0.8rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		font-family: $font-avenir-roman;
+	}
 
 
 $red : #d41f31;
@@ -84,13 +129,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-@mixin border-style(){
-	border:solid;
-	border-width:1px;
-	border-color:transparent;
-}
-
-
 a{
 	text-decoration:none;
 }
@@ -102,62 +140,74 @@ a.anchor {
     visibility: hidden;
 }
 
-.navbar.navbar-default.navbar-fixed-top{
+.navbar.navbar-default.navbar-fixed-top {
 	font-family: $font-avenir-roman;
 	background: $red;
-	z-index:9999;
+	// z-index:9999;
 	border:none;
 	
-	.navbar-header{
-		height:75px;
+	.navbar-header {
+		// height:75px;
 	}
 	
-	button{
-		height: 35px;
-		width: 35px;
-		position: relative;
-		top: 10px;
-	
+	.navbar-toggle {
+		top: 25px;
+
+		.icon-bar {
+			background-color: #fff;
+		}
+
+		&:focus, &:hover {
+			background-color: #fff;
+			border-color: #fff;
+
+			.icon-bar {
+				background-color: $red;
+			}
+		}
 	}
-	
-	#navbar{
-		border:none;
-		background-color:$red;
-	}
-	
-	img{
-	height: 43px;
-    position: relative;
-    top: 13px;
+	 
+	.navbar-brand {
+		// height: auto;
+		// line-height: 1;
+		float: none;
+		// margin: none;
+		// height: 43px;
+		img {
+			width: 250px;
+		}
 	}
 	
 	ul {
-		background-color:$red;
 		border:none;
-		margin-top:18px;
+		margin-top: 30px;
 
 		li {
 				margin-right:10px;
-				@include border-style();
+				@include border-style(transparent);
+				// line-height: 1;
+				font-size: 1.8rem;
+
 			
-			a{
-				padding:7px;
-				color:white;
-		
-			}
-			a:hover{
+			a {
+				padding: 10px 10px 7px;
 				color:white;
 				text-decoration:none;
-				padding:7px;
-			
+				border: 1px solid $red;
 			}
 			
 		}
-		li:hover{
+		li:hover a {
 			border-color:white;
 		}
 		
 		
+	}
+
+	.navbar-collapse, .navbar-form {
+		border-top: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 	}
 
 
@@ -332,7 +382,7 @@ a.anchor {
 							padding:12px;
 							display:inline-block;
 							font-family: $font-avenir-roman;
-							@include border-style();
+							@include border-style(transparent);
 							
 							
 							a{
@@ -345,7 +395,7 @@ a.anchor {
 							
 						}
 						li:hover{
-							@include border-style();
+							@include border-style(transparent);
 							border-color:white;
 						}
 				}
@@ -371,18 +421,18 @@ a.anchor {
 		
 			margin-left:31%;
 			color:$grey;
-			h6{
-				@include border-style();
-				border-color:$grey;
-				color:$grey;
-				width: 82px;
-				padding: 5px;
-				margin-top:61px;
+			h2{
+				// @include border-style(transparent);
+				// border-color:$grey;
+				// color:$grey;
+				// width: 82px;
+				// padding: 5px;
+				// margin-top:61px;
 				text-align:center;
-				font-family: $font-avenir-roman;
+				// font-family: $font-avenir-roman;
 			}
 			
-			h2{
+			h3{
 				margin-top:152px;
 				font-family: $font-librebaskerville-italic;
 			}
@@ -398,18 +448,48 @@ a.anchor {
 	
 	
 	
-	ul{
+	div.work-group {
 		list-style-type:none;
-		   margin-top: 61px;
+		margin-top: 61px;
 		margin-bottom: 31px;
 	
-		li{
+		div.work-individual {
+			height: 100%;
 			margin-bottom:29px;
-					
-			img{
-					display:block;
-					width:100%;
-					height:auto;
+			
+			// img{
+			// 		display:block;
+			// 		width:100%;
+			// 		height:auto;
+			// }
+
+			a:link {
+				display: block;
+				overflow: hidden;
+				height: 200px;
+
+				.work-img {
+					height: 100%;
+					background-color: $yellow;
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+					transition: all 1s ease;
+				  -moz-transition: all 1s ease;
+				  -ms-transition: all 1s ease;
+				  -webkit-transition: all 1s ease;
+				  -o-transition: all 1s ease;
+				}
+			}
+
+			a:hover .work-img {
+			  transform: scale(1.5);
+			  -moz-transform: scale(1.5);
+			  -webkit-transform: scale(1.5);
+			  -o-transform: scale(1.5);
+			  -ms-transform: scale(1.5); /* IE 9 */
+			  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+			   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
 			}
 		}
 	}
@@ -428,34 +508,58 @@ a.anchor {
 	
 	
 		
-	h5{
-		@include border-style();
-		padding: 5px;
-		width: 180px;
-		text-align:center;
-		position: relative;
-		margin-left: 61%;
-		top: 36px;
-		font-family: $font-avenir-roman;
+	h2 {
+		// @include border-style(transparent);
+		// padding: 5px;
+		// width: 180px;
+		// text-align:center;
+		// position: relative;
+		// margin-left: 61%;
+		// top: 36px;
+		// font-family: $font-avenir-roman;
 	}
 	
 	#meet{
-	    position: relative;
-		top: 36px;
-		margin-left: 61%;
+	 //    position: relative;
+		// top: 36px;
+		// margin-left: 61%;
 	}
 	
-	ul{
-		li{
+	.team-individual {
+		
+		div {
+			position: relative;
 			display:inline-block;
 			background-color:$grey;
-			@include border-style();
-			width:98%;
-			padding-bottom:30%;
+			@include border-style(#fff);
+			// width:98%;
+			// padding-bottom:30%;
+			padding: 1rem;
+
+			&:before {
+				content: '';
+				background-image: url(../../assets/img/circle-00.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+				position: absolute;
+				height: 2rem;
+				width: 2rem;
+				top: -1rem;
+				right: 1rem;
+
+
+			}
 			
-			h3{
+			h4{
 				font-family: $font-librebaskerville-italic;
 				font-size:14px;
+				margin: 0;
+				margin-bottom: 0.5rem;
+			}
+			p {
+				margin: 0;
+				line-height: 1;
 			}
 			
 		}
@@ -467,18 +571,47 @@ a.anchor {
 footer{
 	background-color:$red;
 	color:white;
-	height:256px;
+	// height:256px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	overflow:hidden;
+	background-image: url(../../assets/img/footerlogo.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 85% center;
 	
 	ul{
 		list-style-type:none;
-		margin-top: 56px;
-		float:left;
-	
+		// margin-top: 56px;
+		margin-top: 2rem;
+		// float: left;
+		padding-left: 0;
+		
+		li {
+			display: table;
+			line-height: 3rem;
+			margin-bottom: 1rem;
+
+			&.address {
+				line-height: 2rem;
+			}
+			i { 
+				font-size: 3rem;
+				display: table-cell;
+				padding-right: 1rem;
+				vertical-align: middle;
+				line-height: 3rem;
+				
+				&.icon-location {
+					line-height: 1rem;
+				}
+			}
 		}
+	}
+
 
 	p{
-		@include border-style();
+		@include border-style(transparent);
 		width: 126px;
 		padding: 12px;
 		position: relative;
@@ -491,7 +624,7 @@ footer{
 		float:right;
 		position: relative;
 		top: -150px;
-		}
+	}
 	
 }
 	
@@ -499,31 +632,13 @@ footer{
 	float:right;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
+/* ================
+MEDIA QUERIES
+===================*/
 
+@media screen and (max-width: 767px ) {
+	.navbar.navbar-default.navbar-fixed-top ul {
+		margin-top: 0;
+	}
+}
