@@ -33,7 +33,7 @@ export default class Home extends React.Component{
 			<div>
 				<NavBar />
 				<div id="aboutSection">
-					<div><p>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</p></div>
+					<div><h1>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</h1></div>
 				</div>
 				<a className="anchor" id="intro"></a>
 				{IntroComponents}
@@ -43,18 +43,22 @@ export default class Home extends React.Component{
 						<div className="row">
 							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" > 
 								<div className="seeOurWork">
-									<h6>OUR WORK</h6>
-									<h2>See our work </h2>
+									<h2 className="block-title">OUR WORK</h2>
+									<h3>See our work </h3>
 									<p> A good look at what we've done so far. (And a brief glimpse into what we can do.)</p>
 								</div>
-							</div>
+							</div>
 							<OurWork />
 						</div>
 				</div>
 				<a className="anchor" id="team"></a>
 				<div id="teamSection">
-						<h5>OUR LEADERSHIP TEAM</h5>
-						<p id="meet"> Meet the men and women in charge of it all.</p>
+					<div className="row">
+						<div className="col-sm-4 col-sm-offset-8">
+							<h2 className="block-title">OUR LEADERSHIP TEAM</h2>
+							<p id="meet"> Meet the men and women in charge of it all.</p>
+						</div>
+					</div>
 					<ul className="row">
 						<div className="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
 						<TeamLink style={{marginTop: 174 + '%'}} name={"Catherine Parsons"} title={"VP, CRM"}/>

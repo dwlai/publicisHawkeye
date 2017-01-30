@@ -4,10 +4,16 @@ import { Link } from 'react-router'
 export default class OurWorkLink extends React.Component{
 
 	render(){
+    var divStyle = {
+        backgroundImage: 'url(' + this.props.image + ')'
+    }
+
 		return(
-				<li className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<Link to={"our-work-page/" + this.props.title}><img src={this.props.image} alt={this.props.title}/></Link>
-				</li>
+				<div className="work-individual col-sm-6">
+					<Link to={"our-work-page/" + this.props.title}> {/*<img src={this.props.image} alt={this.props.title}/> */}
+            <div className="work-img" style={divStyle} title={this.props.title}>&nbsp;</div>
+          </Link>
+				</div>
 				
 				);
 	}
