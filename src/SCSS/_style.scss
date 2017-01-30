@@ -239,10 +239,15 @@ a.anchor {
 						width:434px;
 						margin-right: 8%;
 						margin-top: 23%;
+						background-image: url('../../assets/img/eclipse.png');
 						background-size:contain;
 						background-repeat:no-repeat;
 						float:right;
 				}
+				
+				.approach{
+						transform: rotate(0deg);
+				}	
 				
 				.brain2{
 					    width: 79%;

@@ -4,7 +4,7 @@ export default class ApproachButton extends React.Component{
 	
 	handleClick(){
 		
-		this.props.changeSubcontent();
+		this.props.rotateVector();
 		
 	}
 	

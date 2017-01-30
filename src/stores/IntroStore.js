@@ -12,7 +12,7 @@ class IntroStore extends EventEmitter{
 								image:"",
 								image2: "./assets/img/difference/flower.png",
 								className: "flower",
-								className2: "flower2"
+								className2: "flower2"					
 							},
 							{
 								title: "What can we do? A lot.",
@@ -28,10 +28,10 @@ class IntroStore extends EventEmitter{
 								image:"./assets/img/eclipse.png",
 								image2: "./assets/img/approach/vectorsmartobject.png",
 								className:"approach",
-								className2: "vector",
-								intelligence: "Intelligence We transform data into a more robust understanding of when, why, and how consumers act. ",
+								className2: "vector"
+								/*intelligence: "Intelligence We transform data into a more robust understanding of when, why, and how consumers act. ",
 								relevance: "Relevance Our deep understanding of the consumer inspires us to craft compelling storytelling and purposeful design for timely, targeted messages that resonate loudly with your audience. ",
-								action: "Action Action drives reaction. We focus on creative ideas that get measurable and actionable results, continuously testing and optimizing, and building towards the next success.",
+								action: "Action Action drives reaction. We focus on creative ideas that get measurable and actionable results, continuously testing and optimizing, and building towards the next success.",*/
 							},
 							{
 								title: "Experience Intelligence Platform",
@@ -39,8 +39,7 @@ class IntroStore extends EventEmitter{
 								image:"./assets/img/eclipse.png",
 								image2: "./assets/img/data/data.png",
 								className:"data",
-								className2:"data2"
-								
+								className2:"data2"								
 							}
 	
 						]
@@ -51,7 +50,7 @@ class IntroStore extends EventEmitter{
 		return this.intro[item];
 	}
 	
-	getsubContent(item){
+	/*getsubContent(item){
 		var subContent;
 		if( item == 1)
 		{
@@ -69,7 +68,7 @@ class IntroStore extends EventEmitter{
 		return(subContent);
 	
 			
-	}
+	}*/
 	
 }
 
