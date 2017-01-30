@@ -9,6 +9,7 @@ export default class IntroPic extends React.Component{
 						"transition":"0s",
 						"transform":"rotate(0deg)"
 					});
+				$('.approach').attr("data-count", 1);
 		
 		return (
 				<div className={this.props.className} data-count={this.props.count}>
