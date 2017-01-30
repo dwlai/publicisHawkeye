@@ -5,15 +5,30 @@ export default class IntroPic extends React.Component{
 	
 	render(){
 		
-				$('.approach').css({
-						"transition":"0s",
-						"transform":"rotate(0deg)"
-					});
-				$('.approach').attr("data-count", 1);
+		var $approach = $('.approach');
+		var $labels = $approach.find("p");
+		var $intelligence = $approach.find(".intelligence")
+		
+		$approach.add($labels).css({
+				"transition":"0s",
+				"transform":"rotate(0deg)"
+		});
+		
+		$intelligence.css({
+				"top":"-42px",
+				"left":"184px"
+		});
+		
+		$labels.removeClass("active");
+									
+		$approach.attr("data-count", 1);
 		
 		return (
 				<div className={this.props.className} data-count={this.props.count}>
 					<img className={this.props.className2} src={this.props.image2} />
+					<p className="intelligence" ><em>Intelligence</em></p>
+					<p className="action" ><em>Action</em></p>
+					<p className="relevance" ><em>Relevance</em></p>
 				</div>
 		);
 	}

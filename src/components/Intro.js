@@ -23,34 +23,62 @@ export default class Intro extends React.Component{
 						
 		}
 		
-		
-		
-
 			
 	rotateVector(){
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
+	
 		//cache dom
 		var $vector = $('.approach');
+		var $labels = $vector.find("p");
+		var $intelligence = $vector.find(".intelligence");
+		var $relevance = $vector.find(".relevance");
+		var $action = $vector.find(".action");
 		var count = $vector.attr("data-count");
 		var degrees = 120 * count;
-		count++;
+		var ndegrees = degrees * -1;
+		var rotateState = count % 3;
 		
+		if (rotateState == 1)    //data-count = 2
+		{
+			$intelligence.css({
+				"top":"-56px",
+				"left":"152px"
+			
+			});
+			$labels.removeClass("active");
+			$intelligence.addClass("active");
+		}
+		else if (rotateState == 2)  //data-count = 3
+		{
+				$intelligence.css({
+				"top":"-92px",
+				"left":"130px"
+			});
+			
+			$labels.removeClass("active");
+			$relevance.addClass("active");
+		}
+		else if (rotateState == 0) //data-count = 1
+		{
+				$intelligence.css({	
+				"top":"-42px",
+				"left":"184px"
+			});
+			$labels.removeClass("active");
+			$action.addClass("active");
+			
+		}
+	
 		//render
 		$vector.css({
-						"transition":"2.5s",
+						"transition":"2s",
 						"transform":"rotate("+degrees+"deg)"
 					});
+		$labels.css({
+						"transition":"2s",
+						"transform":"rotate("+ndegrees+"deg)"
+					});
 					
+		count++;
 		$vector.attr("data-count",count);
 	
 	}

@@ -203,6 +203,11 @@ a.anchor {
 		background-color:$grey;
 		top: -193px;
 		
+		.intelligence, .relevance, .action{
+				display:none;
+				font-family: $font-librebaskerville-italic;
+				}
+		
 
 		.row{
 		
@@ -246,7 +251,33 @@ a.anchor {
 				}
 				
 				.approach{
+						
 						transform: rotate(0deg);
+						
+						.active{
+								
+								color:yellow;
+							}
+						
+						.intelligence{
+										display:block;
+										position: absolute;
+										top: -42px;
+										left: 184px;
+						
+									}
+						.action{
+							display:block;
+							position: absolute;
+							top: 294px;
+							left: 456px;
+						}
+						.relevance{
+							display:block;
+							    position: absolute;
+								top: 417px;
+								left: -10px;
+						}
 				}	
 				
 				.brain2{
@@ -257,8 +288,8 @@ a.anchor {
 						
 				.vector{
 					    width: 99%;
-						margin-left: 9%;
-						margin-top: 0%;
+						margin-left: 6%;
+						margin-top: -8%;
 						}
 						
 				.data2{
