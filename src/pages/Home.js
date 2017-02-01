@@ -20,6 +20,11 @@ export default class Home extends React.Component{
 			};
 	}
 	
+	changeContent(item){
+		alert(item);
+		
+	}
+	
 	
 	render(){
 		
@@ -39,11 +44,11 @@ export default class Home extends React.Component{
 				<a className="anchor" id="intro"></a>
 				
 				<div id ="introSection" className="container-fluid">
-					<ul>
-						<IntroLink item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
-						<IntroLink item = {'1'} title={["OUR",<br/>, "CAPABILITIES"]}/>
-						<IntroLink item = {'2'} title={["OUR",<br/>, "APPROACH"]}/>
-						<IntroLink item = {'3'} title={["OUR",<br/>, "DATA"]}/>
+					<ul className="introLinks">
+						<IntroLink changeContent={this.changeContent.bind(this)} item = {'0'} title={"our difference"}/>
+						<IntroLink changeContent={this.changeContent.bind(this)} item = {'1'} title={"our capabilities"}/>
+						<IntroLink changeContent={this.changeContent.bind(this)} item = {'2'} title={"our approach"}/>
+						<IntroLink changeContent={this.changeContent.bind(this)} item = {'3'} title={"our data"}/>
 					</ul>
 					<div className="screen">
 						<div className="filmstrip">

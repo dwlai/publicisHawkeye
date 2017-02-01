@@ -258,18 +258,25 @@ a.anchor {
 				}
 				
 				
-				ul{
+				.introLinks{
 							position:absolute;
+							z-index:1;
 						
 						li {
-							padding:12px;
+							text-transform:uppercase;
 							display:inline-block;
-							font-family: $font-avenir-roman;
-							@include border-style(transparent);
+							margin-right: 25px;
+							border: solid;
+							border-width: 1px;
+							border-color: transparent;
+							font-size: 1.8rem;
 							
 							
 							a{
+								width: 111px;
+								display: inline-block;
 								color:white;
+								padding: 10px 10px 7px;
 							}
 							a:hover{
 								color:white;
@@ -278,7 +285,7 @@ a.anchor {
 							
 						}
 						li:hover{
-							@include border-style(transparent);
+						
 							border-color:white;
 						}
 				}

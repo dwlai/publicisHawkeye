@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class IntroLink extends React.Component{
 	
-	handleClick(e){
+	handleClick(){
 		this.props.changeContent(this.props.item);
 		
 	}
