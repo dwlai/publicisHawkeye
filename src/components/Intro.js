@@ -67,9 +67,9 @@ export default class Intro extends React.Component{
 	render(){
 		return (
 
-				<section id="introSection">
-					<div className="container-fluid">
-						<div className="row introComponent">
+				// <section id="introSection">
+					<div className="introComponent container-fluid">
+						<div className="row ">
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<IntroPic  
 									image2={this.props.image2} 
@@ -83,7 +83,7 @@ export default class Intro extends React.Component{
 						</div>
 					</div>
 					</div>
-				</section>
+				// </section>
 
 				
 					
