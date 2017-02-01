@@ -9,19 +9,38 @@ export default class OurWorkPage extends React.Component{
 			
 		var article = WorkPageStore.getContent(this.props.params.article)[0];	
 		return(
-				<div className="ourWorkPage">
-					<div className="container-fluid">
-						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<p>OUR WORK</p>
-							<Link className="back" to="/">"BACK"</Link>
-							<h1>{article.headline}</h1>
-							<h2>{article.subhead}</h2>
-							<p> <span>Intelligence:</span> {article.intelligence}</p>
-							<p> <span>Relevance:</span> {article.relevance}</p>
-							<p> <span>Action:</span> {article.action}</p>
-						</div>
-						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<img src={article.image} alt={article.title} />
+				<div id="ourWorkPage">
+					<div className="container-fluid block -white edge--both--reverse">
+
+						<div className="container">
+							<div className="row">
+						
+								<div className="col-sm-6">
+
+									<div className="row">
+										<div className="col-xs-6">
+											<h2 className="block-title">OUR WORK</h2>
+										</div>
+										<div className="col-xs-6">
+											<h2 className="block-title back pull-right"><Link to="/">{"< BACK"}</Link></h2>
+										</div>
+									</div>
+
+									<div className="row">
+										<div className="col-sm-12">
+											<h3>{article.headline}</h3>
+											<h4>{article.subhead}</h4>
+											<p> <span className="text-red">Intelligence:</span> {article.intelligence}</p>
+											<p> <span className="text-red">Relevance:</span> {article.relevance}</p>
+											<p> <span className="text-red">Action:</span> {article.action}</p>
+										</div>
+									</div>
+								</div>
+								<div className="col-sm-6">
+									<img src={article.image} alt={article.title} className="img-responsive" />
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
