@@ -30,6 +30,9 @@ export default class Home extends React.Component{
 		$filmstrip.removeClass();
 		$filmstrip.addClass("filmstrip");
 		$approachButton.css("visibility","hidden");
+		var $subContent = $('.subContent')
+		$subContent.find('div').removeClass('active');
+		$('.copy').removeClass('hide');
 		
 		
 		if (item == 0)
