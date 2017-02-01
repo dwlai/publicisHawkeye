@@ -3,6 +3,14 @@ $grey : #818285;
 $yellow : #ffcb08;
 $turquoise : #2bbbab;
 
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
 @mixin border-style($color){
 	border:solid;
 	border-width:1px;
@@ -619,6 +627,7 @@ a.anchor {
 				display: block;
 				overflow: hidden;
 				height: 200px;
+				position: relative;
 
 				.work-img {
 					height: 100%;
@@ -626,23 +635,52 @@ a.anchor {
 					background-repeat: no-repeat;
 					background-position: center;
 					background-size: cover;
-					transition: all 1s ease;
-				  -moz-transition: all 1s ease;
-				  -ms-transition: all 1s ease;
-				  -webkit-transition: all 1s ease;
-				  -o-transition: all 1s ease;
+					@include prefix(transition, all 1s ease, moz ms webkit o);
+				}
+				
+				.work-overlay {
+					position: absolute;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    // background: rgba(0,0,0,0.5);
+			    background: $red;
+			    background: transparentize($red, 0.5);
+			    text-align: center;
+			    opacity: 0;
+			    @include prefix(transition, opacity 1s ease, moz ms webkit o);
+
+			    	h2 {
+			    		color: #fff;
+			    		font-size: 3.4rem;
+							line-height: 1;
+			    		position: absolute;
+			    		margin: 0;
+			    		top: 50%;
+			    		left: 50%;
+			    		@include prefix(transform, translate(-50%, -50%), moz ms webkit o);
+			    	}
+			   }
+			}
+
+			a:hover {
+
+				.work-img {
+					@include prefix(transform, scale(1.5), moz ms webkit o);
+				  // transform: scale(1.5);
+				  // -moz-transform: scale(1.5);
+				  // -webkit-transform: scale(1.5);
+				  // -o-transform: scale(1.5);
+				  // -ms-transform: scale(1.5); /* IE 9 */
+				  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+				   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+				}
+				.work-overlay {
+					opacity: 1;
 				}
 			}
 
-			a:hover .work-img {
-			  transform: scale(1.5);
-			  -moz-transform: scale(1.5);
-			  -webkit-transform: scale(1.5);
-			  -o-transform: scale(1.5);
-			  -ms-transform: scale(1.5); /* IE 9 */
-			  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
-			   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
-			}
 		}
 	}
 }
