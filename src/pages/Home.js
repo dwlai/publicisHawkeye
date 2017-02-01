@@ -119,7 +119,7 @@ export default class Home extends React.Component{
 						<div className="team-bg-img row">
 							<div className="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
 							<TeamLink className="team-catherine" name={"Catherine Parsons"} title={"VP, CRM"}/>
-							<TeamLink className="team-scott" name={"Scott Pinkney"} title={"VP, Executive Director"}/>
+							<TeamLink className="team-scott" name={"Scott Pinkney"} title={"VP, Executive Creative Director"}/>
 							<TeamLink className="team-vish" name={"Vish Ramkissoon"} title={"VP, Decision Science"}/>
 							<TeamLink className="team-jennifer" name={"Jennifer McConville"} title={"Director of Production"}/>
 						</div>

@@ -27,14 +27,12 @@ class IntroStore extends EventEmitter{
 							{
 								id:3,
 								title: "We've got it down to an art, and down to a science.",
-								content: "The best Relationship Moments arise from a perfect blend of intelligence, relevance, and action. Intelligence We transform data into a more robust understanding of when, why, and how consumers act.  Relevance Our deep understanding of the consumer inspires us to craft compelling storytelling and purposeful design for timely, targeted messages that resonate loudly with your audience. Action Action drives reaction. We focus on creative ideas that get measurable and actionable results, continuously testing and optimizing, and building towards the next success.",
+								content: "The best Relationship Moments arise from a perfect blend of intelligence, relevance, and action.",
 								image:"./assets/img/eclipse.png",
 								image2: "./assets/img/approach/vectorsmartobject.png",
 								className:"approach",
 								className2: "vector"
-								/*intelligence: "Intelligence We transform data into a more robust understanding of when, why, and how consumers act. ",
-								relevance: "Relevance Our deep understanding of the consumer inspires us to craft compelling storytelling and purposeful design for timely, targeted messages that resonate loudly with your audience. ",
-								action: "Action Action drives reaction. We focus on creative ideas that get measurable and actionable results, continuously testing and optimizing, and building towards the next success.",*/
+								
 							},
 							{
 								id:4,
