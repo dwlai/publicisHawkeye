@@ -259,8 +259,11 @@ a.anchor {
 				
 				
 				.introLinks{
-							position:absolute;
-							z-index:1;
+						
+							z-index: 1;
+							position: absolute;
+							margin-left: 43%;
+							margin-top: 10%;
 						
 						li {
 							text-transform:uppercase;
@@ -273,7 +276,6 @@ a.anchor {
 							
 							
 							a{
-								width: 111px;
 								display: inline-block;
 								color:white;
 								padding: 10px 10px 7px;
@@ -292,10 +294,15 @@ a.anchor {
 				
 		.screen{
 				width:100%;
+				height:100vh;
+				overflow:hidden;
 		}
 		
 		.filmstrip{
+					position:relative;
 					width:400%;
+					transition:1.5s;
+					left:0px;
 		}
 		.introComponent{
 					display:inline-block;
@@ -378,13 +385,21 @@ a.anchor {
 							position: absolute;
 							top: 294px;
 							left: 456px;
+							
+							.action.active{}
+							.action.rotate1{}
+							.action.rotate3{}
 						}
 						
 						.relevance{
 							display:block;
-							    position: absolute;
-								top: 417px;
-								left: -10px;
+							position: absolute;
+							top: 417px;
+							left: -10px;
+								
+							.relevance.active{}
+							.relevance.rotate1{}
+							.relevance.rotate3{}
 						}
 				}	
 				
@@ -416,6 +431,7 @@ a.anchor {
 					}
 				
 				.approachButton{
+					visibility:hidden;
 					height:30px;
 					width:200px;
 					background-color:white;
