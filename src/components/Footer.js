@@ -6,13 +6,10 @@ export default class Footer extends React.Component{
 			<footer id="footer">
 				<div className="container">
 					
-					<div className="row">
+					
 						{/* <div className="block-title"> */}
 							<h2 className="block-title">GET IN TOUCH</h2>
 						{/* </div> */}
-					</div>
-					
-					<div className="row">
 						<ul className="footer-list">
 						{/*
 							<li><img src="./assets/img/map.png" alt="map"/> 111 Queen St E, Suite 200<br/>Toronto, ON M5C 1S2</li>
@@ -26,7 +23,7 @@ export default class Footer extends React.Component{
 
 						</ul>
 						{/* <img id="footerlogo" src="./assets/img/footerlogo.png" alt="footer logo" /> */}
-					</div>
+					
 
 				</div>
 			</footer>

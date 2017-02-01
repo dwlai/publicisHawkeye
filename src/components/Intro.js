@@ -98,27 +98,29 @@ export default class Intro extends React.Component{
 	render(){
 						
 		return (
-				<div id ="introSection" className="container-fluid">
-					<div className="row">
-						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<IntroPic  
-									image2={this.state.intro.image2} 
-									className={this.state.intro.className} 
-									className2={this.state.intro.className2}
-									count={1}/>
-						</div>
-						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<ul>
-								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
-								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'1'} title={["OUR",<br/>, "CAPABILITIES"]}/>
-								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'2'} title={["OUR",<br/>, "APPROACH"]}/>
-								<IntroLink changeContent= {this.changeContent.bind(this)} item = {'3'} title={["OUR",<br/>, "DATA"]}/>
-							</ul>
-							<IntroContent title={this.state.intro.title} content={this.state.intro.content} />
-							<ApproachButton rotateVector={this.rotateVector.bind(this)}/>
+				<section id="introSection">
+					<div className="container-fluid">
+						<div className="row">
+							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<IntroPic  
+										image2={this.state.intro.image2} 
+										className={this.state.intro.className} 
+										className2={this.state.intro.className2}
+										count={1}/>
+							</div>
+							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<ul>
+									<IntroLink changeContent= {this.changeContent.bind(this)} item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
+									<IntroLink changeContent= {this.changeContent.bind(this)} item = {'1'} title={["OUR",<br/>, "CAPABILITIES"]}/>
+									<IntroLink changeContent= {this.changeContent.bind(this)} item = {'2'} title={["OUR",<br/>, "APPROACH"]}/>
+									<IntroLink changeContent= {this.changeContent.bind(this)} item = {'3'} title={["OUR",<br/>, "DATA"]}/>
+								</ul>
+								<IntroContent title={this.state.intro.title} content={this.state.intro.content} />
+								<ApproachButton rotateVector={this.rotateVector.bind(this)}/>
+							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 		);
 	}
 

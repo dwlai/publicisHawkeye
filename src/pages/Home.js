@@ -13,41 +13,51 @@ export default class Home extends React.Component{
 		return (
 			<div>
 				<NavBar />
-				<div id="aboutSection">
+				<section id="aboutSection">
 					<div><h1>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</h1></div>
-				</div>
+				</section>
 				<a className="anchor" id="intro"></a>
 				<Intro />
 				<a className="anchor" id="ourWork"></a>
-				<div id = "ourWorkSection" className="container-fluid">
+				<section id="ourWorkSection" className="block -white edge--both--reverse">
 					
+					<div className="container">
 						<div className="row">
-							<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" > 
+							
+							<div className="col-md-6">
 								<div className="seeOurWork">
 									<h2 className="block-title">OUR WORK</h2>
+
 									<h3>See our work </h3>
 									<p> A good look at what we've done so far. (And a brief glimpse into what we can do.)</p>
 								</div>
 							</div>
+							
 							<OurWork />
-						</div>
-				</div>
-				<a className="anchor" id="team"></a>
-				<div id="teamSection">
-					<div className="row">
-						<div className="col-sm-4 col-sm-offset-8">
-							<h2 className="block-title">OUR LEADERSHIP TEAM</h2>
-							<p id="meet"> Meet the men and women in charge of it all.</p>
+
 						</div>
 					</div>
-					<ul className="row">
-						<div className="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
-						<TeamLink style={{marginTop: 174 + '%'}} name={"Catherine Parsons"} title={"VP, CRM"}/>
-						<TeamLink style={{marginTop: 188 + '%'}} name={"Scott Pinkney"} title={"VP, Executive Director"}/>
-						<TeamLink style={{marginTop: 135 + '%'}} name={"Vish Ramkissoon"} title={"VP, Decision Science"}/>
-						<TeamLink style={{marginTop: 165 + '%'}} name={"Jennifer McConville"} title={"Director of Production"}/>
-					</ul>
-				</div>
+				</section>
+				<a className="anchor" id="team"></a>
+				<section id="teamSection" className="">
+
+					<div className="container">
+						<div className="row">
+							<div className="col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8">
+								<h2 className="block-title">OUR LEADERSHIP TEAM</h2>
+								<p id="meet"> Meet the men and women in charge of it all.</p>
+							</div>
+						</div>
+					
+						<div className="team-bg-img row">
+							<div className="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+							<TeamLink className="team-catherine" name={"Catherine Parsons"} title={"VP, CRM"}/>
+							<TeamLink className="team-scott" name={"Scott Pinkney"} title={"VP, Executive Director"}/>
+							<TeamLink className="team-vish" name={"Vish Ramkissoon"} title={"VP, Decision Science"}/>
+							<TeamLink className="team-jennifer" name={"Jennifer McConville"} title={"Director of Production"}/>
+						</div>
+					</div>
+				</section>
 				<Footer/>
 			</div>
 		);

@@ -19,7 +19,7 @@ export default class OurWork extends React.Component{
 			});
 	
 			return(
-							<div className="work-group col-sm-6">
+							<div className="work-group col-md-6">
 							{OurWorkLinks}
 							</div>
 			);
