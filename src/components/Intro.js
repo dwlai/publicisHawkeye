@@ -66,7 +66,7 @@ export default class Intro extends React.Component{
 						
 	render(){
 		return (
-				<div id ="introSection" className="container-fluid">
+				
 					<div className="row">
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<IntroPic  
@@ -80,7 +80,7 @@ export default class Intro extends React.Component{
 							<ApproachButton rotateVector={this.rotateVector.bind(this)}/>
 						</div>
 					</div>
-				</div>
+	
 		);
 	}
 

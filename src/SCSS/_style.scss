@@ -251,11 +251,36 @@ a.anchor {
 
 		position:relative;
 		background-color:$grey;
-		top: -193px;
 		
 		.intelligence, .relevance, .action{
 				display:none;
 				font-family: $font-librebaskerville-italic;
+				}
+				
+				
+				ul{
+							position:absolute;
+						
+						li {
+							padding:12px;
+							display:inline-block;
+							font-family: $font-avenir-roman;
+							@include border-style(transparent);
+							
+							
+							a{
+								color:white;
+							}
+							a:hover{
+								color:white;
+								text-decoration:none;
+							}	
+							
+						}
+						li:hover{
+							@include border-style(transparent);
+							border-color:white;
+						}
 				}
 		
 
@@ -374,31 +399,6 @@ a.anchor {
 							margin-left: -21%;
 							margin-top: -43%;
 					}
-				
-					
-				ul{
-						margin-top:31%;
-						li {
-							padding:12px;
-							display:inline-block;
-							font-family: $font-avenir-roman;
-							@include border-style(transparent);
-							
-							
-							a{
-								color:white;
-							}
-							a:hover{
-								color:white;
-								text-decoration:none;
-							}	
-							
-						}
-						li:hover{
-							@include border-style(transparent);
-							border-color:white;
-						}
-				}
 				
 				.approachButton{
 					height:30px;
