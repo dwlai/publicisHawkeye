@@ -67,7 +67,7 @@ export default class Intro extends React.Component{
 	render(){
 		return (
 				
-					<div className="row">
+					<div className="row introComponent">
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<IntroPic  
 									image2={this.props.image2} 

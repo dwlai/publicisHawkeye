@@ -39,13 +39,18 @@ export default class Home extends React.Component{
 				<a className="anchor" id="intro"></a>
 				
 				<div id ="introSection" className="container-fluid">
-						<ul>
-							<IntroLink item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
-							<IntroLink item = {'1'} title={["OUR",<br/>, "CAPABILITIES"]}/>
-							<IntroLink item = {'2'} title={["OUR",<br/>, "APPROACH"]}/>
-							<IntroLink item = {'3'} title={["OUR",<br/>, "DATA"]}/>
-						</ul>
-					{IntroComponents}
+					<ul>
+						<IntroLink item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
+						<IntroLink item = {'1'} title={["OUR",<br/>, "CAPABILITIES"]}/>
+						<IntroLink item = {'2'} title={["OUR",<br/>, "APPROACH"]}/>
+						<IntroLink item = {'3'} title={["OUR",<br/>, "DATA"]}/>
+					</ul>
+					<div className="screen">
+						<div className="filmstrip">
+							{IntroComponents}
+						</div>
+					</div>
+						
 				</div>
 				<a className="anchor" id="ourWork"></a>
 				<div id = "ourWorkSection" className="container-fluid">

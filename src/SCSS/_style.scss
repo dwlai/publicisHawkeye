@@ -282,7 +282,19 @@ a.anchor {
 							border-color:white;
 						}
 				}
+				
+		.screen{
+				width:100%;
+		}
 		
+		.filmstrip{
+					width:400%;
+		}
+		.introComponent{
+					display:inline-block;
+					width:25%;
+				}
+				
 
 		.row{
 		
@@ -290,6 +302,7 @@ a.anchor {
 				color:white;
 				height:100vh;
 				
+			
 				.introContent{
 						margin-top:39%;
 						}
@@ -310,8 +323,8 @@ a.anchor {
 				}
 				
 				.brain, .approach, .data{
-						height:434px;
-						width:434px;
+						height:390px;
+						width:390px;
 						margin-right: 8%;
 						margin-top: 23%;
 						background-image: url('../../assets/img/eclipse.png');
