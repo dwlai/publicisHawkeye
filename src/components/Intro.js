@@ -69,19 +69,19 @@ export default class Intro extends React.Component{
 
 				// <section id="introSection">
 					<div className="introComponent container-fluid">
-						<div className="row ">
-						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<IntroPic  
-									image2={this.props.image2} 
-									className={this.props.className} 
-									className2={this.props.className2}
-									count={1}/>
+						<div className="row">
+							<div className="col-sm-6">
+								<IntroPic  
+										image2={this.props.image2} 
+										className={this.props.className} 
+										className2={this.props.className2}
+										count={1}/>
+							</div>
+							<div className="col-sm-5">
+								<IntroContent title={this.props.title} content={this.props.content} />
+								<ApproachButton rotateVector={this.rotateVector.bind(this)}/>
+							</div>
 						</div>
-						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<IntroContent title={this.props.title} content={this.props.content} />
-							<ApproachButton rotateVector={this.rotateVector.bind(this)}/>
-						</div>
-					</div>
 					</div>
 				// </section>
 
