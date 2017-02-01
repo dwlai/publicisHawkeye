@@ -35,23 +35,19 @@ export default class Home extends React.Component{
 		if (item == 0)
 		{
 			$filmstrip.addClass("ourDifference");
-			$filmstrip.css("left","0px");
 		}
 		else if (item == 1)
 		{
 			$filmstrip.addClass("ourCapabilities");
-			$filmstrip.css("left",(-1*width/4)+"px");
 		}
 		else if (item == 2)
 		{
 			$filmstrip.addClass("ourApproach");
-			$filmstrip.css("left",(-1*width/2)+"px");
 			$approachButton.css("visibility","visible");
 		}
 		else if (item == 3)
 		{
 			$filmstrip.addClass("ourData")
-			$filmstrip.css("left",((width/4)*-3)+"px");
 		}
 		
 	}
