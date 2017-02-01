@@ -350,30 +350,107 @@ a.anchor {
 
 		// position:relative;
 		background-color:$grey;
-		// top: -193px;
-		margin-top: -100px;
+
 		
 		.intelligence, .relevance, .action{
-			display:none;
-			font-family: $font-librebaskerville-italic;
+				display:none;
+				font-family: $font-librebaskerville-italic;
+				}
+				
+				
+				.introLinks{
+						
+							z-index: 1;
+							position: absolute;
+							margin-left: 43%;
+							margin-top: 10%;
+						
+						li {
+							text-transform:uppercase;
+							display:inline-block;
+							margin-right: 25px;
+							border: solid;
+							border-width: 1px;
+							border-color: transparent;
+							font-size: 1.8rem;
+							
+							
+							a{
+								display: inline-block;
+								color:white;
+								padding: 10px 10px 7px;
+							}
+							a:hover{
+								color:white;
+								text-decoration:none;
+							}	
+							
+						}
+						li:hover{
+						
+							border-color:white;
+						}
+				}
+				
+		.screen{
+				width:100%;
+				height:100vh;
+				overflow:hidden;
 		}
+		
+		.filmstrip{
+					position:relative;
+					width:400%;
+					transition:1.5s;
+					left:0px;
+		}
+		
+		.filmstrip.ourDifference{
+								margin-left:0%;
+							}
+		.filmstrip.ourCapabilities{
+							margin-left:-100%;
+						}
+						
+		.filmstrip.ourApproach{
+							margin-left:-200%;
+						}
+		.filmstrip.ourData{
+							margin-left:-300%;
+						}
+		
+		
+		
+		
+		.introComponent{
+					display:inline-block;
+					width:25%;
+				}
+				
 		
 		.row {	
 				color:white;
-				margin-top:38px;
+				height:100vh;
+				
+			
+				.introContent{
+					margin-top:39%;
+				}
 				
 				
 				h1{
 				  font-family: $font-librebaskerville-italic;
 					font-size: 26pt;
 				}
+
 				
-				
+			// conflict start				
 				div{
 				
 					margin-top:6%;
 					margin-bottom:6%;				
 				}
+			// conflict end
 						
 				.flower{
 							width:70%;
@@ -385,8 +462,8 @@ a.anchor {
 				}
 				
 				.brain, .approach, .data{
-						height:434px;
-						width:434px;
+						height:390px;
+						width:390px;
 						margin-right: 8%;
 						margin-top: 23%;
 						background-image: url('../../assets/img/eclipse.png');
@@ -433,13 +510,21 @@ a.anchor {
 							position: absolute;
 							top: 294px;
 							left: 456px;
+							
+							.action.active{}
+							.action.rotate1{}
+							.action.rotate3{}
 						}
 						
 						.relevance{
 							display:block;
-							    position: absolute;
-								top: 417px;
-								left: -10px;
+							position: absolute;
+							top: 417px;
+							left: -10px;
+								
+							.relevance.active{}
+							.relevance.rotate1{}
+							.relevance.rotate3{}
 						}
 				}	
 				
@@ -470,32 +555,8 @@ a.anchor {
 							margin-top: -43%;
 					}
 				
-					
-				ul{
-						margin-top:31%;
-						li {
-							padding:12px;
-							display:inline-block;
-							font-family: $font-avenir-roman;
-							@include border-style(transparent);
-							
-							
-							a{
-								color:white;
-							}
-							a:hover{
-								color:white;
-								text-decoration:none;
-							}	
-							
-						}
-						li:hover{
-							@include border-style(transparent);
-							border-color:white;
-						}
-				}
-				
 				.approachButton{
+					visibility:hidden;
 					height:30px;
 					width:200px;
 					background-color:white;

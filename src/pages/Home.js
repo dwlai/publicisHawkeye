@@ -5,11 +5,63 @@ import TeamLink from '../components/TeamLink';
 import Footer from '../components/Footer';
 import { Link } from 'react-router';
 import OurWork from '../components/OurWork';
+import IntroStore from '../stores/IntroStore';
+import IntroLink from '../components/IntroLink';
+import $ from 'jquery';
 
 
 export default class Home extends React.Component{
+
+
+	constructor(){
+			super();
+			this.state = {
+						intros: IntroStore.getContent(),
+						
+			};
+	}
+	
+	changeContent(item){
+
+		var $filmstrip = $(".filmstrip");
+		var $screen = $(".screen");
+		var $approachButton=$(".approachButton");
+		var width = $filmstrip.width();
+		$filmstrip.removeClass();
+		$filmstrip.addClass("filmstrip");
+		$approachButton.css("visibility","hidden");
+		
+		
+		if (item == 0)
+		{
+			$filmstrip.addClass("ourDifference");
+		}
+		else if (item == 1)
+		{
+			$filmstrip.addClass("ourCapabilities");
+		}
+		else if (item == 2)
+		{
+			$filmstrip.addClass("ourApproach");
+			$approachButton.css("visibility","visible");
+		}
+		else if (item == 3)
+		{
+			$filmstrip.addClass("ourData")
+		}
+		
+	}
+	
 	
 	render(){
+		
+		const { intros } = this.state;
+		
+		const IntroComponents = intros.map((intro) =>{
+				return <Intro key ={intro.id}{...intro}/>
+		});
+		
+		
 		return (
 			<div>
 				<NavBar />
@@ -17,7 +69,22 @@ export default class Home extends React.Component{
 					<div><h1>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</h1></div>
 				</section>
 				<a className="anchor" id="intro"></a>
-				<Intro />
+				
+				<div id ="introSection" className="container-fluid">
+			
+					<div className="screen">
+						<ul className="introLinks">
+							<IntroLink changeContent={this.changeContent.bind(this)} item = {'0'} title={["our",<br/>, "difference"]}/>
+							<IntroLink changeContent={this.changeContent.bind(this)} item = {'1'} title={["our",<br/>, "capabilities"]}/>
+							<IntroLink changeContent={this.changeContent.bind(this)} item = {'2'} title={["our",<br/>, "approach"]}/>
+							<IntroLink changeContent={this.changeContent.bind(this)} item = {'3'} title={["our",<br/>, "data"]}/>
+						</ul>
+						<div className="filmstrip">
+							{IntroComponents}
+						</div>
+					</div>
+						
+				</div>
 				<a className="anchor" id="ourWork"></a>
 				<section id="ourWorkSection" className="block -white edge--both--reverse">
 					
