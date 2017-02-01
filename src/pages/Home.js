@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router';
 import OurWork from '../components/OurWork';
 import IntroStore from '../stores/IntroStore';
+import IntroLink from '../components/IntroLink';
 
 
 export default class Home extends React.Component{
@@ -36,6 +37,12 @@ export default class Home extends React.Component{
 					<div><h1>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</h1></div>
 				</div>
 				<a className="anchor" id="intro"></a>
+						<ul>
+							<IntroLink item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
+							<IntroLink item = {'1'} title={["OUR",<br/>, "CAPABILITIES"]}/>
+							<IntroLink item = {'2'} title={["OUR",<br/>, "APPROACH"]}/>
+							<IntroLink item = {'3'} title={["OUR",<br/>, "DATA"]}/>
+						</ul>
 				{IntroComponents}
 				<a className="anchor" id="ourWork"></a>
 				<div id = "ourWorkSection" className="container-fluid">

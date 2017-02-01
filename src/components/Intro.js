@@ -1,6 +1,5 @@
 import React from 'react';
 import IntroPic from './IntroPic';
-import IntroLink from './IntroLink';
 import IntroContent from './IntroContent';
 import ApproachButton from './ApproachButton';
 import $ from 'jquery';
@@ -77,12 +76,6 @@ export default class Intro extends React.Component{
 									count={1}/>
 						</div>
 						<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<ul>
-								<IntroLink item = {'0'} title={["OUR",<br/>, "DIFFERENCE"]}/>
-								<IntroLink item = {'1'} title={["OUR",<br/>, "CAPABILITIES"]}/>
-								<IntroLink item = {'2'} title={["OUR",<br/>, "APPROACH"]}/>
-								<IntroLink item = {'3'} title={["OUR",<br/>, "DATA"]}/>
-							</ul>
 							<IntroContent title={this.props.title} content={this.props.content} />
 							<ApproachButton rotateVector={this.rotateVector.bind(this)}/>
 						</div>
