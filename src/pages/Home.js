@@ -30,6 +30,9 @@ export default class Home extends React.Component{
 		$filmstrip.removeClass();
 		$filmstrip.addClass("filmstrip");
 		$approachButton.css("visibility","hidden");
+		var $subContent = $('.subContent')
+		$subContent.find('div').removeClass('active');
+		$('.copy').removeClass('hide');
 		
 		
 		if (item == 0)
@@ -65,7 +68,7 @@ export default class Home extends React.Component{
 		return (
 			<div>
 				<NavBar />
-				<section id="aboutSection">
+				<section id="heroSection">
 					<div><h1>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</h1></div>
 				</section>
 				<a className="anchor" id="intro"></a>
