@@ -9,8 +9,14 @@ export default class Intro extends React.Component{
 	rotateVector(){
 	
 		//cache dom
-		var $vector = $('.approach');
-		var $labels = $vector.find("p");
+		var $introComponent = $('.introComponent');
+		var $introContent= $introComponent.find('.introContent');
+		var $copy = $introContent.find('.copy');
+		var $vector = $introComponent.find('.approach');
+		var $subIntelligence=$('.subIntelligence');
+		var $subRelevance=$('.subRelevance');
+		var $subAction=$('.subAction');
+		var $labels = $vector.find(".labels");
 		var $intelligence = $vector.find(".intelligence");
 		var $relevance = $vector.find(".relevance");
 		var $action = $vector.find(".action");
@@ -18,34 +24,45 @@ export default class Intro extends React.Component{
 		var degrees = 120 * count;
 		var ndegrees = degrees * -1;
 		var rotateState = count % 3;
+		var $subContent = $introComponent.find('.subContent');
+		
+		$copy.addClass('hide');
+		$subContent.find('div').removeClass('active');
+		$labels.removeClass("active");
+		
+		
 		
 		if (rotateState == 1)    //data-count = 2
 		{
-			$labels.removeClass("active");
+			
 			$intelligence.removeClass("rotate1");
 			$intelligence.addClass("active");
 			$action.addClass("rotate3");
 			$relevance.addClass("rotate1");
 			$relevance.removeClass("rotate3");
+			
+			$subIntelligence.addClass("active");
 
 		}
 		else if (rotateState == 2)  //data-count = 3
 		{
-			$labels.removeClass("active");
+		
 			$relevance.addClass("active");
 			$relevance.removeClass("rotate1");
 			$intelligence.addClass("rotate3");
 			$action.addClass("rotate1");
 			$action.removeClass("rotate3");
+			$subRelevance.addClass("active");
 		}
 		else if (rotateState == 0) //data-count = 1
 		{
-			$labels.removeClass("active");
+		
 			$action.addClass("active");
 			$action.removeClass("rotate1");
 			$intelligence.addClass("rotate1");
 			$intelligence.removeClass("rotate3");
 			$relevance.addClass("rotate3");
+			$subAction.addClass("active");
 			
 		}
 	

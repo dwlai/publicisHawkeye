@@ -311,7 +311,7 @@ a.anchor {
 
 }
 
-#aboutSection{
+#heroSection{
 	background-image:url("../../assets/img/hero.png");
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -351,6 +351,21 @@ a.anchor {
 		// position:relative;
 		background-color:$grey;
 
+		.subIntelligence, .subRelevance, .subAction{
+			display:none;
+			
+		}
+		
+		.active{
+			display:block;
+		}
+		
+		.copy.hide{
+			display:none;
+			}
+		
+		
+		
 		
 		.intelligence, .relevance, .action{
 				display:none;
