@@ -288,23 +288,18 @@ a.anchor {
 		
 			
 				color:white;
-				margin-top:38px;
+				height:100vh;
+				
+				.introContent{
+						margin-top:39%;
+						}
 				
 				
 				h1{
 				  font-family: $font-librebaskerville-italic;
 					font-size: 26pt;
 				}
-				
-				
-				div{
-				
-					margin-top:6%;
-					margin-bottom:6%;				
-				}
-				
-				
-				
+						
 				.flower{
 							width:70%;
 							background-size: cover;
