@@ -349,6 +349,7 @@
 	  margin-top: -1rem;
 	  padding-top: 3rem;
 	  background-color: $grey;
+	  
 
 	  .subIntelligence, .subRelevance, .subAction {
 	    display: none;
@@ -408,7 +409,7 @@
 	  .screen {
 	    width: 100%;
 	    height: 100vh;
-	    overflow: hidden;
+	    //overflow: hidden;
 	    margin-right: -15px;
 	    margin-left: -15px;
 	  }
@@ -446,7 +447,7 @@
 	    height: 100vh;
 
 	    .introContent {
-	      margin-top: 39%;
+	      margin-top: 28%;
 	    }
 
 	    h1 {
@@ -461,20 +462,27 @@
 	    }
 
 	    // conflict end
+		
+		
+	.imgContainer{
+			width:70%;
+	  }	
+
 
 	    .flower {
-	      width: 70%;
-	      background-size: cover;
-	      background-repeat: no-repeat;
-	      position: relative;
-	      top: 128px;
-	      left: 59px;
+	     width: 100%;
+	      margin-right: -26%;
+		  padding-top:100%;
+
+	      // margin-top: 23%;
+	      float: right;
 	    }
 
 	    .brain, .approach, .data {
-	      height: 390px;
-	      width: 390px;
-	      margin-right: 8%;
+	      
+	      width: 100%;
+	      margin-right: -26%;
+		  padding-top:100%;
 
 	      // margin-top: 23%;
 	      background-image: url("../../assets/img/eclipse.png");
@@ -542,25 +550,26 @@
 	    .brain2 {
 	      width: 79%;
 	      margin-left: 10%;
-	      margin-top: 16%;
+	      margin-top: -102%;
 	    }
 
 	    .vector {
 	      width: 99%;
 	      margin-left: 6%;
-	      margin-top: -8%;
+	      margin-top: -115%;
 	    }
 
 	    .data2 {
 	      width: 85%;
 	      margin-left: 7%;
-	      margin-top: -1%;
+	      margin-top: -108%;
 	    }
 
 	    .flower2 {
-	      width: 148%;
-	      margin-left: -21%;
-	      margin-top: -43%;
+				position:absolute;
+				width: 93%;
+				margin-left: -21%;
+				margin-top: -96%;
 	    }
 
 	    .approachButton {

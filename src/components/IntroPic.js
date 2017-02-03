@@ -24,12 +24,16 @@ export default class IntroPic extends React.Component{
 		$approach.attr("data-count", 1);
 		
 		return (
-				<div className={this.props.className} data-count={this.props.count}>
-					<img className={this.props.className2} src={this.props.image2} />
-					<p className="intelligence labels" ><em>Intelligence</em></p>
-					<p className="action labels" ><em>Action</em></p>
-					<p className="relevance labels" ><em>Relevance</em></p>
+				<div className="imgContainer">
+					<div className={this.props.className} data-count={this.props.count}>
+						<img className={this.props.className2} src={this.props.image2} />
+						<p className="intelligence labels" ><em>Intelligence</em></p>
+						<p className="action labels" ><em>Action</em></p>
+						<p className="relevance labels" ><em>Relevance</em></p>
+					</div>
 				</div>
+				
+				
 		);
 	}
 
