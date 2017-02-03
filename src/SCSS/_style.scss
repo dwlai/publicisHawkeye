@@ -521,7 +521,8 @@
 	      transform: rotate(0deg);
 
 	      .active {
-	        color: yellow;
+	        font-weight:bold;
+			font-size:20pt;
 	      }
 
 	      .intelligence {
@@ -570,8 +571,8 @@
 			}
 
 	        .relevance.active {
-							margin-top: -3%;
-							margin-left: -1%;
+							margin-top: -6%;
+							margin-left: -17%;
 								} 
 
 	        .relevance.rotate1 {
