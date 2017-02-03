@@ -76,7 +76,7 @@ export default class Home extends React.Component{
 				<div id ="introSection" className="container-fluid">
 			
 					<div className="screen">
-						<div className="introLinksWrap col-sm-5 col-sm-offset-6">
+						<div className="introLinksWrap col-sm-6 col-sm-offset-6">
 							<ul className="introLinks">
 								<IntroLink changeContent={this.changeContent.bind(this)} item = {'0'} title={["our",<br/>, "difference"]}/>
 								<IntroLink changeContent={this.changeContent.bind(this)} item = {'1'} title={["our",<br/>, "capabilities"]}/>

@@ -119,10 +119,6 @@
 	  margin: 0 !important;
 	}
 
-	.display-none {
-		display: none;
-	}
-
 /* =====================
 	TYPE
 ===================== */
@@ -355,6 +351,15 @@
 	  background-color: $grey;
 	  color: white;
 
+	  .approachButton {
+      visibility: hidden;
+      // height: 30px;
+      // width: 200px;
+      padding: 1rem 2rem;
+      background-color: lighten($grey, 10%);
+      color: #fff;
+    }
+
 	  .subIntelligence, .subRelevance, .subAction {
 	    display: none;
 	  }
@@ -396,6 +401,7 @@
 	      // border-width: 1px;
 	      // border-color: transparent;
 	      font-size: 1.4rem;
+	      font-size: 1.5vw;
 	      padding: 0;
 	      margin-right: 1rem;
 
@@ -453,156 +459,149 @@
 	    display: inline-block;
 	    width: 25%;
 			vertical-align: top;
+			padding-bottom: 5rem;
 	  }
 
-	  // .row {
-	    
-	    // height: 100vh;
+    .introContent {
+      margin-top: 46%;
+      margin-top: 32rem;
 
-	    .introContent {
-	      margin-top: 46%;
-	      margin-top: 32rem;
-	      @include prefix(transition, margin-top 1s ease, moz webkit ms o);
-	    }
+      @include prefix(transition, margin-top 1s ease, moz webkit ms o);
 
-	    h1 {
-	      font-family: $font-librebaskerville-italic;
-	      font-size: 26pt;
-	    }
+      .copy {
+      	max-height: 200px;
+      	overflow-y: auto;
 
-	    // conflict start				
+      }
+    }
 
-	    // conflict end
-		
-		
-			.imgContainer{
-				width:70%;
-				margin-top: 20rem;
-		  }	
+    h1 {
+      font-family: $font-librebaskerville-italic;
+      font-size: 26pt;
+    }
 
-	    .flower {
-				width: 100%;
-	      margin-right: -26%;
-			  padding-top:100%;
-	      margin-top: 27%;
+		.imgContainer{
+			width:70%;
+			margin-top: 20rem;
+	  }	
 
-	    }
+    .flower {
+			width: 100%;
+      margin-right: -26%;
+		  padding-top:100%;
+      margin-top: 27%;
 
-	    .brain, .approach, .data {
-	      
-	      width: 100%;
-	      margin-left: 14%;
-			  padding-top:100%;
-	      margin-top: 27%;
-	      background-image: url("../../assets/img/eclipse.png");
-	      background-size: contain;
-	      background-repeat: no-repeat;
-	    
-	    }
+    }
 
-			.brain2 {
-	      width: 79%;
-	      margin-left: 10%;
-	      margin-top: -102%;
-	    }
+    .brain, .approach, .data {
+      
+      width: 100%;
+      margin-left: 14%;
+		  padding-top:100%;
+      margin-top: 27%;
+      background-image: url("../../assets/img/eclipse.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+    }
 
-	    .vector {
-	      width: 99%;
-	      margin-left: 6%;
-	      margin-top: -115%;
-	    }
+		.brain2 {
+      width: 79%;
+      margin-left: 10%;
+      margin-top: -102%;
+    }
 
-	    .data2 {
-	      width: 85%;
-	      margin-left: 7%;
-	      margin-top: -108%;
-	    }
+    .vector {
+      width: 99%;
+      margin-left: 6%;
+      margin-top: -115%;
+    }
 
-	    .flower2 {
-				position: absolute;
-				width: 93%;
-				margin-left: 0%;
-				margin-top: -77%;
-	    }
-		
-	    .approach {
-	      transform: rotate(0deg);
+    .data2 {
+      width: 85%;
+      margin-left: 7%;
+      margin-top: -108%;
+    }
 
-	      .active {
-	        font-weight:bold;
-					font-size:20pt;
-	      }
+    .flower2 {
+			position: absolute;
+			width: 93%;
+			margin-left: 0%;
+			margin-top: -77%;
+    }
+	
+    .approach {
+      transform: rotate(0deg);
 
-	      .intelligence {
-				display: block;
-				position: absolute;
-				margin-top: -116%;
-				margin-left: 42%;
-	      }
+      .active {
+        font-weight:bold;
+				font-size:20pt;
+      }
 
-	      .intelligence.active {
-				margin-top: -126%;
-				margin-left: 25%;
-	      }
+      .intelligence {
+			display: block;
+			position: absolute;
+			margin-top: -116%;
+			margin-left: 42%;
+      }
 
-	      .intelligence.rotate1 {
-				margin-top: -116%;
-				margin-left: 42%;
-	      }
+      .intelligence.active {
+			margin-top: -126%;
+			margin-left: 25%;
+      }
 
-	      .intelligence.rotate3 {
-				margin-top: -121%;
-				margin-left: 25%;
-	      }
+      .intelligence.rotate1 {
+			margin-top: -116%;
+			margin-left: 42%;
+      }
 
-	      .action {
-	        display: block;
-	        position: absolute;
+      .intelligence.rotate3 {
+			margin-top: -121%;
+			margin-left: 25%;
+      }
+
+      .action {
+        display: block;
+        position: absolute;
+				margin-left: 106%;
+				margin-top: -41%;
+
+        .action.active {
 					margin-left: 106%;
 					margin-top: -41%;
+				}
 
-	        .action.active {
-						margin-left: 106%;
-						margin-top: -41%;
-					}
+        .action.rotate1 {}
 
-	        .action.rotate1 {}
+        .action.rotate3 {}
+      }
 
-	        .action.rotate3 {}
-	      }
+      .relevance {
+        display: block;
+        position: absolute;
+						margin-top: -8%;
+						margin-left: 1%;
+		}
 
-	      .relevance {
-	        display: block;
-	        position: absolute;
-							margin-top: -8%;
-							margin-left: 1%;
-			}
+    .relevance.active {
+			margin-top: -6%;
+			margin-left: -17%;
+		}
 
-      .relevance.active {
-				margin-top: -6%;
-				margin-left: -17%;
-			}
+    .relevance.rotate1 {
+			margin-top: -8%;
+			margin-left: -2%;
+		}
 
-      .relevance.rotate1 {
-				margin-top: -8%;
-				margin-left: -2%;
-			}
+    .relevance.rotate3 {
+			margin-top: -8%;
+			margin-left: 1%;
+		}
+      
+	// }
 
-      .relevance.rotate3 {
-				margin-top: -8%;
-				margin-left: 1%;
-			}
-	      
-		// }
-
-	    .approachButton {
-	      visibility: hidden;
-	      height: 30px;
-	      width: 200px;
-	      background-color: white;
-	      color: black;
-	    }
-	  }
+    
+  }
 	}
 
 	#ourWorkSection {
@@ -925,6 +924,12 @@
 MEDIA QUERIES
 ===================*/
 
+@media screen and (min-width: 1300px) {
+	#introSection .introLinksWrap .introLinks li {
+  	font-size: 1.6rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navbar.navbar-default.navbar-fixed-top ul {
     margin-top: 0;
@@ -932,18 +937,20 @@ MEDIA QUERIES
 
   #introSection {
   	.introLinksWrap {
-  		bottom: -5rem;
+  		// bottom: -5rem;
+  		margin-top: 105%;
+
 	  	.introLinks li {
 		    font-size: 1.2rem;
 	  	}	
 	  }
 
+	  .imgContainer {
+	  	margin-top: 0;
+	  }
+
   	.filmstrip {
   		margin-top: 12rem;
-  	}
-
-  	.imgContainer {
-  		margin-top: 0;
   	}
 		
 		.introContent {
@@ -982,5 +989,18 @@ MEDIA QUERIES
     .team-jennifer {
       margin-top: 1rem;
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+	#introSection .introLinksWrap {
+  	margin-top: 115%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+	#introSection .introLinksWrap .introLinks li {
+  	font-size: 1rem;
+  	margin-right: 0.5rem;
   }
 }
