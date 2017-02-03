@@ -491,63 +491,7 @@
 	      float: right;
 	    }
 
-	    .approach {
-	      transform: rotate(0deg);
-
-	      .active {
-	        color: yellow;
-	      }
-
-	      .intelligence {
-	        display: block;
-	        position: absolute;
-	        top: -42px;
-	        left: 184px;
-	      }
-
-	      .intelligence.active {
-	        top: -56px;
-	        left: 152px;
-	      }
-
-	      .intelligence.rotate1 {
-	        top: -42px;
-	        left: 184px;
-	      }
-
-	      .intelligence.rotate3 {
-	        top: -92px;
-	        left: 130px;
-	      }
-
-	      .action {
-	        display: block;
-	        position: absolute;
-	        top: 294px;
-	        left: 456px;
-
-	        .action.active {}
-
-	        .action.rotate1 {}
-
-	        .action.rotate3 {}
-	      }
-
-	      .relevance {
-	        display: block;
-	        position: absolute;
-	        top: 417px;
-	        left: -10px;
-
-	        .relevance.active {}
-
-	        .relevance.rotate1 {}
-
-	        .relevance.rotate3 {}
-	      }
-	    }
-
-	    .brain2 {
+			    .brain2 {
 	      width: 79%;
 	      margin-left: 10%;
 	      margin-top: -102%;
@@ -570,6 +514,81 @@
 				width: 93%;
 				margin-left: -21%;
 				margin-top: -96%;
+	    }
+		
+		
+		
+		
+		
+		
+	    .approach {
+	      transform: rotate(0deg);
+
+	      .active {
+	        color: yellow;
+	      }
+
+	      .intelligence {
+				display: block;
+				position: absolute;
+				margin-top: -116%;
+				margin-left: 42%;
+	      }
+
+	      .intelligence.active {
+				margin-top: -126%;
+				margin-left: 25%;
+	      }
+
+	      .intelligence.rotate1 {
+				margin-top: -116%;
+				margin-left: 42%;
+	      }
+
+	      .intelligence.rotate3 {
+				margin-top: -121%;
+				margin-left: 25%;
+	      }
+
+	      .action {
+	        display: block;
+	        position: absolute;
+			margin-left: 106%;
+			margin-top: -41%;
+
+	        .action.active {
+							margin-left: 106%;
+							margin-top: -41%;
+							}
+
+	        .action.rotate1 {}
+
+	        .action.rotate3 {}
+	      }
+
+	      .relevance {
+	        display: block;
+	        position: absolute;
+							margin-top: -8%;
+							margin-left: 1%;
+			}
+
+	        .relevance.active {
+							margin-top: -3%;
+							margin-left: -1%;
+								} 
+
+	        .relevance.rotate1 {
+								margin-top: -8%;
+								margin-left: -2%;
+							}
+
+	        .relevance.rotate3 {
+							margin-top: -8%;
+							margin-left: 1%;
+			
+			}
+	      
 	    }
 
 	    .approachButton {
