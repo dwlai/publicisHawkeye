@@ -409,7 +409,7 @@
 	  .screen {
 	    width: 100%;
 	    height: 100vh;
-	    //overflow: hidden;
+	    overflow: hidden;
 	    margin-right: -15px;
 	    margin-left: -15px;
 	  }
@@ -473,25 +473,24 @@
 	     width: 100%;
 	      margin-right: -26%;
 		  padding-top:100%;
-
 	      // margin-top: 23%;
-	      float: right;
+
 	    }
 
 	    .brain, .approach, .data {
 	      
 	      width: 100%;
-	      margin-right: -26%;
+	      margin-left: 14%;
 		  padding-top:100%;
 
 	      // margin-top: 23%;
 	      background-image: url("../../assets/img/eclipse.png");
 	      background-size: contain;
 	      background-repeat: no-repeat;
-	      float: right;
+	    
 	    }
 
-			    .brain2 {
+		.brain2 {
 	      width: 79%;
 	      margin-left: 10%;
 	      margin-top: -102%;
