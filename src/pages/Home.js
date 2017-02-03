@@ -76,12 +76,14 @@ export default class Home extends React.Component{
 				<div id ="introSection" className="container-fluid">
 			
 					<div className="screen">
-						<ul className="introLinks col-sm-5 col-sm-offset-6">
-							<IntroLink changeContent={this.changeContent.bind(this)} item = {'0'} title={["our",<br/>, "difference"]}/>
-							<IntroLink changeContent={this.changeContent.bind(this)} item = {'1'} title={["our",<br/>, "capabilities"]}/>
-							<IntroLink changeContent={this.changeContent.bind(this)} item = {'2'} title={["our",<br/>, "approach"]}/>
-							<IntroLink changeContent={this.changeContent.bind(this)} item = {'3'} title={["our",<br/>, "data"]}/>
-						</ul>
+						<div className="introLinksWrap col-sm-5 col-sm-offset-6">
+							<ul className="introLinks">
+								<IntroLink changeContent={this.changeContent.bind(this)} item = {'0'} title={["our",<br/>, "difference"]}/>
+								<IntroLink changeContent={this.changeContent.bind(this)} item = {'1'} title={["our",<br/>, "capabilities"]}/>
+								<IntroLink changeContent={this.changeContent.bind(this)} item = {'2'} title={["our",<br/>, "approach"]}/>
+								<IntroLink changeContent={this.changeContent.bind(this)} item = {'3'} title={["our",<br/>, "data"]}/>
+							</ul>
+						</div>
 						<div className="filmstrip">
 							{IntroComponents}
 						</div>

@@ -119,6 +119,10 @@
 	  margin: 0 !important;
 	}
 
+	.display-none {
+		display: none;
+	}
+
 /* =====================
 	TYPE
 ===================== */
@@ -346,10 +350,10 @@
 
 	#introSection {
 	  // position:relative;
-	  margin-top: -1rem;
+	  margin-top: -3rem;
 	  padding-top: 3rem;
 	  background-color: $grey;
-	  
+	  color: white;
 
 	  .subIntelligence, .subRelevance, .subAction {
 	    display: none;
@@ -368,13 +372,20 @@
 	    font-family: $font-librebaskerville-italic;
 	  }
 
-	  .introLinks {
+	  .introLinksWrap {
 	    z-index: 1;
 	    position: absolute;
 
 	    // margin-left: 43%;
-	    margin-top: 10%;
+	    margin-top: 15rem;
+	  	padding-left: 0;
+	  	padding-right: 0;
+
+	  }
+
+	  .introLinks {
 	    padding-left: 0;
+	    padding-right: 0;
 
 	    li {
 	      text-transform: uppercase;
@@ -384,8 +395,9 @@
 	      // border: solid;
 	      // border-width: 1px;
 	      // border-color: transparent;
-	      font-size: 1.8rem;
+	      font-size: 1.4rem;
 	      padding: 0;
+	      margin-right: 1rem;
 
 	      a {
 	        display: inline-block;
@@ -408,7 +420,7 @@
 
 	  .screen {
 	    width: 100%;
-	    height: 100vh;
+	    // height: 100vh;
 	    overflow: hidden;
 	    margin-right: -15px;
 	    margin-left: -15px;
@@ -440,15 +452,17 @@
 	  .introComponent {
 	    display: inline-block;
 	    width: 25%;
-		vertical-align:top;
+			vertical-align: top;
 	  }
 
-	  .row {
-	    color: white;
-	    height: 100vh;
+	  // .row {
+	    
+	    // height: 100vh;
 
 	    .introContent {
 	      margin-top: 46%;
+	      margin-top: 32rem;
+	      @include prefix(transition, margin-top 1s ease, moz webkit ms o);
 	    }
 
 	    h1 {
@@ -461,15 +475,15 @@
 	    // conflict end
 		
 		
-	.imgContainer{
-			width:70%;
-	  }	
-
+			.imgContainer{
+				width:70%;
+				margin-top: 20rem;
+		  }	
 
 	    .flower {
-	     width: 100%;
+				width: 100%;
 	      margin-right: -26%;
-		  padding-top:100%;
+			  padding-top:100%;
 	      margin-top: 27%;
 
 	    }
@@ -478,8 +492,7 @@
 	      
 	      width: 100%;
 	      margin-left: 14%;
-		  padding-top:100%;
-
+			  padding-top:100%;
 	      margin-top: 27%;
 	      background-image: url("../../assets/img/eclipse.png");
 	      background-size: contain;
@@ -487,7 +500,7 @@
 	    
 	    }
 
-		.brain2 {
+			.brain2 {
 	      width: 79%;
 	      margin-left: 10%;
 	      margin-top: -102%;
@@ -512,17 +525,12 @@
 				margin-top: -77%;
 	    }
 		
-		
-		
-		
-		
-		
 	    .approach {
 	      transform: rotate(0deg);
 
 	      .active {
 	        font-weight:bold;
-			font-size:20pt;
+					font-size:20pt;
 	      }
 
 	      .intelligence {
@@ -550,13 +558,13 @@
 	      .action {
 	        display: block;
 	        position: absolute;
-			margin-left: 106%;
-			margin-top: -41%;
+					margin-left: 106%;
+					margin-top: -41%;
 
 	        .action.active {
-							margin-left: 106%;
-							margin-top: -41%;
-							}
+						margin-left: 106%;
+						margin-top: -41%;
+					}
 
 	        .action.rotate1 {}
 
@@ -570,23 +578,22 @@
 							margin-left: 1%;
 			}
 
-	        .relevance.active {
-							margin-top: -6%;
-							margin-left: -17%;
-								} 
+      .relevance.active {
+				margin-top: -6%;
+				margin-left: -17%;
+			}
 
-	        .relevance.rotate1 {
-								margin-top: -8%;
-								margin-left: -2%;
-							}
+      .relevance.rotate1 {
+				margin-top: -8%;
+				margin-left: -2%;
+			}
 
-	        .relevance.rotate3 {
-							margin-top: -8%;
-							margin-left: 1%;
-			
+      .relevance.rotate3 {
+				margin-top: -8%;
+				margin-left: 1%;
 			}
 	      
-	    }
+		// }
 
 	    .approachButton {
 	      visibility: hidden;
@@ -921,6 +928,33 @@ MEDIA QUERIES
 @media screen and (max-width: 767px) {
   .navbar.navbar-default.navbar-fixed-top ul {
     margin-top: 0;
+  }
+
+  #introSection {
+  	.introLinksWrap {
+  		bottom: -5rem;
+	  	.introLinks li {
+		    font-size: 1.2rem;
+	  	}	
+	  }
+
+  	.filmstrip {
+  		margin-top: 12rem;
+  	}
+
+  	.imgContainer {
+  		margin-top: 0;
+  	}
+		
+		.introContent {
+			margin-top: 12rem;
+  	}
+
+		.filmstrip.ourCapabilities, .filmstrip.ourApproach, .filmstrip.ourData {
+		 .introContent {
+	  		// margin -top: 0;
+	  	}
+	  }
   }
 
   #teamSection {
