@@ -818,11 +818,13 @@
 	  }
 
 	  .team-vish {
-	    margin-top: 155%;
+	    margin-top: 165%;
+	    &:before { left: 3rem; }
 	  }
 
 	  .team-jennifer {
-	    margin-top: 185%;
+	    margin-top: 195%;
+	    &:before { left: 3rem; }
 	  }
 	}
 
@@ -1010,8 +1012,16 @@ MEDIA QUERIES
     }
 
     .team-individual {
-      padding-left: 0px;
-      padding-right: 0px;
+      // padding-left: 0px;
+      // padding-right: 0px;
+      [class^=team-]:before {
+
+      	top: 50%;
+      	@include prefix(transform, translate(0, -50%), moz webkit ms o);
+      	right: -1rem;
+      	left: initial;
+      }
+
     }
 
     .team-catherine {
