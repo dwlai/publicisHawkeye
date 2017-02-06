@@ -318,30 +318,44 @@
 	  position: relative;
 	  z-index: 1;
 	  top: 99px;
+	  height:0px;
 
-	  div {
-	    height: 188px;
-	    width: 681px;
-	    background: rgba(0, 0, 0, 0.09);
-	    position: relative;
-	    top: 146px;
-	    left: 253px;
-	    border: solid;
-	    border-color: white;
-	    border-width: 5px;
-	    display: none;
+	  .heroTitle {
+				width: 49%;
+				background: rgba(0, 0, 0, 0.7);
+				border: solid;
+				border-color: white;
+				border-width: 4px;
+				padding-bottom: 14%;
+				position: absolute;
+				margin-top: 12%;
+				margin-left: 18%;
+				height:0px;
+				
+			.circle-crop{
+				width: 8%;
+				position: absolute;
+				margin-left: 95.5%;
+				margin-top: 10%
+	  
+			}
+			
+			.heroContent{
+				text-transform:uppercase;
+				color: white;
+				font-size: 2vw;
+				width: 83%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 8.5%;
 
-	    p {
-	      color: white;
-	      margin-left: auto;
-	      margin-right: auto;
-	      vertical-align: middle;
-	      font-size: 26px;
-	      width: 541px;
-	      position: relative;
-	      top: 61px;
-	    }
+			}
+				
+		
+			
 	  }
+	  
+
 	}
 
 	#introSection {
@@ -502,6 +516,7 @@
       background-image: url("../../assets/img/eclipse.png");
       background-size: contain;
       background-repeat: no-repeat;
+	  height:0px;
     
     }
 

@@ -69,7 +69,10 @@ export default class Home extends React.Component{
 			<div>
 				<NavBar />
 				<section id="heroSection">
-					<div><h1>WE ARE A 1:1 CUSTOMER ENGAGEMENT AGENCY LOCATED IN TORONTO</h1></div>
+					<div className="heroTitle">
+						<img className="circle-crop" src="./assets/img/circle-crop.png" alt="circle-crop"/>
+						<p className="heroContent"> We are a 1:1 customer engagement agency located in Toronto.</p>
+					</div>
 				</section>
 				<a className="anchor" id="intro"></a>
 				
