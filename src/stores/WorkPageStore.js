@@ -8,6 +8,7 @@ class WorkPageStore extends EventEmitter{
 				this.workArticle = [
 										{
 											title:"CPC SMM",
+											titleLink:"cpc-smm",
 											image:"./assets/img/ourWork/mailLaunchPage1.png",
 											headline: "Canada Post Smartmail Marketing Launch",
 											subhead:"A transformation from mail delivery provider to trusted industry leader",
@@ -17,6 +18,7 @@ class WorkPageStore extends EventEmitter{
 										},
 										{
 											title:"ROGERS PLATINUM LAUNCH",
+											titleLink:"rogers-platinum-launch",
 											image:"./assets/img/ourWork/rogerspage.png",
 											headline: "Rogers Platinum MasterCard Launch",
 											subhead:"You'll love the feeling of free™",
@@ -26,6 +28,7 @@ class WorkPageStore extends EventEmitter{
 										},
 										{
 											title:"CPC CONNECTIVITY",
+											titleLink:"cpc-connectivity",
 											image:"./assets/img/ourWork/connectivity.png",
 											headline: "Canada Post Smartmail Marketing – Connectivity",
 											subhead:"The power of integrating direct mail with digital channels",
@@ -35,6 +38,7 @@ class WorkPageStore extends EventEmitter{
 										},
 										{
 											title:"CMA INCITE AWARDS",
+											titleLink:"cma-incite-awards",
 											image:"./assets/img/ourWork/incite.png",
 											headline: "Canada Post's Smartmail Marketing's INCITE Award",
 											subhead:"Recognizing strategy, creativity, and results in Direct Mail",
@@ -44,6 +48,7 @@ class WorkPageStore extends EventEmitter{
 										},
 											{
 											title:"RED LOBSTER",
+											titleLink:"red-lobster",
 											image:"./assets/img/ourWork/redlobsterpage.png",
 											headline: "My Red Lobster Rewards" ,
 											subhead:"Rewards are now on the menu",
@@ -53,6 +58,7 @@ class WorkPageStore extends EventEmitter{
 										},
 											{
 											title:"LG DESIGN COLLECTION",
+											titleLink:"lg-design-collection",
 											image:"./assets/img/ourWork/lgpage.png",
 											headline: "Rewards are now on the menu ",
 											subhead:"Because life's more about having the latest technology",
@@ -68,7 +74,7 @@ class WorkPageStore extends EventEmitter{
 			getContent(item){
 				
 				var result = this.workArticle.filter(function(obj){
-					return obj.title == item;
+					return obj.titleLink == item;
 				});
 				return(result);
 			}
