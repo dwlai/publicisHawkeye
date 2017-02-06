@@ -53,7 +53,7 @@ class WorkPageStore extends EventEmitter{
 										},
 											{
 											title:"LG DESIGN COLLECTION",
-											image:"./assets/img/ourWork/lgpage.png",
+											image:"./assets/img/ourWork/lgpage02.png",
 											headline: "Rewards are now on the menu ",
 											subhead:"Because life's more about having the latest technology",
 											intelligence:"Consumers want to browse content in a way that prioritizes relevant and personalized experiences.  And the demand is only getting stronger.",

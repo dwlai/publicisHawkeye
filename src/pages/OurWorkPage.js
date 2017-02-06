@@ -4,18 +4,21 @@ import WorkPageStore from '../stores/WorkPageStore';
 
 export default class OurWorkPage extends React.Component{
 	
+	
 		
 	render(){
-			
+	
 		var article = WorkPageStore.getContent(this.props.params.article)[0];	
+		var divStyle = { backgroundImage: 'url(' + article.image + ')' };
+
 		return(
 				<div id="ourWorkPage">
 					<div className="container-fluid block -white edge--both--reverse">
 
-						<div className="container">
-							<div className="row">
+						{/*<div className="container-inner">*/}
+							<div className="row is-flex">
 						
-								<div className="col-sm-6">
+								<div className="col-sm-5 col-sm-offset-1">
 
 									<div className="row">
 										<div className="col-xs-6">
@@ -36,12 +39,13 @@ export default class OurWorkPage extends React.Component{
 										</div>
 									</div>
 								</div>
-								<div className="col-sm-6">
+								<div className="col-sm-6 img-div-wrap">
+									{/*<div className="img-div" style={divStyle}></div>*/}
 									<img src={article.image} alt={article.title} className="img-responsive" />
 								</div>
 
 							</div>
-						</div>
+						{/*</div>*/}
 					</div>
 				</div>
 			);
