@@ -324,17 +324,17 @@
 	  height:0px;
 
 	  .heroTitle {
-				width: 49%;
-				background: rgba(0, 0, 0, 0.7);
-				border: solid;
-				border-color: white;
-				border-width: 4px;
-				padding-bottom: 14%;
-				position: absolute;
-				margin-top: 12%;
-				margin-left: 18%;
-				height:0px;
-				
+			width: 49%;
+			background: rgba(0, 0, 0, 0.7);
+			border: solid;
+			border-color: white;
+			border-width: 4px;
+			padding-bottom: 14%;
+			position: absolute;
+			margin-top: 12%;
+			margin-left: 18%;
+			height:0px;
+			
 			.circle-crop{
 				width: 8%;
 				position: absolute;
@@ -352,12 +352,8 @@
 				margin-right: auto;
 				margin-top: 8.5%;
 
-			}
-				
-		
-			
+			}	
 	  }
-	  
 
 	}
 
@@ -432,7 +428,7 @@
 	        @include prefix(transition, border-color 1s ease, moz ms o webkit);
 	      }
 
-	      a:hover {
+	      a:hover, a.active {
 	        cursor: pointer;
 	        text-decoration: none;
 	        border-color: white;
@@ -968,13 +964,71 @@ MEDIA QUERIES
 @media screen and (min-width: 1300px) {
 	#introSection .introLinksWrap .introLinks li {
   	font-size: 1.6rem;
+  	
   }
 }
 
 @media screen and (max-width: 767px) {
   .navbar.navbar-default.navbar-fixed-top ul {
     margin-top: 0;
+    li { margin-left: 1rem; }
   }
+
+  #heroSection {
+	  background-image: url("../../assets/img/hero3.png");
+	  padding-bottom: 85%;
+
+	  .heroTitle {
+			// width: 49%;
+			// background: rgba(0, 0, 0, 0.7);
+			// border: solid;
+			// border-color: white;
+			// border-width: 4px;
+			// padding-bottom: 14%;
+			// position: absolute;
+			// margin-top: 12%;
+			// margin-left: 18%;
+			// height:0px;
+			margin: 0;
+			padding: 0;
+			border: none;
+			background: transparent;
+			top: 25%;
+			@include prefix(transform, translate(0,-25%), moz webkit ms o);
+			width: initial;
+			height: auto;
+			
+			.circle-crop{
+				// width: 8%;
+				// position: absolute;
+				// margin-left: 95.5%;
+				// margin-top: 10%
+				display: none;
+	  
+			}
+			
+			.heroContent{
+				font-size: 2.5rem;
+				font-size: 5vw;
+				background: rgba(0,0,0, 0.7);
+				border: 4px solid #fff;
+				text-align: center;
+				padding: 3rem;
+				margin: 0 auto;
+
+				// text-transform:uppercase;
+				// color: white;
+				// font-size: 2vw;
+				// width: 83%;
+				// margin-left: auto;
+				// margin-right: auto;
+				// margin-top: 8.5%;
+
+			}	
+	  }
+
+
+	}
 
   #introSection {
   	.introLinksWrap {
