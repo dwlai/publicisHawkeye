@@ -964,13 +964,14 @@ MEDIA QUERIES
 @media screen and (min-width: 1300px) {
 	#introSection .introLinksWrap .introLinks li {
   	font-size: 1.6rem;
-  	margin-left: 1rem;
+  	
   }
 }
 
 @media screen and (max-width: 767px) {
   .navbar.navbar-default.navbar-fixed-top ul {
     margin-top: 0;
+    li { margin-left: 1rem; }
   }
 
   #heroSection {
@@ -1007,8 +1008,8 @@ MEDIA QUERIES
 			}
 			
 			.heroContent{
-				font-size: 1.75rem;
-				font-size: 6vw;
+				font-size: 2.5rem;
+				font-size: 5vw;
 				background: rgba(0,0,0, 0.7);
 				border: 4px solid #fff;
 				text-align: center;
