@@ -1072,3 +1072,30 @@ MEDIA QUERIES
   	margin-right: 0.5rem;
   }
 }
+
+/*------------------
+	React Transition Styles
+-----------------------------*/
+
+.fade-enter{
+	position:absolute;
+	right:100px;
+
+}
+
+.fade-enter-active{
+	position:relative;
+		transition: 1s ease-in all;
+	right:0px;
+}
+
+.fade-leave{
+	position:absolute;
+	right:0px;
+}
+
+.fade-leave-active{
+
+	right:-100px;
+	transition: 1s ease-out	all;
+}
