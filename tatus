@@ -1,0 +1,274 @@
+[33mcommit 64a26ab0e770710653baf6c7f4baa0905135d6ff[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 8 12:50:53 2017 -0500
+
+    added ease-out to film strip
+
+[33mcommit 969035799324317cda7c6cddee59722ead4f0f79[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 8 12:40:16 2017 -0500
+
+    added title to page, fixed approach button , added class names to introStore for intro Components
+
+[33mcommit 7d3f06881c6e3af96b71e65e6bf3ce8a10bf748a[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 8 11:33:27 2017 -0500
+
+    took out page transitions for now, working on separate branch
+
+[33mcommit 2859ed0dbfabd0f5d0a168394f50801dcd089855[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Tue Feb 7 17:01:14 2017 -0500
+
+    header section updates
+
+[33mcommit a7035d103516479965b8552f8e779e1bf01d72c6[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Tue Feb 7 16:54:58 2017 -0500
+
+    header updates
+
+[33mcommit da84ec4efc382dc9e761050aa501c26cbe981cf9[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Mon Feb 6 18:02:40 2017 -0500
+
+    team updates
+
+[33mcommit 1ac4884b9a0654d2e2382b1975a6cd97c0943d7b[m
+Merge: 25a6a59 0c47b24
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Mon Feb 6 17:42:17 2017 -0500
+
+    work page updates merge
+
+[33mcommit 25a6a59a6a657feb3c413c8365de614c1d1ec723[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Mon Feb 6 17:41:17 2017 -0500
+
+    work page updates
+
+[33mcommit 0c47b24bfbb848ee2eedc16b91613ef19789247c[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Mon Feb 6 17:38:26 2017 -0500
+
+    cleaned up urls for work pages
+
+[33mcommit 6a1e750e37b9cd9a849b30aafa6654f7b33cff98[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Mon Feb 6 17:08:47 2017 -0500
+
+    began adding react transition group
+
+[33mcommit ea06d98dda8afb3bf3d81988c7ac7f55c4ebeb26[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Sun Feb 5 20:20:49 2017 -0500
+
+    slight style correction to eclipse image, took away height, and completed hero image rectangle content
+
+[33mcommit 7553a8e974eb127b9f37984e28ac5740beef6e87[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Fri Feb 3 18:40:17 2017 -0500
+
+    intro section updates
+
+[33mcommit 5cd933610f4ac077a4ddbec029db34d6f798a97c[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Fri Feb 3 17:20:15 2017 -0500
+
+    intro section updates
+
+[33mcommit 9c78ff9bab6d600a7daae581fffe4f3ee5d9b302[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Fri Feb 3 13:31:07 2017 -0500
+
+    more styling on intro
+
+[33mcommit 4a5db4663a4e86b65cf4fe86b47d976e1c9fe422[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Fri Feb 3 13:20:50 2017 -0500
+
+    some styling on intro section
+
+[33mcommit aedc9224384543f370c39c6b081888bb3eb21925[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Fri Feb 3 00:17:03 2017 -0500
+
+    took away right float for images
+
+[33mcommit 4ceaae8890a94106d6ac3486aded7e3767bf70c1[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Thu Feb 2 23:23:50 2017 -0500
+
+    repositioned vector words
+
+[33mcommit e53c4e3da043efbc93744c7f808c806c4bdf4662[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Thu Feb 2 22:46:57 2017 -0500
+
+    scaled intro images
+
+[33mcommit 911553f270231a8d651efd6c596cece36baeedd9[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Thu Feb 2 19:59:01 2017 -0500
+
+    added content to works page
+
+[33mcommit 79f6ae927d52f862ac470b84c03ceed43253341b[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Wed Feb 1 17:48:39 2017 -0500
+
+    work page style
+
+[33mcommit 1c2f0c79eda47d9e284e0f60a98a24a4ee0ce4c5[m
+Merge: d9ccfa4 e2ac546
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Wed Feb 1 15:29:36 2017 -0500
+
+    style updates intro section merge
+
+[33mcommit d9ccfa4a20562b00fb034f3e116ace20187fd65c[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Wed Feb 1 15:29:12 2017 -0500
+
+    style updates intro section
+
+[33mcommit e2ac546d3beb71dd1e6c7e8751b3dc948e474bbc[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 1 15:13:34 2017 -0500
+
+    editted home .js to revert content back to original when clicking on introlinks
+
+[33mcommit f8642936c45e5d0e06d272ac177c2344b08cbe78[m
+Merge: 71880f5 c25ea3c
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 1 14:15:58 2017 -0500
+
+    getting ryans pushMerge branch 'dev' of https://bitbucket.org/evermightdev/hawkeye into dev
+
+[33mcommit 71880f51a7b671d8890a62ebce80317dd765edcf[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 1 14:14:50 2017 -0500
+
+    added subcontent to approach section in intro
+
+[33mcommit c25ea3c51c66cf550e2354fcefc1bfa0fada709f[m
+Merge: c4e5834 caf78e2
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Wed Feb 1 13:11:00 2017 -0500
+
+    our work section updates merge
+
+[33mcommit c4e58347deb74f8ae0e82f79c22bb63128f52975[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Wed Feb 1 13:10:29 2017 -0500
+
+    our work section style updates
+
+[33mcommit caf78e2e00efea8e4b960b876a1930fced1c33f0[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 1 12:21:54 2017 -0500
+
+    added class names headline and copy to introcontent
+
+[33mcommit d8f1a013e464b8add943714e8639d96f9606b41a[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 1 11:43:23 2017 -0500
+
+    adjust class names on intro components
+
+[33mcommit c74a99a5d78078cd8c9aba858b2b6baf618d4f3c[m
+Merge: a49e445 3383b4a
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Wed Feb 1 03:01:52 2017 -0500
+
+    style updates merge
+
+[33mcommit a49e445e982f39c25eff760534f3a6236e4ac34d[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Wed Feb 1 02:56:10 2017 -0500
+
+    style updates, mobile
+
+[33mcommit 3383b4a3b5f2d4c1a52b66c98bb4b1e634a5c044[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 1 01:15:25 2017 -0500
+
+    changed filmstrip to use margins instead of position
+
+[33mcommit 0c280de797bd686cd0049127a273592e8f1b7211[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Wed Feb 1 00:44:43 2017 -0500
+
+    got filmstrip working for desktop
+
+[33mcommit 4a2346714f0d9b86b87bd9a4ce8a5195679caf99[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Tue Jan 31 22:58:57 2017 -0500
+
+    styled introlinks
+
+[33mcommit 25641f97c619b23d1a8630a7e2c066e4351f249c[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Tue Jan 31 22:30:18 2017 -0500
+
+    styling on filmstrip
+
+[33mcommit 5d518e67c49f42b8ea5f5aa933e7dca5f092ad4f[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Tue Jan 31 22:05:27 2017 -0500
+
+    styling on intro section
+
+[33mcommit da8f5efd48add0d634fd2c9340dd66efbb2f4f19[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Tue Jan 31 21:51:52 2017 -0500
+
+    rearranged intro links
+
+[33mcommit b776bf5c99752b122349e5eb57eeea35641361bb[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Tue Jan 31 20:26:11 2017 -0500
+
+    moved intro links onto homepage
+
+[33mcommit 381a38c2097ee19608a3e7d3d76bebf4f658b5af[m
+Merge: dfe4483 da09fa1
+Author: davidlai <david.lai@evermight.com>
+Date:   Mon Jan 30 18:03:05 2017 -0500
+
+    merged latest styling changes and resolve conflict in introStore.. took ryans changes to title
+
+[33mcommit da09fa118b83657e78a75ec21f258dd9b900fcb7[m
+Author: Ryan Yao <ryanysyao@gmail.com>
+Date:   Mon Jan 30 16:38:02 2017 -0500
+
+    navbar, footer, teamsection desktop, ourwork desktop
+
+[33mcommit dfe4483e3b5c7087b69456218cbd3f4a7f71d693[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Mon Jan 30 13:55:52 2017 -0500
+
+    change intro set up to render all Intro components
+
+[33mcommit 0d339d050f0c56f4a5b586346bb42eccd67486d0[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Mon Jan 30 10:19:41 2017 -0500
+
+    applied class names to elements on rotation
+
+[33mcommit 6f443555fec806f3f19676be8f9dc5f05c7fe4bb[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Mon Jan 30 02:31:49 2017 -0500
+
+    added msg to approachbutton
+
+[33mcommit f90a483f5a9cb2b7afed833dc66631bb214c524f[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Mon Jan 30 02:16:39 2017 -0500
+
+    made vector spin, added active classes to labels
+
+[33mcommit 5250f4db8d9fb7a48480009658b0436afb7b2966[m
+Author: davidlai <david.lai@evermight.com>
+Date:   Sun Jan 29 23:41:51 2017 -0500
+

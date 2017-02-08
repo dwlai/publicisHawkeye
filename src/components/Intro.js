@@ -82,10 +82,11 @@ export default class Intro extends React.Component{
 	}
 						
 	render(){
+		
 		return (
 
 				// <section id="introSection">
-					<div className="introComponent container-fluid">
+					<div className={"introComponent container-fluid " + this.props.className0}>
 						<div className="row">
 							<div className="col-sm-6">
 								<IntroPic  
