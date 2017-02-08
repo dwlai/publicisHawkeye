@@ -21,7 +21,7 @@ class IntroStore extends EventEmitter{
 								title: "What can we do? A lot.",
 								content: "CRM Direct & Digital Marketing Loyalty Marketing Customer & Data Ingelligence Customer & Data Analytics Print & Digital Production Database Management Marketing Automation And this is where we do it all. Like our imaginations, our expertise spans far and wide.  ",
 								image:"./assets/img/eclipse.png",
-								image2: "./assets/img/capabilities/brain.png",
+								image2: "./assets/img/capabilities/brain-00.gif",
 								className0:"introCapabilities",
 								className: "brain",
 								className2: "brain2"
