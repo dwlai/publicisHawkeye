@@ -66,7 +66,7 @@ export default class Home extends React.Component{
 		
 		
 		return (
-			<div>
+			<div id ="home">
 				<NavBar />
 				<section id="heroSection">
 					<div className="heroTitle">

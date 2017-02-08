@@ -3,12 +3,24 @@ import { Link } from 'react-router';
 import WorkPageStore from '../stores/WorkPageStore';
 
 export default class OurWorkPage extends React.Component{
-	
-	
-		
+
+
+	constructor(){
+			super();
+			this.state={
+						workArticle: WorkPageStore.getContent(),
+						};
+	}	
 	render(){
-	
-		var article = WorkPageStore.getContent(this.props.params.article)[0];	
+
+		var item = this.props.params.article;
+		var result = this.state.workArticle.filter(function(obj){
+					return obj.titleLink == item;
+				});
+
+		var article = result[0];
+		
+
 		var divStyle = { backgroundImage: 'url(' + article.image + ')' };
 
 		return(

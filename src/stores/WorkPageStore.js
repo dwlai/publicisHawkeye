@@ -71,12 +71,8 @@ class WorkPageStore extends EventEmitter{
 	
 			}
 			
-			getContent(item){
-				
-				var result = this.workArticle.filter(function(obj){
-					return obj.titleLink == item;
-				});
-				return(result);
+			getContent(){
+				return this.workArticle;
 			}
 
 }
