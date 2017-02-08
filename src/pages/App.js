@@ -8,12 +8,13 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 export default class App extends React.Component {
     render() {
 			
-			const {location } = this.props;
+			const {location} = this.props;
+			var segment = location.pathname.split('/')[2] || 'root';
 			
         return (
 			<div>
-			<ReactCSSTransitionGroup component='div' transitionName="fade" transitionEnterTimeout={10000} transitionLeaveTimeout={10000}>
-				{React.cloneElement(this.props.children, {key: location.pathname, parentComponent:this})}
+			<ReactCSSTransitionGroup transitionName={segment === 'root'? 'reversePageSwap' : 'pageSwap'} transitionEnterTimeout={20000} transitionLeaveTimeout={20000}>
+				{React.cloneElement(this.props.children, {key: segment, parentComponent:this, style: {top: window.pageYOffset + 60}})}
 			</ReactCSSTransitionGroup>
 			</div>
 
