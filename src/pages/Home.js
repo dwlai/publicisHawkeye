@@ -25,11 +25,11 @@ export default class Home extends React.Component{
 
 		var $filmstrip = $(".filmstrip");
 		var $screen = $(".screen");
-		var $approachButton=$(".approachButton");
+		// var $approachButton=$(".approachButton");
 		var width = $filmstrip.width();
 		$filmstrip.removeClass();
 		$filmstrip.addClass("filmstrip");
-		$approachButton.css("visibility","hidden");
+		// $approachButton.css("visibility","hidden");
 		var $subContent = $('.subContent')
 		$subContent.find('div').removeClass('active');
 		$('.copy').removeClass('hide');
@@ -46,7 +46,7 @@ export default class Home extends React.Component{
 		else if (item == 2)
 		{
 			$filmstrip.addClass("ourApproach");
-			$approachButton.css("visibility","visible");
+		//	$approachButton.css("visibility","visible");
 		}
 		else if (item == 3)
 		{

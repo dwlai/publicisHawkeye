@@ -364,14 +364,24 @@
 	  background-color: $grey;
 	  color: white;
 
-	  .approachButton {
-      visibility: hidden;
-      // height: 30px;
-      // width: 200px;
-      padding: 1rem 2rem;
+	 .approachButton{
+	  
+	  padding: 1rem 2rem;
       background-color: lighten($grey, 10%);
       color: #fff;
     }
+	  
+	  .introDifference, .introCapabilities, .introData{
+				.approachButton {
+								visibility:hidden;
+								}
+		}
+
+	.introApproach{
+				.approachButton {
+								visibility: visible;
+								}
+				}
 
 	  .subIntelligence, .subRelevance, .subAction {
 	    display: none;
