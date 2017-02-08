@@ -12,9 +12,10 @@ export default class App extends React.Component {
 			
         return (
 			<div>
-			<ReactCSSTransitionGroup component='div' transitionName="fade" transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
+			{/*<ReactCSSTransitionGroup component='div' transitionName="fade" transitionEnterTimeout={1000} transitionLeaveTimeout={1000}>
 				{React.cloneElement(this.props.children, {key: location.pathname, parentComponent:this})}
-			</ReactCSSTransitionGroup>
+			</ReactCSSTransitionGroup>*/}
+			{this.props.children}
 			</div>
 
         );
