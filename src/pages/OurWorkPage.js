@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import WorkPageStore from '../stores/WorkPageStore';
+import $ from 'jquery';
 
 export default class OurWorkPage extends React.Component{
 

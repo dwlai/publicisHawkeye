@@ -1142,54 +1142,57 @@ MEDIA QUERIES
 -----------------------------*/
 
 .pageSwap-leave {
-	
-  transform: translate3d(0, 0, 0);
+
+nav{
+	z-index:1;
+	}
 }
+	
 
 .pageSwap-leave.pageSwap-leave-active {
-
-  transform: translate3d(-100%, 0, 0);
-  transition: all ease-out 2000ms;
+  
 }
 
 .pageSwap-enter {
   position: absolute;
-  background-color: #EEE;
   left: 0;
-  width: 100%;
-  height: 100%;
   transform: translate3d(100%, 0, 0);
+  z-index:1000;
 }
 
 .pageSwap-enter.pageSwap-enter-active {
-  position: absolute;
-  background-color: #EEE;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: absolute;  
   transform: translate3d(0, 0, 0);
   transition: all ease-out 2000ms;
+  z-index:1000;
 
 }
 
 .reversePageSwap-leave {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
   transform: translate3d(0, 0, 0);
+  z-index:1000;
 }
 
 .reversePageSwap-leave.reversePageSwap-leave-active {
+  position:absolute;
   transform: translate3d(100%, 0, 0);
   transition: all ease-out 2000ms;
+  z-index:1000;
 }
 
 .reversePageSwap-enter {
-  transform: translate3d(-100%, 0, 0);
+	position:absolute;
+
+	nav{
+	
+	z-index:0;
+	}
 }
 
 .reversePageSwap-enter.reversePageSwap-enter-active {
-  transform: translate3d(0, 0, 0);
-  transition: all ease-out 2000ms;
+  	position:absolute;
+  	nav{
+  
+  	}
 }
