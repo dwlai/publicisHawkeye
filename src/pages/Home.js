@@ -60,20 +60,19 @@ export default class Home extends React.Component{
 
 		componentWillUnmount(){
 
-		window.scrollTo(0,0);
-	}
+			window.scrollTo(0,0);
+		}
 
 		componentDidMount(){
 
-        if($('#ourWorkPage').length !== 0 )
-       {
-			var $parent = $('#ourWorkPage');
-			$parent.css("top","0px");
+	        if($('#ourWorkPage').length !== 0 )
+			       {
+						var $leavingPage = $('#ourWorkPage');
+						var scroll = $('#ourWorkSection').offset().top
+						$leavingPage.css("top",scroll);
+						window.scrollTo(0,scroll);
 
-	 	}
-
-
-
+				 	}
 		}
 
 	
