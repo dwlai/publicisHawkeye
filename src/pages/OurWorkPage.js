@@ -11,6 +11,7 @@ export default class OurWorkPage extends React.Component{
 						workArticle: WorkPageStore.getContent(),
 						};
 	}	
+
 	render(){
 
 		var item = this.props.params.article;
@@ -23,7 +24,7 @@ export default class OurWorkPage extends React.Component{
 		var divStyle = { backgroundImage: 'url(' + article.image + ')' };
 
 		return(
-				<div id="ourWorkPage">
+				<div id="ourWorkPage" style={this.props.style}>
 					<div className="container-fluid block -white edge--both--reverse">
 
 						{/*<div className="container-inner">*/}

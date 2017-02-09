@@ -57,6 +57,13 @@ export default class Home extends React.Component{
 		}
 		
 	}
+
+		componentWillUnmount(){
+
+
+		window.scrollTo(0,0);
+	}
+
 	
 	
 	render(){

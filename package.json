@@ -17,7 +17,8 @@
     "react-bootstrap-modal": "^3.0.0",
     "react-dom": "^0.14.7",
     "react-router": "^2.8.1",
-    "react-smooth-scrollbar": "^7.2.1"
+    "react-smooth-scrollbar": "^7.2.1",
+    "react-timeout": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.4",
