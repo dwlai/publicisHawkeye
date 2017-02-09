@@ -313,7 +313,7 @@
 	}
 
 	#heroSection {
-	  background-image: url("../../assets/img/hero.png");
+	  background-image: url("../../assets/img/hero4.png");
 	  background-size: cover;
 	  background-repeat: no-repeat;
 	  width: 100%;
@@ -372,16 +372,16 @@
     }
 	  
 	  .introDifference, .introCapabilities, .introData{
-				.approachButton {
-								visibility:hidden;
-								}
+			.approachButton {
+				visibility:hidden;
+			}
 		}
 
-	.introApproach{
-				.approachButton {
-								visibility: visible;
-								}
-				}
+		.introApproach {
+			.approachButton {
+				visibility: visible;
+			}
+		}
 
 	  .subIntelligence, .subRelevance, .subAction {
 	    display: none;
@@ -405,7 +405,7 @@
 	    position: absolute;
 	    // margin-left: 43%;
 	    margin-top: 15rem;
-	  	padding-left: 0;
+	  	// padding-left: 0;
 	  	padding-right: 0;
 
 	  }
@@ -502,7 +502,7 @@
       font-size: 26pt;
     }
 
-		.imgContainer{
+		.imgContainer {
 			width:70%;
 			margin-top: 20rem;
 	  }	
@@ -512,7 +512,12 @@
       margin-right: -26%;
 		  padding-top:100%;
       margin-top: 27%;
+      margin-left: -15px;
 
+    }
+
+    .introDifference .imgContainer {
+    	margin-top: -1rem;
     }
 
     .brain, .approach, .data {
@@ -750,7 +755,7 @@
 	  color: white;
 
 	  .team-bg-img {
-	    background-image: url("../../assets/img/team.png");
+	    background-image: url("../../assets/img/team-03.jpg");
 	    background-size: contain;
 	    background-repeat: no-repeat;
 	    background-position: center bottom;
@@ -978,6 +983,12 @@ MEDIA QUERIES
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	#introSection .introDifference .imgContainer {
+  	margin-top: 20rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navbar.navbar-default.navbar-fixed-top ul {
     margin-top: 0;
@@ -985,7 +996,7 @@ MEDIA QUERIES
   }
 
   #heroSection {
-	  background-image: url("../../assets/img/hero3.png");
+	  background-image: url("../../assets/img/hero4.gif");
 	  padding-bottom: 85%;
 
 	  .heroTitle {
@@ -1121,6 +1132,12 @@ MEDIA QUERIES
 
 			}
 		}
+  }
+}
+
+@media screen and (max-width: 600px) {
+	#introSection .introLinksWrap {
+  	margin-top: 110%;
   }
 }
 

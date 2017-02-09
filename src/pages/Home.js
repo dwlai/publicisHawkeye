@@ -98,7 +98,7 @@ export default class Home extends React.Component{
 				</section>
 				<a className="anchor" id="intro"></a>
 				
-				<div id ="introSection" className="container-fluid">
+				<div id ="introSection" className="">
 			
 					<div className="screen">
 						<div className="introLinksWrap col-sm-6 col-sm-offset-6">
