@@ -19,8 +19,7 @@ export default class OurWorkPage extends React.Component{
 				});
 
 		var article = result[0];
-		
-
+	
 		var divStyle = { backgroundImage: 'url(' + article.image + ')' };
 
 		return(

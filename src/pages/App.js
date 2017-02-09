@@ -10,7 +10,6 @@ export default class App extends React.Component {
 			
 			const {location} = this.props;
 			var segment = location.pathname.split('/')[2] || 'root';
-			
         return (
 			<div>
 			<ReactCSSTransitionGroup transitionName={segment === 'root'? 'reversePageSwap' : 'pageSwap'} transitionEnterTimeout={20000} transitionLeaveTimeout={20000}>
