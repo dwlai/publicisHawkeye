@@ -21,10 +21,10 @@ export default class NavBar extends React.Component{
 
 		        <div id="navbar" className="navbar-collapse collapse">
 		          <ul className="nav navbar-nav navbar-right">
-		            <Navlink section={"#intro"} title={"ABOUT"}/>
-									<Navlink section={"#ourWork"} title={"OUR WORK"}/>
-									<Navlink section={"#team"} title={"OUR TEAM"}/>
-									<Navlink section={"#footer"} title={"CONTACT"}/>
+		            <Navlink section={"intro"} title={"ABOUT"}/>
+									<Navlink section={"ourWork"} title={"OUR WORK"}/>
+									<Navlink section={"team"} title={"OUR TEAM"}/>
+									<Navlink section={"footer"} title={"CONTACT"}/>
 		          </ul>
 		        </div>
 		      </div>

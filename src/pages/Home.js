@@ -61,11 +61,14 @@ export default class Home extends React.Component{
 		componentWillUnmount(){
 
 			window.scrollTo(0,0);
+			window.removeEventListener('scroll', this.handleScroll);
 		}
 
 		componentDidMount(){
 
-	        if($('#ourWorkPage').length !== 0 )
+			window.addEventListener('scroll', this.handleScroll);
+
+	        if($('#ourWorkPage').length !== 0 ) // part of page transition
 			       {
 						var $leavingPage = $('#ourWorkPage');
 						var scroll = $('#ourWorkSection').offset().top
@@ -74,6 +77,27 @@ export default class Home extends React.Component{
 
 				 	}
 		}
+
+	handleScroll(){
+
+
+		var $navLinks = $('#navbar a');
+		var scrollPos = window.pageYOffset;
+		$navLinks.each(function(){
+			var refLink = this.getAttribute('data');
+			var $refElement = $('#'+ refLink);
+			if( $refElement.position().top <= scrollPos){
+
+				$navLinks.removeClass('active');
+				this.className ='active';
+
+			}
+			else
+				this.className = "";
+
+		});
+
+	}
 
 	
 	

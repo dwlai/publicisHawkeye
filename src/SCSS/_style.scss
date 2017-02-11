@@ -283,6 +283,7 @@
 	    border: none;
 	    margin-top: 30px;
 
+
 	    li {
 	      margin-right: 10px;
 
@@ -298,6 +299,13 @@
 	        border: 1px solid $red;
 	        transition: border 0.5s ease;
 	      }
+	    .active{
+
+	    	border-color:white;
+	    }
+
+
+	    
 	    }
 
 	    li:hover a {
