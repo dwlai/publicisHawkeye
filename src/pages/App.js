@@ -18,7 +18,7 @@ export default class App extends React.Component {
         return (
 			<div>
 			<ReactCSSTransitionGroup transitionName={segment === 'root'? 'reversePageSwap' : 'pageSwap'} transitionEnterTimeout={2000} transitionLeaveTimeout={2000}>
-				{React.cloneElement(this.props.children, {key: segment, parentComponent:this, style: {top: window.pageYOffset}})}
+				{React.cloneElement(this.props.children, {key: segment, parentComponent:this})}
 			</ReactCSSTransitionGroup>
 			</div>
 

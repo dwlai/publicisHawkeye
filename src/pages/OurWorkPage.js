@@ -13,6 +13,17 @@ export default class OurWorkPage extends React.Component{
 						};
 	}	
 
+
+	componentWillMount(){
+
+		if(window.pageYOffset==0)
+		{
+				var scroll = $('#ourWorkSection').offset().top;	
+				window.scrollTo(0,scroll);
+		}
+	}//this was necessary to negate the scrolling caused by navigating with the back and forward buttons
+
+
 	render(){
 
 		var item = this.props.params.article;
@@ -22,10 +33,11 @@ export default class OurWorkPage extends React.Component{
 
 		var article = result[0];
 	
-		var divStyle = { backgroundImage: 'url(' + article.image + ')' };
+		var divStyle = { backgroundImage: 'url(' + article.image + ')'};
+
 
 		return(
-				<div id="ourWorkPage" style={this.props.style}>
+				<div id="ourWorkPage" style={{top: window.pageYOffset}}>
 					<div className="container-fluid block -white edge--both--reverse">
 
 						{/*<div className="container-inner">*/}
