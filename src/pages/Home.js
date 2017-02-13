@@ -71,7 +71,7 @@ export default class Home extends React.Component{
 	        if($('#ourWorkPage').length !== 0 ) // part of page transition
 			       {
 						var $leavingPage = $('#ourWorkPage');
-						var scroll = $('#ourWorkSection').offset().top
+						var scroll = $('#ourWork').offset().top
 						$leavingPage.css("top",scroll);
 						window.scrollTo(0,scroll);
 
@@ -99,6 +99,14 @@ export default class Home extends React.Component{
 
 	}
 
+	scrollToSection(section){
+
+		var $target = $('#'+section);
+		$('html, body').stop().animate({ 'scrollTop' : $target.offset().top +2},
+		500, 'swing');
+
+	}
+
 	
 	
 	render(){
@@ -112,7 +120,7 @@ export default class Home extends React.Component{
 		
 		return (
 			<div id ="home">
-				<NavBar />
+				<NavBar scrollToSection={this.scrollToSection.bind(this)}/>
 				<section id="heroSection">
 					<div className="heroTitle">
 						<img className="circle-crop" src="./assets/img/circle-crop.png" alt="circle-crop"/>

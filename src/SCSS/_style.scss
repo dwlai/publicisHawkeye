@@ -11,7 +11,7 @@
 	    #{"-" + $prefix + "-" + $property}: $value;
 	  }
 
-	  // Output standard non-prefixed declaration
+	  // Output standard non-prefixed declarat
 	  #{$property}: $value;
 	}
 
@@ -629,6 +629,13 @@
 			}	    
 	  }
 
+	}
+
+
+
+	#ourWork{
+
+		top:-58px;
 	}
 
 	#ourWorkSection {

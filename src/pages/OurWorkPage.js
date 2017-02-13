@@ -14,14 +14,14 @@ export default class OurWorkPage extends React.Component{
 	}	
 
 
-	componentWillMount(){
+	// componentWillMount(){
 
-		if(window.pageYOffset==0)
-		{
-				var scroll = $('#ourWorkSection').offset().top;	
-				window.scrollTo(0,scroll);
-		}
-	}//this was necessary to negate the scrolling caused by navigating with the back and forward buttons
+	// 	if(window.pageYOffset==0)
+	// 	{
+	// 			var scroll = $('#ourWorkSection').offset().top;	
+	// 			window.scrollTo(0,scroll);
+	// 	}
+	// }//this is necessary to negate the scrolling caused by navigating with the back and forward buttons
 
 
 	render(){
