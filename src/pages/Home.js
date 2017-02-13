@@ -33,46 +33,6 @@ export default class Home extends React.Component{
 			});
 	}
 
-
-	// changeContent(item){
-
-	// 	var $introLinks = $('.introLinks li a');
-	// 	$introLinks.removeClass();
-	// 	$introLinks[item].className = "active";
-		
-		
-	// 	var $filmstrip = $(".filmstrip");
-	// 	var $screen = $(".screen");
-	// 	var width = $filmstrip.width();
-	// 	$filmstrip.removeClass();
-	// 	$filmstrip.addClass("filmstrip");
-	// 	var $subContent = $('.subContent');
-	// 	$subContent.find('div').removeClass('active');
-	// 	$('.copy').removeClass('hide');
-		
-		
-	// 	if (item == 0)
-	// 	{
-	// 		$filmstrip.addClass("ourDifference");
-	// 	}
-	// 	else if (item == 1)
-	// 	{
-	// 		$filmstrip.addClass("ourCapabilities");
-	// 	}
-	// 	else if (item == 2)
-	// 	{
-	// 		$filmstrip.addClass("ourApproach");
-	// 	//	$approachButton.css("visibility","visible");
-	// 	}
-	// 	else if (item == 3)
-	// 	{
-	// 		$filmstrip.addClass("ourData")
-	// 	}
-		
-	// }
-
-
-
 		componentWillUnmount(){
 
 			window.scrollTo(0,0);
@@ -150,11 +110,9 @@ export default class Home extends React.Component{
 								<IntroLink changeContent={this.changeContent.bind(this)} item = {'3'} title={["our",<br/>, "data"]}/>
 							</ul>
 						</div>
-						<div className="filmstrip">
-							<ReactCSSTransitionGroup transitionName="introTransition" transitionEnterTimeout={30000} transitionLeaveTimeout={30000}>
+							<ReactCSSTransitionGroup transitionName="introTransition" transitionEnterTimeout={1500} transitionLeaveTimeout={1500}>
 								<Intro key={intro.id} {...intro} />
 							</ReactCSSTransitionGroup>
-						</div>
 					</div>
 						
 				</div>

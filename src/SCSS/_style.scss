@@ -21,6 +21,27 @@
 	  border-color: $color;
 	}
 
+
+
+@mixin expoOut () {
+-webkit-transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+   -moz-transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+     -o-transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000); 
+        transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000); /* easeOutExpo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// angle edges
 	@mixin angle($pseudo, $flip: false, $angle: 3.5deg) {
 	  // Possible values for $pseudo are: before, after, both
@@ -462,32 +483,9 @@
 	    // margin-left: -15px;
 	  }
 
-	  .filmstrip {
-	    position: relative;
-	    width: 400%;
-	    transition: 2s ease-out all;
-	    left: 0px;
-	  }
-
-	  .filmstrip.ourDifference {
-	    margin-left: 0%;
-	  }
-
-	  .filmstrip.ourCapabilities {
-	    margin-left: -100%;
-	  }
-
-	  .filmstrip.ourApproach {
-	    margin-left: -200%;
-	  }
-
-	  .filmstrip.ourData {
-	    margin-left: -300%;
-	  }
-
 	  .introComponent {
 	    display: inline-block;
-	    width: 25%;
+	    width: 100%;
 			vertical-align: top;
 			padding-bottom: 5rem;
 	  }
@@ -1127,19 +1125,11 @@ MEDIA QUERIES
 			font-size: 1.2vw;
 	 	}
 
-  	.filmstrip {
-  		margin-top: 12rem;
-  	}
 		
 		.introContent {
 			margin-top: 12rem;
   	}
 
-		.filmstrip.ourCapabilities, .filmstrip.ourApproach, .filmstrip.ourData {
-		 .introContent {
-	  		// margin -top: 0;
-	  	}
-	  }
   }
 
   #teamSection {
@@ -1213,6 +1203,10 @@ MEDIA QUERIES
 	React Transition Styles
 -----------------------------*/
 
+
+	/*--------pageSwap---------*/
+
+
 .pageSwap-leave {
 	 	position:absolute;
   		opacity:1;
@@ -1225,7 +1219,8 @@ nav{
 .pageSwap-leave.pageSwap-leave-active {
 		position:absolute;
 		opacity:0;
-		transition: all ease-out 2000ms;
+		transition: all ease-out 1500ms;
+		@include expoOut();
   
 }
 
@@ -1241,7 +1236,8 @@ nav{
 .pageSwap-enter.pageSwap-enter-active {
   position: absolute;  
   transform: translate3d(0, 0, 0);
-  transition: all ease-out 2000ms;
+  transition: all ease-out 1500ms;
+  @include expoOut();
   z-index:1000;
    width:100%;
   height:100%;
@@ -1259,7 +1255,8 @@ nav{
 .reversePageSwap-leave.reversePageSwap-leave-active {
   position:absolute;
   transform: translate3d(100%, 0, 0);
-  transition: all ease-out 2000ms;
+  transition: all ease-out 1500ms;
+  @include expoOut();
   z-index:1000;
    width:100%;
   height:100%;
@@ -1278,8 +1275,39 @@ nav{
 .reversePageSwap-enter.reversePageSwap-enter-active {
   	position:absolute;
   	opacity:1;
-  	transition: all ease-out 2000ms;
+  	transition: all ease-out 1500ms;
+  	@include expoOut();
   	nav{
   
   	}
+}
+
+
+/*---------introComponents slides--------*/
+
+
+.introTransition-leave {
+	opacity:1;
+  
+}
+
+.introTransition-leave.introTransition-leave-active {
+opacity:0;
+ transform: translate3d(-100%,0,0);
+ transition: all ease-out 1500ms;
+ @include expoOut();
+}
+
+.introTransition-enter {
+	position:absolute;
+	opacity:0;
+	transform: translate3d(100%,0,0);
+
+}
+
+.introTransition-enter.introTransition-enter-active {
+	opacity:1;
+	transform: translate3d(0,0,0);
+	transition: all ease-out 1500ms;
+	@include expoOut();
 }
