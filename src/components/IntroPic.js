@@ -28,8 +28,10 @@ export default class IntroPic extends React.Component{
 					<div className={this.props.className} data-count={this.props.count}>
 						<img className={this.props.className2} src={this.props.image2} />
 						<p className="intelligence labels" ><em>Intelligence</em></p>
-						<p className="action labels" ><em>Action</em></p>
+						<p className="action labels"><em>Action</em></p>
 						<p className="relevance labels" ><em>Relevance</em></p>
+						<p className="brainHeading">And this is where we do it all.</p>
+						<p className="brainCopy">Like our imaginations,<br/> our expertise spans far and wide.</p>
 					</div>
 				</div>
 				

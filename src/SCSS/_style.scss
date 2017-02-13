@@ -511,7 +511,7 @@
     }
 
 		.imgContainer{
-			width:70%;
+			width:84%;
 			margin-top: 20rem;
 	  }	
 
@@ -631,6 +631,34 @@
 
 	}
 
+	.approach, .flower, .data{
+			.brainCopy, .brainHeading{
+			display:none;
+			}
+	}
+
+	.brain{
+
+		
+		.brainHeading{
+				position: absolute;
+				margin-top: -75%;
+				margin-left: 18%;
+				font-size: 1.55vw;
+				font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
+
+		}
+
+		.brainCopy{
+			position: absolute;
+			width: 37%;
+			text-align: center;
+			margin-top: -23%;
+			margin-left: 31%;
+			font-size: 1vw;
+		}
+
+	}
 
 
 	#ourWork{
@@ -1058,7 +1086,7 @@ MEDIA QUERIES
   #introSection {
   	.introLinksWrap {
   		// bottom: -5rem;
-  		margin-top: 105%;
+  		margin-top: 78%;
 
 	  	.introLinks li {
 		    font-size: 1.2rem;
@@ -1067,8 +1095,37 @@ MEDIA QUERIES
 	  }
 
 	  .imgContainer {
+	  	width:42%;
 	  	margin-top: 0;
+	  	margin-right:auto;
+	  	margin-left:auto;
+
+	  	.flower{
+	  		margin-left:-76%;
+	  	}
+
+	  	div{
+	  		margin-left:0px;
+
+	  	}
 	  }
+
+	  .brainHeading{
+			position: absolute;
+			margin-top: -39%;
+			margin-left: 8%;
+			font-size: 1.65vw;
+			font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
+	  }
+
+	 	.brainCopy{
+			position: absolute;
+			width: 37%;
+			text-align: center;
+			margin-top: -13%;
+			margin-left: 8%;
+			font-size: 1.2vw;
+	 	}
 
   	.filmstrip {
   		margin-top: 12rem;
