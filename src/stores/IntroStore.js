@@ -52,8 +52,8 @@ class IntroStore extends EventEmitter{
 		
 	}
 	
-	getContent(){
-		return this.intro;
+	getContent(item){
+		return this.intro[item];
 	}
 	
 	/*getsubContent(item){

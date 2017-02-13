@@ -8,6 +8,7 @@ import OurWork from '../components/OurWork';
 import IntroStore from '../stores/IntroStore';
 import IntroLink from '../components/IntroLink';
 import $ from 'jquery';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
 export default class Home extends React.Component{
@@ -16,47 +17,61 @@ export default class Home extends React.Component{
 	constructor(){
 			super();
 			this.state = {
-						intros: IntroStore.getContent(),
+						intro: IntroStore.getContent(0),
 						
 			};
 	}
 	
 	changeContent(item){
-
+		
 		var $introLinks = $('.introLinks li a');
 		$introLinks.removeClass();
 		$introLinks[item].className = "active";
-		
-		
-		var $filmstrip = $(".filmstrip");
-		var $screen = $(".screen");
-		var width = $filmstrip.width();
-		$filmstrip.removeClass();
-		$filmstrip.addClass("filmstrip");
-		var $subContent = $('.subContent');
-		$subContent.find('div').removeClass('active');
-		$('.copy').removeClass('hide');
-		
-		
-		if (item == 0)
-		{
-			$filmstrip.addClass("ourDifference");
-		}
-		else if (item == 1)
-		{
-			$filmstrip.addClass("ourCapabilities");
-		}
-		else if (item == 2)
-		{
-			$filmstrip.addClass("ourApproach");
-		//	$approachButton.css("visibility","visible");
-		}
-		else if (item == 3)
-		{
-			$filmstrip.addClass("ourData")
-		}
-		
+
+		this.setState({
+			intro: IntroStore.getContent(item),
+			});
 	}
+
+
+	// changeContent(item){
+
+	// 	var $introLinks = $('.introLinks li a');
+	// 	$introLinks.removeClass();
+	// 	$introLinks[item].className = "active";
+		
+		
+	// 	var $filmstrip = $(".filmstrip");
+	// 	var $screen = $(".screen");
+	// 	var width = $filmstrip.width();
+	// 	$filmstrip.removeClass();
+	// 	$filmstrip.addClass("filmstrip");
+	// 	var $subContent = $('.subContent');
+	// 	$subContent.find('div').removeClass('active');
+	// 	$('.copy').removeClass('hide');
+		
+		
+	// 	if (item == 0)
+	// 	{
+	// 		$filmstrip.addClass("ourDifference");
+	// 	}
+	// 	else if (item == 1)
+	// 	{
+	// 		$filmstrip.addClass("ourCapabilities");
+	// 	}
+	// 	else if (item == 2)
+	// 	{
+	// 		$filmstrip.addClass("ourApproach");
+	// 	//	$approachButton.css("visibility","visible");
+	// 	}
+	// 	else if (item == 3)
+	// 	{
+	// 		$filmstrip.addClass("ourData")
+	// 	}
+		
+	// }
+
+
 
 		componentWillUnmount(){
 
@@ -111,12 +126,7 @@ export default class Home extends React.Component{
 	
 	render(){
 		
-		const { intros } = this.state;
-		
-		const IntroComponents = intros.map((intro) =>{
-				return <Intro key ={intro.id}{...intro}/>
-		});
-		
+		const { intro } = this.state;
 		
 		return (
 			<div id ="home">
@@ -141,7 +151,9 @@ export default class Home extends React.Component{
 							</ul>
 						</div>
 						<div className="filmstrip">
-							{IntroComponents}
+							<ReactCSSTransitionGroup transitionName="introTransition" transitionEnterTimeout={30000} transitionLeaveTimeout={30000}>
+								<Intro key={intro.id} {...intro} />
+							</ReactCSSTransitionGroup>
 						</div>
 					</div>
 						

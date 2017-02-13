@@ -80,9 +80,9 @@ export default class Intro extends React.Component{
 		$vector.attr("data-count",count);
 	
 	}
-						
+
 	render(){
-		
+
 		return (
 
 				// <section id="introSection">
