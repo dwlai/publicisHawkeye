@@ -9,7 +9,7 @@ export default class IntroLink extends React.Component{
 	
 	render(){
 		return(
-			<li  className="" onClick={this.handleClick.bind(this)}><a href={this.props.section}>{this.props.title}</a></li>
+			<li onClick={this.handleClick.bind(this)}><a className={this.props.className} href={this.props.section}>{this.props.title}</a></li>
 		);
 	}
 }

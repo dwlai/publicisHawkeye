@@ -58,6 +58,8 @@ export default class Home extends React.Component{
 
 		var $navLinks = $('#navbar a');
 		var scrollPos = window.pageYOffset;
+		var documentHeight = $(document).height();
+		var windowHeight = $(window).height();
 		$navLinks.each(function(){
 			var refLink = this.getAttribute('data');
 			var $refElement = $('#'+ refLink);
@@ -71,6 +73,11 @@ export default class Home extends React.Component{
 				this.className = "";
 
 		});
+
+		  if(scrollPos + windowHeight > documentHeight-50) {
+       				$navLinks.removeClass('active');
+       				$navLinks[3].className = "active";
+   			}
 
 	}
 
@@ -104,7 +111,7 @@ export default class Home extends React.Component{
 					<div className="screen">
 						<div className="introLinksWrap col-sm-6 col-sm-offset-6">
 							<ul className="introLinks">
-								<IntroLink changeContent={this.changeContent.bind(this)} item = {'0'} title={["our",<br/>, "difference"]}/>
+								<IntroLink className={"active"} changeContent={this.changeContent.bind(this)} item = {'0'} title={["our",<br/>, "difference"]}/>
 								<IntroLink changeContent={this.changeContent.bind(this)} item = {'1'} title={["our",<br/>, "capabilities"]}/>
 								<IntroLink changeContent={this.changeContent.bind(this)} item = {'2'} title={["our",<br/>, "approach"]}/>
 								<IntroLink changeContent={this.changeContent.bind(this)} item = {'3'} title={["our",<br/>, "data"]}/>
