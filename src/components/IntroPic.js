@@ -14,11 +14,6 @@ export default class IntroPic extends React.Component{
 				"transform":"rotate(0deg)"
 		});
 		
-		$intelligence.css({
-				"top":"-42px",
-				"left":"184px"
-		});
-		
 		$labels.removeClass("active");
 									
 		$approach.attr("data-count", 1);

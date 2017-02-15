@@ -1098,32 +1098,29 @@ nav{
 /*---------introComponents slides--------*/
 
 
-.introTransition-leave {
-	position:absolute;
-	opacity:1;
-	 transform: translate3d(-100%,0,0);
-  
+.cross-fade-leave {
+  opacity: 1;
 }
-
-.introTransition-leave.introTransition-leave-active {
-opacity:0;
- transform: translate3d(-200%,0,0);
- transition: all ease-out 1500ms;
- @include expoOut();
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: all 1.5s;
+  @include expoOut();
+  transform: translate3d(-100%,0,0);
 }
-
-.introTransition-enter {
-	position:relative;
-	opacity:0;
-	transform: translate3d(100%,0,0);
-
+ 
+.cross-fade-enter {
+  opacity: 0;
+  transform: translate3d(100%,0,0);
 }
-
-.introTransition-enter.introTransition-enter-active {
-	opacity:1;
-	transform: translate3d(0,0,0);
-	transition: all ease-out 1500ms;
-	@include expoOut();
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: all 1.5s;
+  @include expoOut();
+  transform: translate3d(0,0,0);
+}
+ 
+.cross-fade-height {
+  transition: height .5s ease-in-out;
 }
 
 
