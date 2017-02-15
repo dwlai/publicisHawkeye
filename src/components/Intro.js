@@ -81,6 +81,14 @@ export default class Intro extends React.Component{
 	
 	}
 
+	componentDidMount(){
+
+		var $introLinks = $('.introLinks li a');
+		$introLinks.removeClass();
+		$introLinks[this.props.id].className = "active";
+
+	}
+
 	render(){
 
 		return (
