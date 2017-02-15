@@ -9,13 +9,13 @@ class WorkStore extends EventEmitter{
 							id:1,
 							title:"CPC SMM",
 							titleLink:"cpc-smm",
-							image:"./assets/img/ourWork/maillaunch-00.png"
+							image:"./assets/img/ourWork/tile-cpcsmm.png"
 						},
 						{
 							id:2,
 							title:"ROGERS PLATINUM LAUNCH",
 							titleLink:"rogers-platinum-launch",
-							image:"./assets/img/ourWork/rogers-00.png"
+							image:"./assets/img/ourWork/tile-rogers.png"
 						},
 						{
 							id:3,
@@ -28,19 +28,19 @@ class WorkStore extends EventEmitter{
 							id:4,
 							title:"CMA INCITE AWARDS",
 							titleLink:"cma-incite-awards",
-							image:"./assets/img/ourWork/incite-00.png"
+							image:"./assets/img/ourWork/tile-incite.png"
 						},
 							{
 							id:5,
 							title:"RED LOBSTER",
 							titleLink:"red-lobster",
-							image:"./assets/img/ourWork/redlobster-00.png"
+							image:"./assets/img/ourWork/tile-redlobster.png"
 						},
 							{
 							id:6,
 							title:"LG DESIGN COLLECTION",
 							titleLink:"lg-design-collection",
-							image:"./assets/img/ourWork/lg-00.png"
+							image:"./assets/img/ourWork/tile-lg.png"
 						}
 
 					]	

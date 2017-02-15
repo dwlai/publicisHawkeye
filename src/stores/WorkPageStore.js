@@ -9,7 +9,7 @@ class WorkPageStore extends EventEmitter{
 										{
 											title:"CPC SMM",
 											titleLink:"cpc-smm",
-											image:"./assets/img/ourWork/mailLaunchPage1.png",
+											image:"./assets/img/ourWork/page-cpcsmm.jpg",
 											headline: "Canada Post Smartmail Marketing Launch",
 											subhead:"A transformation from mail delivery provider to trusted industry leader",
 											intelligence:"This was our chance to reignite the power of direct mail. ",
@@ -19,7 +19,7 @@ class WorkPageStore extends EventEmitter{
 										{
 											title:"ROGERS PLATINUM LAUNCH",
 											titleLink:"rogers-platinum-launch",
-											image:"./assets/img/ourWork/rogerspage.png",
+											image:"./assets/img/ourWork/page-rogers.jpg",
 											headline: "Rogers Platinum MasterCard Launch",
 											subhead:"You'll love the feeling of free™",
 											intelligence:"Today's consumers feel more economic pressures and want to make the most out of every dollar.",
@@ -29,7 +29,7 @@ class WorkPageStore extends EventEmitter{
 										{
 											title:"CPC CONNECTIVITY",
 											titleLink:"cpc-connectivity",
-											image:"./assets/img/ourWork/connectivity.png",
+											image:"./assets/img/ourWork/page-connectivity.jpg",
 											headline: "Canada Post Smartmail Marketing – Connectivity",
 											subhead:"The power of integrating direct mail with digital channels",
 											intelligence:"With an always-on consumer, marketers must use multiple channels to engage with customers.  In an increasingly digitally-connected world, direct mail is falling out of consideration due to lack of perceived value, capability, and significance.",
@@ -39,7 +39,7 @@ class WorkPageStore extends EventEmitter{
 										{
 											title:"CMA INCITE AWARDS",
 											titleLink:"cma-incite-awards",
-											image:"./assets/img/ourWork/incite.png",
+											image:"./assets/img/ourWork/page-incite.jpg",
 											headline: "Canada Post's Smartmail Marketing's INCITE Award",
 											subhead:"Recognizing strategy, creativity, and results in Direct Mail",
 											intelligence:"Big data, deeper analytics capabilities, and innovations in technology provide marketers with the ability to command attention and connect more effectively than ever before - especially in direct mail.",
@@ -49,7 +49,7 @@ class WorkPageStore extends EventEmitter{
 											{
 											title:"RED LOBSTER",
 											titleLink:"red-lobster",
-											image:"./assets/img/ourWork/redlobsterpage.png",
+											image:"./assets/img/ourWork/page-redlobster.jpg",
 											headline: "My Red Lobster Rewards" ,
 											subhead:"Rewards are now on the menu",
 											intelligence:"Consumers want a simple program that saves them money and recognizes their loyalty to a brand.",
@@ -59,7 +59,7 @@ class WorkPageStore extends EventEmitter{
 											{
 											title:"LG DESIGN COLLECTION",
 											titleLink:"lg-design-collection",
-											image:"./assets/img/ourWork/lgpage02.png",
+											image:"./assets/img/ourWork/page-lg.jpg",
 											headline: "Rewards are now on the menu ",
 											subhead:"Because life's more about having the latest technology",
 											intelligence:"Consumers want to browse content in a way that prioritizes relevant and personalized experiences.  And the demand is only getting stronger.",
