@@ -1214,6 +1214,9 @@ MEDIA QUERIES
 
 		}
 
+
+
+
 	  #introSection {
 	  	.introLinksWrap {
 	  		// bottom: -5rem;
@@ -1251,9 +1254,29 @@ MEDIA QUERIES
 
 		  }
 
+
+
+	.brain{
+			.loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
+				display:block;
+				position:absolute;
+				width: 29%;
+				margin-left: 5%;
+				margin-top: -32%;
+				opacity:0;
+	   		 }
+
+	   		 .loyalty{
+	   		 opacity:1;
+	   		 }
+	}
+		  
+
+
+
 		  .brainHeading{
 				position: absolute;
-				margin-top: -39%;
+				margin-top: -35%;
 				margin-left: 8%;
 				font-size: 1.65vw;
 				font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
@@ -1263,7 +1286,7 @@ MEDIA QUERIES
 				position: absolute;
 				width: 37%;
 				text-align: center;
-				margin-top: -13%;
+				margin-top: -12%;
 				margin-left: 8%;
 				font-size: 1.2vw;
 		 	}
