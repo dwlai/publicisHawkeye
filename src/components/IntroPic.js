@@ -2,12 +2,60 @@ import React from 'react';
 import $ from 'jquery';
 
 export default class IntroPic extends React.Component{
+
+
+
+
+
+
+
+	componentDidMount(){
+
+		if(this.props.className == 'brain'){
+
+			var $images = $('.brain img');
+			var timeout = 0;
+
+			function fadeIn($image){
+				$image.animate({opacity : "1"},1500, function(){fadeOut($image);});
+			}
+
+			function fadeOut($image){
+				$image.animate({opacity : "0"},1500);
+			}
+
+
+			function initAnimate($img){
+			$img.each(function(){
+
+				setTimeout(function(){fadeIn($(this));}.bind(this),timeout);
+				timeout = timeout + 1500;
+				});
+				
+				setTimeout(function(){initAnimate($img)}.bind(this),0);
+			}
+
+			initAnimate($images);
+			
+
+			// $images.each(function(){
+			// 	console.log($(this));
+			// 	setTimeout(function(){fadeIn($(this));},1000);
+			// })
+			
+
+		}
+
+
+
+
+
+	}
 	
 	render(){
 		
 		var $approach = $('.approach');
 		var $labels = $approach.find("p");
-		var $intelligence = $approach.find(".intelligence")
 		
 		$approach.add($labels).css({
 				"transition":"0s",
@@ -17,11 +65,19 @@ export default class IntroPic extends React.Component{
 		$labels.removeClass("active");
 									
 		$approach.attr("data-count", 1);
+
+
+
 		
 		return (
 				<div className="imgContainer">
 					<div className={this.props.className} data-count={this.props.count}>
 						<img className={this.props.className2} src={this.props.image2} />
+						<img className="aquisition" src={"./assets/img/capabilities/brain-02-aquisition.png"} />
+						<img className="upsell" src={"./assets/img/capabilities/brain-03-upsell.png"} />
+						<img className="crosssell" src={"./assets/img/capabilities/brain-04-crosssell.png"} />
+						<img className="demand" src={"./assets/img/capabilities/brain-05-demand.png"} />
+						<img className="retention" src={"./assets/img/capabilities/brain-06-retention.png"} />
 						<p className="intelligence labels" ><em>Intelligence</em></p>
 						<p className="action labels"><em>Action</em></p>
 						<p className="relevance labels" ><em>Relevance</em></p>

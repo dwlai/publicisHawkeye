@@ -535,11 +535,28 @@
 		  height:0px;
     }
 
-		.brain2 {
-      width: 79%;
-      margin-left: 10%;
-      margin-top: -102%;
-    }
+
+.approach, .flower, .data{
+			.loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
+			display:none;
+		
+   		 	}
+}
+
+	.brain{
+			.loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
+				display:block;
+				position:absolute;
+				width: 61%;
+				margin-left: 8%;
+				margin-top: -66%;
+				opacity:0;
+	   		 }
+
+	   		 .loyalty{
+	   		 opacity:1;
+	   		 }
+	}
 
     .vector {
       width: 99%;
@@ -642,7 +659,7 @@
 		
 		.brainHeading{
 				position: absolute;
-				margin-top: -75%;
+				margin-top: -72%;
 				margin-left: 18%;
 				font-size: 1.55vw;
 				font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
