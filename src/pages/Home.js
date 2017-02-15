@@ -8,7 +8,7 @@ import OurWork from '../components/OurWork';
 import IntroStore from '../stores/IntroStore';
 import IntroLink from '../components/IntroLink';
 import $ from 'jquery';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 
 export default class Home extends React.Component{
@@ -117,9 +117,9 @@ export default class Home extends React.Component{
 								<IntroLink changeContent={this.changeContent.bind(this)} item = {'3'} title={["our",<br/>, "data"]}/>
 							</ul>
 						</div>
-							<ReactCSSTransitionGroup transitionName="introTransition" transitionEnterTimeout={1500} transitionLeaveTimeout={1500}>
+							 <ReactCSSTransitionReplace transitionName="cross-fade" transitionEnterTimeout={1500} transitionLeaveTimeout={1500}>
 								<Intro key={intro.id} {...intro} />
-							</ReactCSSTransitionGroup>
+							</ReactCSSTransitionReplace>
 					</div>
 						
 				</div>

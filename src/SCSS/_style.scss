@@ -477,6 +477,7 @@
 	  }
 
 	  .screen {
+	  	position:relative;
 	    width: 100%;
 	    // height: 100vh;
 	    overflow: hidden;
@@ -534,11 +535,28 @@
 		  height:0px;
     }
 
-		.brain2 {
-      width: 79%;
-      margin-left: 10%;
-      margin-top: -102%;
-    }
+
+.approach, .flower, .data{
+			.loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
+			display:none;
+		
+   		 	}
+}
+
+	.brain{
+			.loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
+				display:block;
+				position:absolute;
+				width: 61%;
+				margin-left: 8%;
+				margin-top: -66%;
+				opacity:0;
+	   		 }
+
+	   		 .loyalty{
+	   		 opacity:1;
+	   		 }
+	}
 
     .vector {
       width: 99%;
@@ -641,7 +659,7 @@
 		
 		.brainHeading{
 				position: absolute;
-				margin-top: -75%;
+				margin-top: -72%;
 				margin-left: 18%;
 				font-size: 1.55vw;
 				font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
@@ -1097,6 +1115,7 @@
 
 	/*---------introComponents slides--------*/
 
+// <<<<<<< HEAD
 
 	.introTransition-leave {
 		opacity:1;
@@ -1123,6 +1142,32 @@
 		transition: all ease-out 1500ms;
 		@include expoOut();
 	}
+// =======
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: all 1.5s;
+  @include expoOut();
+  transform: translate3d(-100%,0,0);
+}
+ 
+.cross-fade-enter {
+  opacity: 0;
+  transform: translate3d(100%,0,0);
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: all 1.5s;
+  @include expoOut();
+  transform: translate3d(0,0,0);
+}
+ 
+.cross-fade-height {
+  transition: height .5s ease-in-out;
+}
+// >>>>>>> ac0692f59db4e100860ad897c6b4f2f8f072a1b3
 
 
 /* ================
@@ -1198,6 +1243,9 @@ MEDIA QUERIES
 
 		}
 
+
+
+
 	  #introSection {
 	  	.introLinksWrap {
 	  		// bottom: -5rem;
@@ -1235,9 +1283,29 @@ MEDIA QUERIES
 
 		  }
 
+
+
+	.brain{
+			.loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
+				display:block;
+				position:absolute;
+				width: 29%;
+				margin-left: 5%;
+				margin-top: -32%;
+				opacity:0;
+	   		 }
+
+	   		 .loyalty{
+	   		 opacity:1;
+	   		 }
+	}
+		  
+
+
+
 		  .brainHeading{
 				position: absolute;
-				margin-top: -39%;
+				margin-top: -35%;
 				margin-left: 8%;
 				font-size: 1.65vw;
 				font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
@@ -1247,7 +1315,7 @@ MEDIA QUERIES
 				position: absolute;
 				width: 37%;
 				text-align: center;
-				margin-top: -13%;
+				margin-top: -12%;
 				margin-left: 8%;
 				font-size: 1.2vw;
 		 	}
