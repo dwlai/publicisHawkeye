@@ -33,6 +33,7 @@ export default class Home extends React.Component{
 
 			window.scrollTo(0,0);
 			window.removeEventListener('scroll', this.handleScroll);
+			$('#ourWorkPage').css('top', '0');
 		}
 
 		componentDidMount(){

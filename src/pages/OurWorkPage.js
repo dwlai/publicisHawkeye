@@ -14,6 +14,10 @@ export default class OurWorkPage extends React.Component{
 	}	
 
 
+
+	componentWillMount(){
+		$('.navbar').css( 'z-index', 3);
+	}
 	// componentWillMount(){
 
 	// 	if(window.pageYOffset==0)
@@ -23,8 +27,8 @@ export default class OurWorkPage extends React.Component{
 	// 	}
 	// }//this is necessary to negate the scrolling caused by navigating with the back and forward buttons
 
-
 	render(){
+
 
 		var item = this.props.params.article;
 		var result = this.state.workArticle.filter(function(obj){
@@ -37,7 +41,7 @@ export default class OurWorkPage extends React.Component{
 
 
 		return(
-				<div id="ourWorkPage" style={{top: window.pageYOffset}}>
+				<div id="ourWorkPage" style={{position:'absolute', top: window.pageYOffset, zIndex:1000}}>
 					<div className="container-fluid block -white edge--both--reverse">
 
 						{/*<div className="container-inner">*/}
