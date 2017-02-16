@@ -26,16 +26,16 @@ export default class IntroPic extends React.Component{
 
 
 			function initAnimate($img){
-			// $img.each(function(){
+			$img.each(function(){
 
-				// setTimeout(function(){fadeIn($(this));}.bind(this),timeout);
-				// timeout = timeout + 1500;
-				// });
+				setTimeout(function(){fadeIn($(this));}.bind(this),timeout);
+				timeout = timeout + 1500;
+				});
 				
-				// setTimeout(function(){initAnimate($img)}.bind(this),0);
+				setTimeout(function(){initAnimate($img)}.bind(this),0);
 			}
 
-			// initAnimate($images);
+			initAnimate($images);
 		}
 
 	}
