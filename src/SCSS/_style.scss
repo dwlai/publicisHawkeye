@@ -340,7 +340,7 @@
 	    border: none;
 	    margin-top: 30px;
 	    li {
-	      margin-right: 10px;
+	      // margin-right: 10px;
 	      @include border-style(transparent);
 	      // line-height: 1;
 	      font-size: 1.8rem;
@@ -410,231 +410,305 @@
 	  padding-top: 3rem;
 	  background-color: $grey;
 	  color: white;
-	  .approachButton {
-	    padding: 1rem 2rem;
-	    background-color: lighten($grey, 10%);
-	    color: #fff;
-	  }
-	  .introDifference, .introCapabilities, .introData {
-	    .approachButton {
-	      visibility: hidden;
-	    }
-	  }
-	  .introApproach {
-	    .approachButton {
-	      visibility: visible;
-	    }
-	  }
-	  .subIntelligence, .subRelevance, .subAction {
-	    display: none;
-	  }
-	  .active {
-	    display: block;
-	  }
-	  .copy.hide {
-	    display: none;
-	  }
-	  .intelligence, .relevance, .action {
-	    display: none;
-	    font-family: $font-librebaskerville-italic;
-	  }
-	  .introLinksWrap {
-	    z-index: 1;
-	    position: absolute;
-	    // margin-left: 43%;
-	    margin-top: 15rem;
-	    padding-left: 0;
-	    padding-right: 0;
-	  }
-	  .introLinks {
-	    padding-left: 0;
-	    padding-right: 0;
-	    li {
-	      text-transform: uppercase;
-	      display: inline-block;
-	      // margin-right: 25px;
-	      // border: solid;
-	      // border-width: 1px;
-	      // border-color: transparent;
-	      font-size: 1.4rem;
-	      font-size: 1.5vw;
-	      padding: 0;
-	      margin-right: 1rem;
-	      a {
-	        display: inline-block;
-	        color: white;
-	        padding: 10px 10px 7px;
-	        line-height: 2.1rem;
-	        text-decoration: none;
-	        border: 1px solid transparent;
-	        @include prefix(transition, border-color 1s ease, moz ms o webkit);
-	      }
-	      a:hover, a.active {
-	        cursor: pointer;
-	        text-decoration: none;
-	        border-color: white;
-	      }
-	    }
-	  }
+
 	  .screen {
 	    position: relative;
-	    width: 100%;
+	    // width: 100%;
 	    // height: 100vh;
 	    overflow: hidden;
 	    // margin-right: -15px;
 	    // margin-left: -15px;
 	  }
-	  .introComponent {
-	    display: inline-block;
-	    width: 100%;
-	    vertical-align: top;
-	    padding-bottom: 5rem;
-	  }
-	  .introContent {
-	    margin-top: 46%;
-	    margin-top: 32rem;
-	    @include prefix(transition, margin-top 1s ease, moz webkit ms o);
-	    .copy {
-	      max-height: 200px;
-	      overflow-y: auto;
-	    }
-	  }
-	  h1 {
-	    font-family: $font-librebaskerville-italic;
-	    font-size: 26pt;
-	  }
-	  .imgContainer {
-	    width: 84%;
-	    margin-top: 20rem;
-	  }
-	  .flower {
-	    width: 100%;
-	    margin-right: -26%;
-	    padding-top: 100%;
-	    margin-top: 27%;
-	  }
-	  .brain, .approach, .data {
-	    width: 100%;
-	    margin-left: 14%;
-	    padding-top: 100%;
-	    margin-top: 27%;
-	    background-image: url("../../assets/img/eclipse.png");
-	    background-size: contain;
-	    background-repeat: no-repeat;
-	    height: 0px;
-	  }
-	  .approach, .flower, .data {
-	    .loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
-	      display: none;
-	    }
-	  }
-	  .brain {
-	    .loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
-	      display: block;
-	      position: absolute;
-	      width: 61%;
-	      margin-left: 8%;
-	      margin-top: -66%;
-	      opacity: 0;
-	    }
-	    .loyalty {
-	      opacity: 1;
-	    }
-	  }
-	  .vector {
-	    width: 99%;
-	    margin-left: 6%;
-	    margin-top: -115%;
-	  }
-	  .data2 {
-	    width: 85%;
-	    margin-left: 7%;
-	    margin-top: -108%;
-	  }
-	  .flower2 {
+
+	  .introLinksWrap {
+	    z-index: 1;
 	    position: absolute;
-	    width: 93%;
-	    margin-left: 0%;
-	    margin-top: -77%;
+	    // margin-left: 43%;
+	    margin-top: 15rem;
+	    // padding-left: 0;
+	    padding-right: 0;
+
+	    .introLinks {
+		    padding-left: 0;
+		    padding-right: 0;
+		    li {
+		      text-transform: uppercase;
+		      display: inline-block;
+		      // margin-right: 25px;
+		      // border: solid;
+		      // border-width: 1px;
+		      // border-color: transparent;
+		      font-size: 1.4rem;
+		      font-size: 1.5vw;
+		      padding: 0;
+		      margin-right: 1rem;
+		      a {
+		        display: inline-block;
+		        color: white;
+		        padding: 10px 10px 7px;
+		        line-height: 2.1rem;
+		        text-decoration: none;
+		        border: 1px solid transparent;
+		        @include prefix(transition, border-color 1s ease, moz ms o webkit);
+		      }
+		      a:hover, a.active {
+		        cursor: pointer;
+		        text-decoration: none;
+		        border-color: white;
+		      }
+		    }
+		  }
 	  }
-	  .approach {
-	    transform: rotate(0deg);
-	    .active {
-	      font-weight: bold;
-	      font-size: 20pt;
-	    }
-	    .intelligence {
-	      display: block;
-	      position: absolute;
-	      margin-top: -116%;
-	      margin-left: 42%;
-	    }
-	    .intelligence.active {
-	      margin-top: -126%;
-	      margin-left: 25%;
-	    }
-	    .intelligence.rotate1 {
-	      margin-top: -116%;
-	      margin-left: 42%;
-	    }
-	    .intelligence.rotate3 {
-	      margin-top: -121%;
-	      margin-left: 25%;
-	    }
-	    .action {
-	      display: block;
-	      position: absolute;
-	      margin-left: 106%;
-	      margin-top: -41%;
-	      .action.active {
-	        margin-left: 106%;
-	        margin-top: -41%;
-	      }
-	      .action.rotate1 {}
-	      .action.rotate3 {}
-	    }
-	    .relevance {
-	      display: block;
-	      position: absolute;
-	      margin-top: -8%;
-	      margin-left: 1%;
-	    }
-	    .relevance.active {
-	      margin-top: -6%;
-	      margin-left: -17%;
-	    }
-	    .relevance.rotate1 {
-	      margin-top: -8%;
-	      margin-left: -2%;
-	    }
-	    .relevance.rotate3 {
-	      margin-top: -8%;
-	      margin-left: 1%;
-	    }
+
+	  .introComponentWrap {
+
+	  	.introComponent {
+		    // display: inline-block;
+		    // width: 100%;
+		    vertical-align: top;
+		    padding-bottom: 10rem;
+
+		    .row:first-of-type {
+		    	margin-top: 15rem;
+		    }
+		
+		    &.introDifference {
+			  	background-image: url("../../assets/img/difference/flower-back.jpg");
+			  	background-size: 50%;
+			    background-repeat: no-repeat;
+			    background-position: left top;
+
+			    background-size: 55%;
+			    background-position: left -5rem center;
+
+			  }
+
+		    .imgContainer {
+				  // width: 84%;
+				  // margin-top: 20rem;
+				  
+				  .flower {
+				    // width: 100%;
+				    // margin-right: -26%;
+				    // padding-top: 100%;
+				    // margin-top: 27%;
+				  }
+				  .flower, .brain, .approach, .data {
+				    // width: 100%;
+				    // margin-left: 14%;
+				    // padding-top: 100%;
+				    // margin-top: 27%;
+				    background-image: url("../../assets/img/eclipse.png");
+				    background-size: contain;
+				    background-repeat: no-repeat;
+				    background-position: center;
+				    max-width: 40rem;
+				    position: relative;
+				    margin: auto;
+				    // height: 0px;
+				    > img {
+				    	margin-left: auto;
+				    	margin-right: auto;
+				    	width: 100%;
+				    	max-width: 40rem;
+				    }
+				  }
+				  .flower {
+				  	background: transparent;
+				  }
+				  // .approach, .flower, .data {
+				    .loyalty, .aquisition, .upsell, .crosssell, .demand, .retention, .brainSpacer {
+				      display: none;
+				    }
+				  // }
+				  .brain {
+				  	.brainSpacer { display: block; }
+				    .loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
+				      display: block;
+				      position: absolute;
+				      // width: 61%;
+				      // margin-left: 8%;
+				      // margin-top: -66%;
+				      opacity: 0;
+				      top: 50%;
+				      left: 50%;
+				      // width: 80%;
+				      padding: 6rem 5rem 1rem 3rem;
+				      @include prefix(transform, translate(-50%, -50%), moz ms webkit o);
+				    }
+				    .loyalty {
+				      opacity: 1;
+				    }
+				  }
+				  .data > img {
+						// max-width: 35rem;
+						width: 85%;
+				  }
+				  .vector {
+				    // width: 99%;
+				    // margin-left: 6%;
+				    // margin-top: -115%;
+				  }
+				  .data2 {
+				    // width: 85%;
+				    // margin-left: 7%;
+				    // margin-top: -108%;
+				  }
+				  .flower2 {
+				    // position: absolute;
+				    // width: 93%;
+				    // margin-left: 0%;
+				    // margin-top: -77%;
+				  }
+				  .approach {
+				  	background-size: 90%;
+				    transform: rotate(0deg);
+				    .active {
+				      font-weight: bold;
+				      font-size: 20pt;
+				    }
+				    .intelligence {
+				      display: block;
+				      position: absolute;
+				      margin-top: -105%;
+				      margin-left: 42%;
+				    }
+				    .intelligence.active {
+				      margin-top: -126%;
+				      margin-left: 25%;
+				    }
+				    .intelligence.rotate1 {
+				      margin-top: -105%;
+				      margin-left: 42%;
+				    }
+				    .intelligence.rotate3 {
+				      margin-top: -121%;
+				      margin-left: 25%;
+				    }
+				    .action {
+				      display: block;
+				      position: absolute;
+				      margin-left: 100%;
+				      margin-top: -41%;
+				      .action.active {
+				        margin-left: 106%;
+				        margin-top: -41%;
+				      }
+				      .action.rotate1 {}
+				      .action.rotate3 {}
+				    }
+				    .relevance {
+				      display: block;
+				      position: absolute;
+				      margin-top: -8%;
+				      margin-left: 1%;
+				    }
+				    .relevance.active {
+				      margin-top: -6%;
+				      margin-left: -17%;
+				    }
+				    .relevance.rotate1 {
+				      margin-top: -8%;
+				      margin-left: -2%;
+				    }
+				    .relevance.rotate3 {
+				      margin-top: -15%;
+				      margin-left: 1%;
+				    }
+				  }
+
+				  .brain {
+					  .brainHeading {
+					    position: absolute;
+					    // margin-top: -72%;
+					    // margin-left: 18%;
+					    top: 7%;
+					    left: 50%;
+					    @include prefix(transform, translate(-50%,0), ms moz webkit o);
+					    text-align: center;
+					    font-size: 1.55vw;
+					    font-size: 2rem;
+					    line-height: 1;
+					    font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
+					  }
+					  .brainCopy {
+					    position: absolute;
+					    // width: 37%;
+					    bottom: 7%;
+					    left: 45%;
+					    width: 40%;
+					    // @include prefix(transform, translate(-50%,0), ms moz webkit o);
+					    text-align: center;
+					    line-height: 1;
+					    // margin-top: -23%;
+					    // margin-left: 31%;
+					    // font-size: 1vw;
+					  }
+					}
+
+					.approach, .flower, .data {
+					  .brainCopy, .brainHeading {
+					    display: none;
+					  }
+					}
+
+				  .intelligence, .relevance, .action {
+				    display: none;
+				    font-family: $font-librebaskerville-italic;
+				  }
+				  
+				}
+				
+			  .introContent {
+			  	margin-top: 10rem;
+			    // margin-top: 46%;
+			    // margin-top: 32rem;
+			    @include prefix(transition, margin-top 1s ease, moz webkit ms o);
+			    .copy {
+			      // max-height: 200px;
+			      overflow-y: auto;
+			    }
+				  .subIntelligence, .subRelevance, .subAction {
+				    display: none;
+				  }
+				  .active {
+				    display: block;
+				  }
+				  .copy.hide {
+				    display: none;
+				  }
+
+					h1 {
+				    font-family: $font-librebaskerville-italic;
+				    font-size: 26pt;
+				  }
+			  }
+
+			  .approachButton {
+			    padding: 1rem 2rem;
+			    background-color: lighten($grey, 10%);
+			    color: #fff;
+			    // display: none;
+			  }
+			  
+			  &.introDifference, &.introCapabilities, &.introData {
+			    .approachButton {
+			      visibility: hidden;
+			    }
+			  }
+			  &.introApproach {
+			    .approachButton {
+			      visibility: visible;
+			    }
+			  }
+
+		  }
 	  }
+	    
 	}
-	.approach, .flower, .data {
-	  .brainCopy, .brainHeading {
-	    display: none;
-	  }
-	}
-	.brain {
-	  .brainHeading {
-	    position: absolute;
-	    margin-top: -72%;
-	    margin-left: 18%;
-	    font-size: 1.55vw;
-	    font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
-	  }
-	  .brainCopy {
-	    position: absolute;
-	    width: 37%;
-	    text-align: center;
-	    margin-top: -23%;
-	    margin-left: 31%;
-	    font-size: 1vw;
-	  }
-	}
+
+
+	
 	#ourWork {
 	  top: -58px;
 	}
@@ -880,38 +954,36 @@
 	}
 
 	/* Helpers */
+		/* Equal height columns */
 
-
-	/* Equal height columns */
-
-	.row.is-flex {
-	  display: flex;
-	  flex-wrap: wrap;
-	}
-	.row.is-flex>[class*='col-'] {
-	  display: flex;
-	  flex-direction: column;
-	}
-	.row.is-flex {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display: flex;
-	  -webkit-flex-wrap: wrap;
-	  -ms-flex-wrap: wrap;
-	  flex-wrap: wrap;
-	}
-	.row.is-flex>[class*='col-'] {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display: flex;
-	  -webkit-box-orient: vertical;
-	  -webkit-box-direction: normal;
-	  -webkit-flex-direction: column;
-	  -ms-flex-direction: column;
-	  flex-direction: column;
-	}
+		.row.is-flex {
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+		.row.is-flex>[class*='col-'] {
+		  display: flex;
+		  flex-direction: column;
+		}
+		.row.is-flex {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-flex-wrap: wrap;
+		  -ms-flex-wrap: wrap;
+		  flex-wrap: wrap;
+		}
+		.row.is-flex>[class*='col-'] {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-orient: vertical;
+		  -webkit-box-direction: normal;
+		  -webkit-flex-direction: column;
+		  -ms-flex-direction: column;
+		  flex-direction: column;
+		}
 
 /* ================
  Our Work Page
@@ -964,64 +1036,64 @@
 	-----------------------------*/
 
 
-	/*--------pageSwap---------*/
+		/*--------pageSwap---------*/
 
-	.pageSwap-leave {
-	  position: absolute;
-	  opacity: 1;
-	  nav {}
-	}
-	.pageSwap-leave.pageSwap-leave-active {
-	  position: absolute;
-	  opacity: 0;
-	  transition: all ease-out 1500ms;
-	  @include expoOut();
-	}
-	.pageSwap-enter {
-	  position: absolute;
-	  left: 0;
-	  transform: translate3d(100%, 0, 0);
-	  z-index: 1000;
-	  width: 100%;
-	  height: 100%;
-	}
-	.pageSwap-enter.pageSwap-enter-active {
-	  position: absolute;
-	  transform: translate3d(0, 0, 0);
-	  transition: all ease-out 1500ms;
-	  @include expoOut();
-	  z-index: 1000;
-	  width: 100%;
-	  height: 100%;
-	}
-	.reversePageSwap-leave {
-	  position: absolute;
-	  transform: translate3d(0, 0, 0);
-	  z-index: 1000;
-	  width: 100%;
-	  height: 100%;
-	}
-	.reversePageSwap-leave.reversePageSwap-leave-active {
-	  position: absolute;
-	  transform: translate3d(100%, 0, 0);
-	  transition: all ease-out 1500ms;
-	  @include expoOut();
-	  z-index: 1000;
-	  width: 100%;
-	  height: 100%;
-	}
-	.reversePageSwap-enter {
-	  position: absolute;
-	  opacity: 0;
-	  nav {}
-	}
-	.reversePageSwap-enter.reversePageSwap-enter-active {
-	  position: absolute;
-	  opacity: 1;
-	  transition: all ease-out 1500ms;
-	  @include expoOut();
-	  nav {}
-	}
+		.pageSwap-leave {
+		  position: absolute;
+		  opacity: 1;
+		  nav {}
+		}
+		.pageSwap-leave.pageSwap-leave-active {
+		  position: absolute;
+		  opacity: 0;
+		  transition: all ease-out 1500ms;
+		  @include expoOut();
+		}
+		.pageSwap-enter {
+		  position: absolute;
+		  left: 0;
+		  transform: translate3d(100%, 0, 0);
+		  z-index: 1000;
+		  width: 100%;
+		  height: 100%;
+		}
+		.pageSwap-enter.pageSwap-enter-active {
+		  position: absolute;
+		  transform: translate3d(0, 0, 0);
+		  transition: all ease-out 1500ms;
+		  @include expoOut();
+		  z-index: 1000;
+		  width: 100%;
+		  height: 100%;
+		}
+		.reversePageSwap-leave {
+		  position: absolute;
+		  transform: translate3d(0, 0, 0);
+		  z-index: 1000;
+		  width: 100%;
+		  height: 100%;
+		}
+		.reversePageSwap-leave.reversePageSwap-leave-active {
+		  position: absolute;
+		  transform: translate3d(100%, 0, 0);
+		  transition: all ease-out 1500ms;
+		  @include expoOut();
+		  z-index: 1000;
+		  width: 100%;
+		  height: 100%;
+		}
+		.reversePageSwap-enter {
+		  position: absolute;
+		  opacity: 0;
+		  nav {}
+		}
+		.reversePageSwap-enter.reversePageSwap-enter-active {
+		  position: absolute;
+		  opacity: 1;
+		  transition: all ease-out 1500ms;
+		  @include expoOut();
+		  nav {}
+		}
 
 /* ================
 introComponents slides
@@ -1087,11 +1159,19 @@ MEDIA QUERIES
 			font-size: 3rem;
 		}
 	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		#introSection .introComponentWrap .introComponent.introDifference {
+	  	background-size: 70%;
+	    // background-position: left -5rem center;
+	  }
+	}
+
 	@media screen and (max-width: 767px) {
 	  .navbar.navbar-default.navbar-fixed-top ul {
 	    margin-top: 0;
 	    li {
 	      margin-left: 1rem;
+	      margin-right: 1rem;
 	    }
 	  }
 	  #heroSection {
@@ -1142,26 +1222,48 @@ MEDIA QUERIES
 	    }
 	  }
 	  #introSection {
+
+	  	.introComponentWrap {
+		  	
+		  	.introComponent {
+		  		&.introDifference {
+				  	background-size: 150%;
+				    background-position: center;
+				  }
+				  .row:first-of-type {
+				  	margin-top: 23rem;
+				  }
+
+				  .introContent {
+				  	margin-top: 5rem;
+				  }
+				}
+			}
 	    .introLinksWrap {
+	    	width: 100%;
+	    	text-align: center;
 	      // bottom: -5rem;
 	      // margin-top: 75%;
-	      margin-top: 95%;
+	      // margin-top: 95%;
+	      margin-top: 13rem;
+	      // top: 60%;
 	      .introLinks li {
 	        font-size: 1.2rem;
 	        margin-right: 0.5rem;
+	        text-align: left;
 	      }
 	    }
 	    .imgContainer {
-	      width: 42%; //flower only
+	      // width: 42%; //flower only
 	      // margin-top: 30%;
-	      margin-top: 50%;
-	      margin-right: auto;
-	      margin-left: auto;
+	      // margin-top: 50%;
+	      // margin-right: auto;
+	      // margin-left: auto;
 	      .flower {
-	        margin-left: -76%;
+	        // margin-left: -76%;
 	      }
 	      div {
-	        margin-left: 0px;
+	        // margin-left: 0px;
 	      }
 	    }
 	    .introCapabilities, .introApproach, .introData {
@@ -1171,34 +1273,34 @@ MEDIA QUERIES
 	    }
 	    .brain {
 	      .loyalty, .aquisition, .upsell, .crosssell, .demand, .retention {
-	        display: block;
-	        position: absolute;
-	        width: 29%;
-	        margin-left: 5%;
-	        margin-top: -32%;
-	        opacity: 0;
+	        // display: block;
+	        // position: absolute;
+	        // width: 29%;
+	        // margin-left: 5%;
+	        // margin-top: -32%;
+	        // opacity: 0;
 	      }
 	      .loyalty {
 	        opacity: 1;
 	      }
 	    }
 	    .brainHeading {
-	      position: absolute;
-	      margin-top: -35%;
-	      margin-left: 8%;
-	      font-size: 1.65vw;
-	      font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
+	      // position: absolute;
+	      // margin-top: -35%;
+	      // margin-left: 8%;
+	      // font-size: 1.65vw;
+	      // font-family: "LibreBaskerville-Italic", Georgia, Times, serif;
 	    }
 	    .brainCopy {
-	      position: absolute;
-	      width: 37%;
-	      text-align: center;
-	      margin-top: -12%;
-	      margin-left: 8%;
-	      font-size: 1.2vw;
+	      // position: absolute;
+	      // width: 37%;
+	      // text-align: center;
+	      // margin-top: -12%;
+	      // margin-left: 8%;
+	      // font-size: 1.2vw;
 	    }
 	    .introContent {
-	      margin-top: 12rem;
+	      // margin-top: 5rem;
 	    }
 	  }
 	  #teamSection {

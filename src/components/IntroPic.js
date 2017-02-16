@@ -26,16 +26,16 @@ export default class IntroPic extends React.Component{
 
 
 			function initAnimate($img){
-			$img.each(function(){
+			// $img.each(function(){
 
-				setTimeout(function(){fadeIn($(this));}.bind(this),timeout);
-				timeout = timeout + 1500;
-				});
+				// setTimeout(function(){fadeIn($(this));}.bind(this),timeout);
+				// timeout = timeout + 1500;
+				// });
 				
-				setTimeout(function(){initAnimate($img)}.bind(this),0);
+				// setTimeout(function(){initAnimate($img)}.bind(this),0);
 			}
 
-			initAnimate($images);
+			// initAnimate($images);
 		}
 
 	}
@@ -60,16 +60,18 @@ export default class IntroPic extends React.Component{
 		return (
 				<div className="imgContainer">
 					<div className={this.props.className} data-count={this.props.count}>
-						<img className={this.props.className2} src={this.props.image2} />
-						<img className="aquisition" src={"./assets/img/capabilities/brain-02-aquisition.png"} />
-						<img className="upsell" src={"./assets/img/capabilities/brain-03-upsell.png"} />
-						<img className="crosssell" src={"./assets/img/capabilities/brain-04-crosssell.png"} />
-						<img className="demand" src={"./assets/img/capabilities/brain-05-demand.png"} />
-						<img className="retention" src={"./assets/img/capabilities/brain-06-retention.png"} />
+						<p className="brainHeading">And this is where we do it all.</p>
+						<img className="img-responsive brainSpacer" src={"./assets/img/capabilities/space.png"} />
+						<img className={"img-responsive " + this.props.className2} src={this.props.image2} />
+						<img className="img-responsive aquisition" src={"./assets/img/capabilities/brain-02-aquisition.png"} />
+						<img className="img-responsive upsell" src={"./assets/img/capabilities/brain-03-upsell.png"} />
+						<img className="img-responsive crosssell" src={"./assets/img/capabilities/brain-04-crosssell.png"} />
+						<img className="img-responsive demand" src={"./assets/img/capabilities/brain-05-demand.png"} />
+						<img className="img-responsive retention" src={"./assets/img/capabilities/brain-06-retention.png"} />
 						<p className="intelligence labels" ><em>Intelligence</em></p>
 						<p className="action labels"><em>Action</em></p>
 						<p className="relevance labels" ><em>Relevance</em></p>
-						<p className="brainHeading">And this is where we do it all.</p>
+						
 						<p className="brainCopy">Like our imaginations,<br/> our expertise spans far and wide.</p>
 					</div>
 				</div>

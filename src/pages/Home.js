@@ -106,7 +106,7 @@ export default class Home extends React.Component{
 				</section>
 				<a className="anchor" id="intro"></a>
 				
-				<div id ="introSection" className="">
+				<div id="introSection" className="">
 			
 					<div className="screen">
 						<div className="introLinksWrap col-sm-6 col-sm-offset-6">
@@ -117,9 +117,12 @@ export default class Home extends React.Component{
 								<IntroLink changeContent={this.changeContent.bind(this)} item = {'3'} title={["our",<br/>, "data"]}/>
 							</ul>
 						</div>
+
+						<div className="introComponentWrap">
 							 <ReactCSSTransitionReplace transitionName="cross-fade" transitionEnterTimeout={1500} transitionLeaveTimeout={1500}>
 								<Intro key={intro.id} {...intro} />
 							</ReactCSSTransitionReplace>
+						</div>
 					</div>
 						
 				</div>
