@@ -24,10 +24,6 @@ export default class Home extends React.Component{
 	
 	changeContent(item){
 		
-		var $introLinks = $('.introLinks li a');
-		$introLinks.removeClass();
-		$introLinks[item].className = "active";
-
 		this.setState({
 			intro: IntroStore.getContent(item),
 			});
@@ -37,6 +33,7 @@ export default class Home extends React.Component{
 
 			window.scrollTo(0,0);
 			window.removeEventListener('scroll', this.handleScroll);
+			$('#ourWorkPage').css('top', '0');
 		}
 
 		componentDidMount(){
@@ -92,6 +89,7 @@ export default class Home extends React.Component{
 	
 	
 	render(){
+
 		
 		const { intro } = this.state;
 		
