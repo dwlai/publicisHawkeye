@@ -17,11 +17,11 @@ export default class IntroPic extends React.Component{
 			var timeout = 0;
 
 			function fadeIn($image){
-				$image.animate({opacity : "1"},3000, function(){fadeOut($image);});
+				$image.animate({opacity : "1"},1500, function(){fadeOut($image);});
 			}
 
 			function fadeOut($image){
-				$image.animate({opacity : "0"},3000);
+				$image.animate({opacity : "0"},1500);
 			}
 
 
@@ -29,7 +29,7 @@ export default class IntroPic extends React.Component{
 			$img.each(function(){
 
 				setTimeout(function(){fadeIn($(this));}.bind(this),timeout);
-				timeout = timeout + 3000;
+				timeout = timeout + 1500;
 				});
 				
 				setTimeout(function(){initAnimate($img)}.bind(this),0);
