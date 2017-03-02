@@ -663,7 +663,7 @@
 			  .introContent {
 
 			  .subContent{
-			  		margin-top:10%;
+			  		margin-top:5%;
 			  }
 
 			  	margin-top: 10rem;
@@ -834,6 +834,7 @@
 	  }
 	}
 	#teamSection {
+
 	  width: 100%;
 	  padding-top: 8%;
 	  min-height: 368px;
@@ -862,6 +863,11 @@
 	    // margin-left: 61%;
 	  }
 	  .team-individual {
+
+	  h4{
+	  text-transform:none;
+	  }
+
 	    div {
 	      position: relative;
 	      display: inline-block;
@@ -901,7 +907,7 @@
 	    margin-top: 188%;
 	  }
 	  .team-vish {
-	    margin-top: 165%;
+	    margin-top: 124%;
 	    &:before {
 	      left: 3rem;
 	    }
@@ -1183,11 +1189,23 @@ MEDIA QUERIES
 		#ourWorkSection div.work-group div.work-individual a:link .work-overlay h2 {
 			font-size: 3rem;
 		}
+
+	  .teamTitle{
+	  		position:relative;
+	  		top:53px;
+	  		margin-left:62%;
+	  }
+
 	}
 	@media (min-width: 768px) and (max-width: 991px) {
 		#introSection .introComponentWrap .introComponent.introDifference {
 	  	background-size: 70%;
 	    // background-position: left -5rem center;
+	  }
+	  	  .teamTitle{
+	  		position:relative;
+	  		top:53px;
+	  		margin-left:62%;
 	  }
 	}
 
@@ -1329,6 +1347,7 @@ MEDIA QUERIES
 	    }
 	  }
 	  #teamSection {
+
 	    .team-bg-img {
 	      padding-bottom: 60%;
 	    }

@@ -7,38 +7,38 @@ class WorkStore extends EventEmitter{
 		this.work = [
 						{
 							id:1,
-							title:"CPC SMM",
+							title:"Canada Post Smartmail Marketing Launch",
 							titleLink:"cpc-smm",
 							image:"./assets/img/ourWork/tile-cpcsmm.png"
 						},
 						{
 							id:2,
-							title:"ROGERS PLATINUM LAUNCH",
+							title:"Rogers Platinum MasterCard Launch",
 							titleLink:"rogers-platinum-launch",
 							image:"./assets/img/ourWork/tile-rogers.png"
 						},
 						{
 							id:3,
-							title:"CPC CONNECTIVITY",
+							title:"Canada Post Smartmail Marketing – Connectivity",
 							titleLink:"cpc-connectivity",
 							// image:"./assets/img/ourWork/connectivity.png"
 							image:""
 						},
 						{
 							id:4,
-							title:"CMA INCITE AWARDS",
+							title:"CMA Incite Awards",
 							titleLink:"cma-incite-awards",
 							image:"./assets/img/ourWork/tile-incite.png"
 						},
 							{
 							id:5,
-							title:"RED LOBSTER",
+							title:"My Red Lobster Rewards",
 							titleLink:"red-lobster",
 							image:"./assets/img/ourWork/tile-redlobster.png"
 						},
 							{
 							id:6,
-							title:"LG DESIGN COLLECTION",
+							title:"LG Life’s Good eNews",
 							titleLink:"lg-design-collection",
 							image:"./assets/img/ourWork/tile-lg.png"
 						}
