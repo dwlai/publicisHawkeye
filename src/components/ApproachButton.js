@@ -10,7 +10,7 @@ export default class ApproachButton extends React.Component{
 	
 	render(){
 		return(
-			<div className="approachButton btn btn-primary" onClick={this.handleClick.bind(this)}>Read More</div>
+			<div className="approachButton" onClick={this.handleClick.bind(this)}><img src="./assets/img/arrowRight.png" /></div>
 		);
 		
 	}

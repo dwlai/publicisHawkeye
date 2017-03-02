@@ -693,10 +693,7 @@
 			  }
 
 			  .approachButton {
-			    padding: 1rem 2rem;
-			    background-color: lighten($grey, 10%);
-			    color: #fff;
-			    // display: none;
+					cursor:pointer;
 			  }
 			  
 			  &.introDifference, &.introCapabilities, &.introData {
