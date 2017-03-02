@@ -26,7 +26,7 @@ export default class Intro extends React.Component{
 		var rotateState = count % 3;
 		var $subContent = $introComponent.find('.subContent');
 		
-		$copy.addClass('hide');
+		//$copy.addClass('hide');
 		$subContent.find('div').removeClass('active');
 		$labels.removeClass("active");
 		

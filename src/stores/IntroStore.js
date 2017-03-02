@@ -8,7 +8,7 @@ class IntroStore extends EventEmitter{
 		
 							{
 								id:0,
-								title: "We create Relationship Moments™.",
+								title: "",
 								content: 'From grand gestures to "just because",'+" every moment matters in defining a relationship - whether in our personal lives or in business. It's these moments that we seize on. It's these moments that make anyone feel special, heard, and compelled to take immediate action. And together, it's these moments that ultimately determine how your relationship grows. ",
 								image:"",
 								image2: "./assets/img/difference/flower-0.png",
@@ -19,7 +19,7 @@ class IntroStore extends EventEmitter{
 							{
 								id:1,
 								title: "What can we do? A lot.",
-								content: "CRM Direct & Digital Marketing Loyalty Marketing Customer & Data Ingelligence Customer & Data Analytics Print & Digital Production Database Management Marketing Automation And this is where we do it all. Like our imaginations, our expertise spans far and wide.  ",
+								content: "",
 								image:"./assets/img/eclipse.png",
 								image2: "./assets/img/capabilities/brain-01-loyalty.png",
 								className0:"introCapabilities",

@@ -68,9 +68,9 @@ export default class IntroPic extends React.Component{
 						<img className="img-responsive crosssell cycle" src={"./assets/img/capabilities/brain-04-crosssell.png"} />
 						<img className="img-responsive demand cycle" src={"./assets/img/capabilities/brain-05-demand.png"} />
 						<img className="img-responsive retention cycle" src={"./assets/img/capabilities/brain-06-retention.png"} />
-						<p className="intelligence labels" ><em>Intelligence</em></p>
-						<p className="action labels"><em>Action</em></p>
-						<p className="relevance labels" ><em>Relevance</em></p>
+						{/*<p className="intelligence labels" ><em>Intelligence</em></p>*/}
+						{/*<p className="action labels"><em>Action</em></p>*/}
+						{/*<p className="relevance labels" ><em>Relevance</em></p>*/}
 						
 						<p className="brainCopy">Like our imaginations,<br/> our expertise spans far and wide.</p>
 					</div>

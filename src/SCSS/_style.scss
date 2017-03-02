@@ -633,6 +633,7 @@
 					  }
 					  .brainCopy {
 					    position: absolute;
+					    color:$grey;
 					    // width: 37%;
 					    bottom: 7%;
 					    left: 45%;
@@ -660,6 +661,11 @@
 				}
 				
 			  .introContent {
+
+			  .subContent{
+			  		margin-top:10%;
+			  }
+
 			  	margin-top: 10rem;
 			    // margin-top: 46%;
 			    // margin-top: 32rem;
@@ -671,6 +677,8 @@
 				  .subIntelligence, .subRelevance, .subAction {
 				    display: none;
 				  }
+
+			
 				  .active {
 				    display: block;
 				  }
@@ -699,6 +707,23 @@
 			  &.introApproach {
 			    .approachButton {
 			      visibility: visible;
+			    }
+			  }
+
+  				.capabilitiesContent{
+
+
+
+  				}
+			  &.introDifference, &.introApproach, &.introData {
+			    .capabilitiesContent {
+			      display:none;
+			    }
+			  }
+			  &.introCapabilities {
+			    .capabilitiesContent {
+			      display:block;
+			      list-style-type:none;
 			    }
 			  }
 

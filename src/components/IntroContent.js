@@ -8,6 +8,16 @@ export default class IntroContent extends React.Component{
 				<div className="introContent">
 						<h3 className="headline"> <em>{this.props.title}</em></h3>
 						<p className="copy"> {this.props.content} </p>
+						<ul className="capabilitiesContent">
+							<li>>  CRM</li>
+							<li>>  Direct & Digital Marketing</li>
+							<li>>  Loyalty Marketing</li>
+							<li>>  Customer & Data Ingelligence</li>
+							<li>>  Customer & Data Analytics</li>
+							<li>>  Print & Digital Production</li>
+							<li>>  Database Management</li>
+							<li>>  Marketing Automation</li>
+						</ul>
 				<div className="subContent">
 					<div className="subIntelligence">
 						<h4 className = "subhead">Intelligence</h4>
