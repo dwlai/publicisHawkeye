@@ -711,9 +711,6 @@
 			  }
 
   				.capabilitiesContent{
-
-
-
   				}
 			  &.introDifference, &.introApproach, &.introData {
 			    .capabilitiesContent {
@@ -724,6 +721,43 @@
 			    .capabilitiesContent {
 			      display:block;
 			      list-style-type:none;
+			    }
+			  }
+
+		  	.subheadData{
+		  	 margin-top:3%;
+		 
+		  	 	.subheadDataContainer{
+		  	 		max-height:230px;
+		  	 		overflow:hidden;
+		  	 		transition:1s;
+		  	 	}
+		  	 	.subheadDataContainer.active{
+		  	 		max-height:1000px;
+		  	 	}
+
+		  	 	.arrow{
+		  	 			display:block;
+		  	 			margin-top:30px;
+		  	 			margin-left:auto;
+		  	 			margin-right:auto;
+		  	 	}
+		  	 	.arrow:hover{
+		  	 		cursor:pointer;
+		  	 	}
+		  	 	.arrow.active{
+		  	 		transform: rotate(180deg);
+		  	 	}
+  			}
+			  &.introDifference, &.introApproach, &.introCapabilities {
+			    .subheadData {
+			      display:none;
+			    }
+			  }
+			  &.introDataCapabilities {
+			    .subheadData {
+			      display:block;
+
 			    }
 			  }
 

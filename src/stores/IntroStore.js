@@ -40,7 +40,7 @@ class IntroStore extends EventEmitter{
 							{
 								id:3,
 								title: "Experience Intelligence Platform",
-								content: "[Subhead] Connecting the right message to the right person at the right time – in real time. [Copy] It's the place where we start, continue and keep countless conversations alive across all channels relevant to our clients, their customers, and their best prospects. It's our relentless commitment to iterative testing, learning, and scaling at a pace that embraces the speed of the customer journey. It's the engine that drives our Relationship Moments. EIP enables and empowers brands to listen, engage, and react to customers' needs in a more seamless and effective way. Working behind the scenes, our agile, always-on hub combines unstructured and unstructured data collected from digital touchpoints and interactions. It builds a customer profile that continuously evolves with their behaviors to create the perfect cross-channel experiences. ",
+								content: "",
 								image:"./assets/img/eclipse.png",
 								image2: "./assets/img/data/data.png",
 								className0:"introData",

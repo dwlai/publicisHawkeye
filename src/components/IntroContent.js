@@ -1,12 +1,38 @@
 import React from 'react'
+import $ from 'jquery'
 
 export default class IntroContent extends React.Component{
+
+
+
+	moreContent(){
+
+		var $elements = $('.subheadDataContainer, .arrow');
+		if($elements.hasClass('active')){
+			$elements.removeClass('active');
+		}
+		else
+		$elements.addClass('active');
+		
+	}
 	
 	render(){
 		return (
 				
 				<div className="introContent">
 						<h3 className="headline"> <em>{this.props.title}</em></h3>
+						<div className="subheadData">
+							<div className="subheadDataContainer">
+								<h4 className = "subhead">Connecting the right message to the right person at the right time - in real time.</h4>
+								<p>It’s the place where we start, continue, and keep countless conversations alive across all channels relevant to our clients, their customers, and their best prospects.</p>
+								<p>It’s our relentless commitment to iterative testing, learning, and scaling at a pace that embraces the speed and diversity of the customer journey.</p>
+								<p>It’s the engine that drives our Relationship Moments.</p>
+								<p>EIP enables and empowers brands to listen, analyze, and make informed decisions to engage customers in a more seamless and effective way.</p>
+								<p>Working behind the scenes, our agile, always-on hub combines inferred and declared data collected from all touchpoints and interactions with the brand.</p>
+								<p>It builds a customer profile that continuously evolves with their behaviors to create the perfect cross-channel experiences. </p>
+							</div>
+							<div><img onClick={this.moreContent.bind(this)} className="arrow" src="./assets/img/arrow.png"/></div>
+						</div>
 						<p className="copy"> {this.props.content} </p>
 						<ul className="capabilitiesContent">
 							<li>>  CRM</li>
