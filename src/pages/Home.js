@@ -147,8 +147,8 @@ export default class Home extends React.Component{
 				<a className="anchor" id="team"></a>
 				<section id="teamSection" className="">
 
-					<div className="container">
-						<div className="row">
+					<div className="container pos-rel">
+						<div className="row team-wrap">
 							<div className="col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8 teamTitle">
 								<h2 className="block-title">OUR LEADERSHIP TEAM</h2>
 								<p id="meet"> Meet the men and women in charge of it all.</p>

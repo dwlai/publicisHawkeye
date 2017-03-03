@@ -871,6 +871,13 @@
     min-height: 368px;
     background-color: $grey;
     color: white;
+
+    .team-wrap {
+      top: 0;
+      width: 100%;
+      position: absolute;
+      z-index: 111;
+    }
     .team-bg-img {
       /*background-image: url("../../assets/img/team-04.jpg");*/
       /*background-size: contain;
@@ -951,7 +958,7 @@
         &:before {
           left: 3rem;
         }*/
-        top: 60%;
+        top: 55%;
       }
       &.team-jennifer {
         /*margin-top: 195%;*/
@@ -1077,6 +1084,12 @@
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
+    }
+    .pos-rel {
+      position: relative;
+    }
+    .pos-abs {
+      position: absolute;
     }
 
 /* ================
@@ -1352,6 +1365,7 @@ MEDIA QUERIES
         // margin-top: 75%;
         // margin-top: 95%;
         margin-top: 13rem;
+        padding-left: 0;
         // top: 60%;
         .introLinks li {
           font-size: 1.2rem;
@@ -1410,7 +1424,10 @@ MEDIA QUERIES
       }
     }
     #teamSection {
+      .team-wrap {
+        position: static;
 
+      }
       .team-bg-img {
         /*padding-bottom: 60%;*/
       }
